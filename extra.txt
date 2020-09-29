@@ -1,0 +1,919 @@
+import React, { useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import { useStyles } from "./css";
+import ButtonAppBar from "../Appbar/Appbar";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import InboxIcon from "@material-ui/icons/Inbox";
+import { Divider } from "@material-ui/core";
+import Tab from "../Tab/Tab";
+import { Link, Redirect } from "react-router-dom";
+import { DailySummary } from "../DailySummary/DailySummary";
+
+export default function FullWidthGrid() {
+  const classes = useStyles();
+  const [list, setList] = useState("daily");
+  const ListFunction = value => {
+    console.log(value);
+    setList(value);
+  };
+
+  return (
+    <>
+      <ButtonAppBar />
+      <div className={classes.root}>
+        <Grid container spacing={3}>
+          <Grid item lg={12}>
+            <Grid container spacing={3}>
+              <Grid item xs={12} sm={5} md={8} lg={8}>
+                <div className={classes.root}>
+                  <List component="nav" aria-label="main mailbox folders">
+                    <ListItem
+                      button
+                      style={{ padding: "10px" }}
+                      onClick={() => ListFunction("daily")}
+                    >
+                      <ListItemIcon>
+                        <img
+                          src={require("../../assets/icons/dailySummaryIcon.svg")}
+                          style={{ width: "25px" }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText
+                        primary="Daily Summary"
+                        style={{ color: "#00BBDC" }}
+                      />
+                    </ListItem>
+                    <Divider />
+                    <ListItem
+                      button
+                      style={{ padding: "10px" }}
+                      onClick={() => ListFunction("report")}
+                    >
+                      <ListItemIcon>
+                        <img
+                          src={require("../../assets/icons/reportIcon.svg")}
+                          style={{ width: "25px" }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText primary="Report" />
+                    </ListItem>
+                    <Divider />
+                    <ListItem
+                      button
+                      style={{ padding: "10px" }}
+                      onClick={() => ListFunction("help")}
+                    >
+                      <ListItemIcon>
+                        <img
+                          src={require("../../assets/icons/helpIcon.svg")}
+                          style={{ width: "25px" }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText primary="Help" />
+                    </ListItem>
+                    <Divider />
+                    <ListItem
+                      button
+                      style={{ padding: "10px" }}
+                      onClick={() => ListFunction("contact")}
+                    >
+                      <ListItemIcon>
+                        <img
+                          src={require("../../assets/icons/contactAgentIcon.svg")}
+                          style={{ width: "25px" }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText primary="Contact Agent" />
+                    </ListItem>
+                    <Divider />
+                    <ListItem
+                      button
+                      style={{ padding: "10px" }}
+                      onClick={() => ListFunction("faq")}
+                    >
+                      <ListItemIcon>
+                        <img
+                          src={require("../../assets/icons/faqIcon.svg")}
+                          style={{ width: "25px" }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText primary="F.A.Q" />
+                    </ListItem>
+                    <Divider />
+                    <ListItem
+                      button
+                      style={{ padding: "10px" }}
+                      onClick={() => ListFunction("about")}
+                    >
+                      <ListItemIcon>
+                        <img
+                          src={require("../../assets/icons/aboutOtoparkIcon.svg")}
+                          style={{ width: "25px" }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText primary="About otopark" />
+                    </ListItem>
+                    <Divider />
+                    <a
+                      href="https://www.otopark.in/"
+                      style={{ textDecoration: "None", color: "black" }}
+                    >
+                      <ListItem
+                        button
+                        style={{ padding: "10px" }}
+                        onClick={() => ListFunction("website")}
+                      >
+                        <ListItemIcon>
+                          <i
+                            class="fa fa-globe"
+                            aria-hidden="true"
+                            style={{ fontSize: "30px" }}
+                          ></i>
+                          {/* <img src={require('../../assets/icons/aboutOtoparkIcon.svg')} style={{width:'25px'}}/> */}
+                        </ListItemIcon>
+                        <ListItemText primary="Otopark Website" />
+                      </ListItem>
+                    </a>
+                  </List>
+                </div>
+                {/* <div
+                  style={{
+                    borderRight: "1px solid black",
+                    height: "450px",
+                    marginTop: "-380px"
+                  }}
+                ></div> */}
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                md={4}
+                lg={4}
+                className={classes.gridFour}
+              >
+                <div>{list === "daily" ? <DailySummary /> : ""}</div>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Tab />
+        </Grid>
+      </div>
+    </>
+  );
+}
+
+///////// report card 1 ///////
+
+import React from "react";
+import PropTypes from "prop-types";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import Fab from "@material-ui/core/Fab";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import Zoom from "@material-ui/core/Zoom";
+import Button from "@material-ui/core/Button";
+import { useStyles } from "./css";
+import { Card, CardContent, Grid, InputBase } from "@material-ui/core";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import SearchIcon from "@material-ui/icons/Search";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import { Link } from "react-router-dom";
+
+function ScrollTop(props) {
+  const { children, window } = props;
+  const classes = useStyles();
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100
+  });
+
+  const handleClick = event => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
+  return (
+    <Zoom in={trigger}>
+      <div onClick={handleClick} role="presentation" className={classes.root}>
+        {children}
+      </div>
+    </Zoom>
+  );
+}
+
+ScrollTop.propTypes = {
+  children: PropTypes.element.isRequired,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func
+};
+
+export const Report = props => {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <Grid container spacing={2}>
+        {/* appbar */}
+        <div className={classes.root} style={{ width: "100%" }}>
+          <AppBar position="static" style={{ backgroundColor: "#00BBDC" }}>
+            <Toolbar>
+              <Link to="/otopark/executive/getmore">
+                <IconButton
+                  edge="start"
+                  className={classes.menuButton}
+                  color="inherit"
+                  aria-label="open drawer"
+                >
+                  <ArrowBackIcon
+                    className={classes.desktopView}
+                    style={{ color: "white" }}
+                  />
+                </IconButton>
+              </Link>
+
+              <div className={classes.search}>
+                <div className={classes.searchIcon}>
+                  <SearchIcon />
+                </div>
+                <InputBase
+                  placeholder="Search…"
+                  classes={{
+                    root: classes.inputRoot,
+                    input: classes.inputInput
+                  }}
+                  inputProps={{ "aria-label": "search" }}
+                />
+              </div>
+            </Toolbar>
+          </AppBar>
+        </div>
+        {/* appbar end */}
+        <Grid item xs={12}>
+          <Grid container direction="row" justify="center" alignItems="center">
+            <Card className={classes.root}>
+              <CardContent>
+                <Grid container spacing={3}>
+                  <Grid item lg={4}>
+                    <div style={{ marginTop: "40px" }}>
+                      <img
+                        src={require("../../assets/images/profile.png")}
+                        width="70px"
+                        height="70px"
+                      />
+                      <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                    </div>
+                  </Grid>
+                  <Grid item lg={8}>
+                    <div className={classes.content}>
+                      <p>VR Number: 123456</p>
+                      <p>Entry Time: 10.00 AM</p>
+                      <p>Exit Time: 12.00 AM</p>
+                      <p>Booking_Status: Yes</p>
+                      <p>IN/OUT: IN</p>
+                    </div>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
+        <Button className={classes.viewMoreBtn}>View More</Button>
+      </Grid>
+    </div>
+  );
+};
+
+export default Report;
+
+
+
+/////////////  report card 2 ///////////
+
+
+import React from "react";
+import PropTypes from "prop-types";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import { Card, CardContent, Grid, InputBase } from "@material-ui/core";
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import Fab from "@material-ui/core/Fab";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import Zoom from "@material-ui/core/Zoom";
+import Button from "@material-ui/core/Button";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import SearchIcon from "@material-ui/icons/Search";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import { Link } from "react-router-dom";
+import { useStyles } from "./css";
+
+function ScrollTop(props) {
+  const { children, window } = props;
+  const classes = useStyles();
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: -1
+  });
+
+  const handleClick = event => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
+  return (
+    <Zoom in={trigger}>
+      <div onClick={handleClick} role="presentation" className={classes.root}>
+        {children}
+      </div>
+    </Zoom>
+  );
+}
+
+ScrollTop.propTypes = {
+  children: PropTypes.element.isRequired,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func
+};
+
+export default function BackToTop(props) {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.report}>
+      <React.Fragment>
+        <CssBaseline />
+        <div style={{ width: "100%" }}>
+          <AppBar position="static" style={{ backgroundColor: "#00BBDC" }}>
+            <Toolbar>
+              <Link to="/otopark/executive/getmore">
+                <IconButton
+                  edge="start"
+                  className={classes.menuButton}
+                  color="inherit"
+                  aria-label="open drawer"
+                >
+                  <ArrowBackIcon
+                    className={classes.desktopView}
+                    style={{ color: "white" }}
+                  />
+                </IconButton>
+              </Link>
+              <div className={classes.search}>
+                <div className={classes.searchIcon}>
+                  <SearchIcon />
+                </div>
+                <InputBase
+                  placeholder="Search…"
+                  classes={{
+                    root: classes.inputRoot,
+                    input: classes.inputInput
+                  }}
+                  inputProps={{ "aria-label": "search" }}
+                />
+              </div>
+            </Toolbar>
+          </AppBar>
+        </div>
+        <Toolbar id="back-to-top-anchor" />
+        <Container>
+          <Box my={2}>
+            <Grid item xs={12}>
+              <Grid
+                container
+                spacing={2}
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            {/* new bro */}
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+
+            <Grid item xs={12}>
+              <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+              >
+                <Card className={classes.root}>
+                  <CardContent>
+                    <Grid container spacing={2}>
+                      <Grid item lg={4}>
+                        <div style={{ marginTop: "40px" }}>
+                          <img
+                            src={require("../../assets/images/profile.png")}
+                            width="70px"
+                            height="70px"
+                          />
+                          <p style={{ fontSize: "15px" }}>Booking_Id: 123456</p>
+                        </div>
+                      </Grid>
+                      <Grid item lg={8}>
+                        <div className={classes.content}>
+                          <p>VR Number: 123456</p>
+                          <p>Entry Time: 10.00 AM</p>
+                          <p>Exit Time: 12.00 AM</p>
+                          <p>Booking_Status: Yes</p>
+                          <p>IN/OUT: IN</p>
+                        </div>
+                      </Grid>
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          </Box>
+          <Button className={classes.viewMoreBtn}>View More</Button>
+        </Container>
+        <ScrollTop {...props}>
+          <Fab
+            color="secondary"
+            size="small"
+            aria-label="scroll back to top"
+            style={{ backgroundColor: "#00BBDC", marginTop: "-60px" }}
+          >
+            <KeyboardArrowUpIcon style={{ color: "#fff" }} />
+          </Fab>
+        </ScrollTop>
+      </React.Fragment>
+    </div>
+  );
+}
+
