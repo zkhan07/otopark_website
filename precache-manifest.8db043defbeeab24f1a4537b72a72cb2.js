@@ -1,79 +1,55 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce388eb4bd70f0072ad4317bbaa2e8a5",
+    "revision": "c8f36b789fc713aedfe210eabf03da9d",
     "url": "/otopark_website/index.html"
   },
   {
-    "revision": "ec2ad2a01ee2e7a59da2",
-    "url": "/otopark_website/static/css/3.9362e1c7.chunk.css"
+    "revision": "62602063ea5197d97819",
+    "url": "/otopark_website/static/css/2.5c894ee2.chunk.css"
   },
   {
-    "revision": "0371388694f268acfbd1",
-    "url": "/otopark_website/static/js/2.88c769f4.chunk.js"
-  },
-  {
-    "revision": "0f5e6f1b5203b86ab1202ae62480dbf2",
-    "url": "/otopark_website/static/js/2.88c769f4.chunk.js.LICENSE.txt"
-  },
-  {
-    "revision": "ec2ad2a01ee2e7a59da2",
-    "url": "/otopark_website/static/js/3.e3846e44.chunk.js"
+    "revision": "62602063ea5197d97819",
+    "url": "/otopark_website/static/js/2.27baa524.chunk.js"
   },
   {
     "revision": "81896c98bac7b5b16ab1d3790da5b937",
-    "url": "/otopark_website/static/js/3.e3846e44.chunk.js.LICENSE.txt"
+    "url": "/otopark_website/static/js/2.27baa524.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1be312a3d1e8decae228",
-    "url": "/otopark_website/static/js/4.c7623508.chunk.js"
+    "revision": "c9a10c9b98b582a49dd7",
+    "url": "/otopark_website/static/js/3.9b0a962c.chunk.js"
+  },
+  {
+    "revision": "0f5e6f1b5203b86ab1202ae62480dbf2",
+    "url": "/otopark_website/static/js/3.9b0a962c.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "7313c4fa8811dcba6f84",
+    "url": "/otopark_website/static/js/4.fd2507a2.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/otopark_website/static/js/4.c7623508.chunk.js.LICENSE.txt"
+    "url": "/otopark_website/static/js/4.fd2507a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a1e6317801164c398d6f",
-    "url": "/otopark_website/static/js/5.8e4ca3b2.chunk.js"
+    "revision": "b7024085a2a62d6ee8e7",
+    "url": "/otopark_website/static/js/5.786ea0d4.chunk.js"
   },
   {
-    "revision": "8831c8dba04adc6413de",
-    "url": "/otopark_website/static/js/6.12add276.chunk.js"
+    "revision": "43746f6f493ba7dfcf5c",
+    "url": "/otopark_website/static/js/6.468510ff.chunk.js"
   },
   {
-    "revision": "9492bd9fee5e82bcc334",
-    "url": "/otopark_website/static/js/main.5a23ad82.chunk.js"
+    "revision": "c124a2629f344cabff35",
+    "url": "/otopark_website/static/js/main.2786c866.chunk.js"
   },
   {
-    "revision": "b54bede7a94ea1a60e17",
-    "url": "/otopark_website/static/js/runtime-main.0cecde2e.js"
-  },
-  {
-    "revision": "84b0183c62b422d9bbd4243bccb2303a",
-    "url": "/otopark_website/static/media/DST.84b0183c.svg"
-  },
-  {
-    "revision": "4cba38d56df64e28f59509f9c8dff785",
-    "url": "/otopark_website/static/media/MEIT.4cba38d5.svg"
-  },
-  {
-    "revision": "cfc8bf1132a9b90ca19b8bbc7b367f8a",
-    "url": "/otopark_website/static/media/aim.cfc8bf11.svg"
-  },
-  {
-    "revision": "bb42ce112a826fecc6f5166f5b4ab39f",
-    "url": "/otopark_website/static/media/best.bb42ce11.svg"
+    "revision": "823cb2ba3f4f012698e0",
+    "url": "/otopark_website/static/js/runtime-main.1b0a4688.js"
   },
   {
     "revision": "87c15b39137b2347a7938fa6ba35eedd",
     "url": "/otopark_website/static/media/blueLogo.87c15b39.png"
-  },
-  {
-    "revision": "0b3108835cedcf789c1dc7e3ca4dd94b",
-    "url": "/otopark_website/static/media/bmc.0b310883.svg"
-  },
-  {
-    "revision": "ff8143e1b8eaa474bfd6572e2aad9754",
-    "url": "/otopark_website/static/media/cg-goverment.ff8143e1.svg"
   },
   {
     "revision": "023dad1a5a821d07db67bba91c1ff72d",
@@ -88,16 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/otopark_website/static/media/earnMoneySolution.1928d29e.svg"
   },
   {
-    "revision": "a9d9c0f09bb0cde01f7c5f4047ab64d0",
-    "url": "/otopark_website/static/media/evre.a9d9c0f0.svg"
-  },
-  {
     "revision": "c4b162a1486016167d2c13613ca34f92",
     "url": "/otopark_website/static/media/fastTagSolution.c4b162a1.svg"
-  },
-  {
-    "revision": "eaeed368af4ba12b7aed54a8df0cfbfb",
-    "url": "/otopark_website/static/media/fastag.eaeed368.svg"
   },
   {
     "revision": "7f121cec059fd618df0bf97d52760674",
@@ -124,10 +92,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/otopark_website/static/media/freepressMedia.02d195a8.svg"
   },
   {
-    "revision": "5a0879124ab103da95cc4f0a75f1e916",
-    "url": "/otopark_website/static/media/hdfc.5a087912.svg"
-  },
-  {
     "revision": "365e956f23c4c38e275d47f337a4b038",
     "url": "/otopark_website/static/media/heroImg.365e956f.svg"
   },
@@ -136,36 +100,80 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/otopark_website/static/media/hindustanTimesMedia.b46e23e5.svg"
   },
   {
-    "revision": "9146ddbe171f4cf5ccc634652912fd78",
-    "url": "/otopark_website/static/media/iit-bombay.9146ddbe.svg"
+    "revision": "db86adf02b754f1643f1bdb868534e5d",
+    "url": "/otopark_website/static/media/logo1.db86adf0.png"
   },
   {
-    "revision": "e32e20f721ff5a293958517c6a3535fd",
-    "url": "/otopark_website/static/media/logo1.e32e20f7.svg"
+    "revision": "a562526a815fb55493179ad4345597e2",
+    "url": "/otopark_website/static/media/logo10.a562526a.png"
   },
   {
-    "revision": "44a9eadd8d3434d7b7e87fafdff57d9f",
-    "url": "/otopark_website/static/media/logo2.44a9eadd.svg"
+    "revision": "67470bc209d8d17df91ba5f135a7828a",
+    "url": "/otopark_website/static/media/logo11.67470bc2.png"
   },
   {
-    "revision": "96355a884ec1d9e5d8360b57d76aec6b",
-    "url": "/otopark_website/static/media/logo3.96355a88.svg"
+    "revision": "c7229f71a2b7e7230414c1d29b81ae77",
+    "url": "/otopark_website/static/media/logo12.c7229f71.png"
   },
   {
-    "revision": "f7838584194eaec0f030e38e70743e37",
-    "url": "/otopark_website/static/media/logo4.f7838584.svg"
+    "revision": "bb42ce112a826fecc6f5166f5b4ab39f",
+    "url": "/otopark_website/static/media/logo13.bb42ce11.svg"
+  },
+  {
+    "revision": "0b3108835cedcf789c1dc7e3ca4dd94b",
+    "url": "/otopark_website/static/media/logo14.0b310883.svg"
+  },
+  {
+    "revision": "a9d9c0f09bb0cde01f7c5f4047ab64d0",
+    "url": "/otopark_website/static/media/logo15.a9d9c0f0.svg"
   },
   {
     "revision": "1a0aa546378fd8e9e0a591af8814d199",
-    "url": "/otopark_website/static/media/netc.1a0aa546.svg"
-  },
-  {
-    "revision": "727b49989da169658c99235ad5daec1e",
-    "url": "/otopark_website/static/media/niti-ayog.727b4998.svg"
+    "url": "/otopark_website/static/media/logo16.1a0aa546.svg"
   },
   {
     "revision": "2286f0626e617ee6f156b4b5c7cb493b",
-    "url": "/otopark_website/static/media/npci.2286f062.svg"
+    "url": "/otopark_website/static/media/logo17.2286f062.svg"
+  },
+  {
+    "revision": "eaeed368af4ba12b7aed54a8df0cfbfb",
+    "url": "/otopark_website/static/media/logo18.eaeed368.svg"
+  },
+  {
+    "revision": "5a0879124ab103da95cc4f0a75f1e916",
+    "url": "/otopark_website/static/media/logo19.5a087912.svg"
+  },
+  {
+    "revision": "c62fb1fbdada4a6a354710bbe65c8117",
+    "url": "/otopark_website/static/media/logo2.c62fb1fb.png"
+  },
+  {
+    "revision": "91ae8843c82a2202bc5761269df143b0",
+    "url": "/otopark_website/static/media/logo3.91ae8843.png"
+  },
+  {
+    "revision": "28f7c9a457ff723e08ed7fa0f0ef0dc7",
+    "url": "/otopark_website/static/media/logo4.28f7c9a4.png"
+  },
+  {
+    "revision": "b3b0d43e7b1a4e0ad82c628ffc1ad644",
+    "url": "/otopark_website/static/media/logo5.b3b0d43e.png"
+  },
+  {
+    "revision": "8ef00f5711667082eb27b45bc7576d5a",
+    "url": "/otopark_website/static/media/logo6.8ef00f57.png"
+  },
+  {
+    "revision": "10ccf920f3ffcbeea5813ed39b85cde4",
+    "url": "/otopark_website/static/media/logo7.10ccf920.png"
+  },
+  {
+    "revision": "6a37dadd452d350e35c5ed65fb3d3901",
+    "url": "/otopark_website/static/media/logo8.6a37dadd.png"
+  },
+  {
+    "revision": "52c82aa72fc15de79bcac7cd44f64d44",
+    "url": "/otopark_website/static/media/logo9.52c82aa7.png"
   },
   {
     "revision": "726bb45951ed4e9ec0e0a0728adfd8c2",
@@ -182,10 +190,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3f3f657a22f2c4de369628422ce6fc3a",
     "url": "/otopark_website/static/media/parkingTechnologiesImg.3f3f657a.svg"
-  },
-  {
-    "revision": "10016122353f864b66e0a80d479e8397",
-    "url": "/otopark_website/static/media/sine.10016122.svg"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
@@ -206,10 +210,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "077f2769b4ead5398aff30c5ee0faf36",
     "url": "/otopark_website/static/media/smartParkingSolution.077f2769.svg"
-  },
-  {
-    "revision": "f4e214f2b6905eb02190f7933436fa55",
-    "url": "/otopark_website/static/media/startupindia.f4e214f2.svg"
   },
   {
     "revision": "0cd0d982d01212c9b7ae10c2ddce8393",
