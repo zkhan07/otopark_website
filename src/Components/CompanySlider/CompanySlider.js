@@ -17,7 +17,7 @@ export default function FullWidthGrid() {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
@@ -40,7 +40,7 @@ export default function FullWidthGrid() {
         breakpoint: 480,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToScroll: 1
         }
       }
     ]
@@ -53,22 +53,20 @@ export default function FullWidthGrid() {
             <div>
               <a href="#">
                 <img
-                  style={{ backgroundColor: "red" }}
                   width="100px"
                   height="100px"
                   alt="img1"
-                  src={require("../../assets/company/logo1.svg")}
+                  src={require("../../assets/company/logo1.png")}
                 />
               </a>
             </div>
             <div>
               <a href="#">
                 <img
-                  style={{ backgroundColor: "red" }}
                   width="100px"
                   height="100px"
                   alt="img2"
-                  src={require("../../assets/company/logo2.svg")}
+                  src={require("../../assets/company/logo2.png")}
                 />
               </a>
             </div>
@@ -78,7 +76,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img3"
-                  src={require("../../assets/company/logo3.svg")}
+                  src={require("../../assets/company/logo3.png")}
                 />
               </a>
             </div>
@@ -89,7 +87,7 @@ export default function FullWidthGrid() {
                   height="100px"
                   alt="img4"
                   src=""
-                  src={require("../../assets/company/logo4.svg")}
+                  src={require("../../assets/company/logo4.png")}
                 />
               </a>
             </div>
@@ -99,7 +97,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img5"
-                  src={require("../../assets/company/aim.svg")}
+                  src={require("../../assets/company/logo5.png")}
                 />
               </a>
             </div>
@@ -109,7 +107,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img6"
-                  src={require("../../assets/company/best.svg")}
+                  src={require("../../assets/company/logo6.png")}
                 />
               </a>
             </div>
@@ -119,7 +117,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img7"
-                  src={require("../../assets/company/bmc.svg")}
+                  src={require("../../assets/company/logo7.png")}
                 />
               </a>
             </div>
@@ -129,7 +127,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img8"
-                  src={require("../../assets/company/cg-goverment.svg")}
+                  src={require("../../assets/company/logo8.png")}
                 />
               </a>
             </div>
@@ -139,7 +137,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img9"
-                  src={require("../../assets/company/DST.svg")}
+                  src={require("../../assets/company/logo9.png")}
                 />
               </a>
             </div>
@@ -149,7 +147,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img10"
-                  src={require("../../assets/company/evre.svg")}
+                  src={require("../../assets/company/logo10.png")}
                 />
               </a>
             </div>
@@ -159,7 +157,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img11"
-                  src={require("../../assets/company/fastag.svg")}
+                  src={require("../../assets/company/logo11.png")}
                 />
               </a>
             </div>
@@ -169,7 +167,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img12"
-                  src={require("../../assets/company/hdfc.svg")}
+                  src={require("../../assets/company/logo12.png")}
                 />
               </a>
             </div>
@@ -179,7 +177,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img13"
-                  src={require("../../assets/company/iit-bombay.svg")}
+                  src={require("../../assets/company/logo13.svg")}
                 />
               </a>
             </div>
@@ -189,7 +187,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img14"
-                  src={require("../../assets/company/MEIT.svg")}
+                  src={require("../../assets/company/logo14.svg")}
                 />
               </a>
             </div>
@@ -199,7 +197,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img15"
-                  src={require("../../assets/company/netc.svg")}
+                  src={require("../../assets/company/logo15.svg")}
                 />
               </a>
             </div>
@@ -209,7 +207,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img16"
-                  src={require("../../assets/company/niti-ayog.svg")}
+                  src={require("../../assets/company/logo16.svg")}
                 />
               </a>
             </div>
@@ -219,7 +217,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img17"
-                  src={require("../../assets/company/npci.svg")}
+                  src={require("../../assets/company/logo17.svg")}
                 />
               </a>
             </div>
@@ -229,7 +227,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img18"
-                  src={require("../../assets/company/sine.svg")}
+                  src={require("../../assets/company/logo18.svg")}
                 />
               </a>
             </div>
@@ -239,7 +237,7 @@ export default function FullWidthGrid() {
                   width="100px"
                   height="100px"
                   alt="img19"
-                  src={require("../../assets/company/startupindia.svg")}
+                  src={require("../../assets/company/logo19.svg")}
                 />
               </a>
             </div>

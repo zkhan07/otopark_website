@@ -14,22 +14,29 @@ export const useStyles = makeStyles(theme => ({
     marginBottom: "50px"
   },
   cardContainer: {
+    marginLeft: "30px",
     width: "300px",
     height: "200px",
-    outerline: "0px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "20px",
       width: "90%",
-      height: "200px",
-      outerline: "0px"
+      height: "200px"
+    }
+  },
+  removeBorder: {
+    "&:focus": {
+      outline: 0,
+      outline: "none"
     }
   },
   title: {
-    fontSize: "35px"
+    fontSize: "35px",
+    marginLeft: "30px"
   },
   subTitle: {
     marginTop: "-30px",
-    fontSize: "15px"
+    fontSize: "15px",
+    marginLeft: "30px"
   },
   slideImage: {
     width: "60%",

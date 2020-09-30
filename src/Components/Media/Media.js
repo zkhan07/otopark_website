@@ -58,7 +58,7 @@ export default function FullWidthGrid() {
               management, consulting and more
             </p>
             <Slider {...settings}>
-              <div>
+              <div className={classes.removeBorder}>
                 <Card className={classes.cardContainer}>
                   <CardContent>
                     <img
@@ -77,7 +77,7 @@ export default function FullWidthGrid() {
                   </CardContent>
                 </Card>
               </div>
-              <div>
+              <div className={classes.removeBorder}>
                 <Card className={classes.cardContainer}>
                   <CardContent>
                     <img
@@ -96,7 +96,7 @@ export default function FullWidthGrid() {
                   </CardContent>
                 </Card>
               </div>
-              <div style={{ width: "300px" }}>
+              <div className={classes.removeBorder}>
                 <Card className={classes.cardContainer}>
                   <CardContent>
                     <img
@@ -116,63 +116,63 @@ export default function FullWidthGrid() {
                 </Card>
               </div>
               {/* next row */}
-              {/* <div>
-              <Card className={classes.cardContainer}>
-                <CardContent>
-                  <img
-                    className={classes.slideImage}
-                    alt="img1"
-                    src={require("../../assets/images/hindustanTimesMedia.svg")}
-                  />
-                  <p className={classes.para}>
-                    OMG! I cannot believe that I have got a brand new landing
-                    page after getting Omega. It was super easy to edit and
-                    pulish.
-                  </p>
-                  <Button className={classes.moreButton}>
-                    Click here to read full article...
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-            <div>
-              <Card className={classes.cardContainer}>
-                <CardContent>
-                  <img
-                    className={classes.slideImage}
-                    alt="img1"
-                    src={require("../../assets/images/theHinduMedia.svg")}
-                  />
-                  <p className={classes.para}>
-                    OMG! I cannot believe that I have got a brand new landing
-                    page after getting Omega. It was super easy to edit and
-                    pulish.
-                  </p>
-                  <Button className={classes.moreButton}>
-                    Click here to read full article...
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-            <div>
-              <Card className={classes.cardContainer}>
-                <CardContent>
-                  <img
-                    className={classes.slideImage}
-                    alt="img1"
-                    src={require("../../assets/images/freepressMedia.svg")}
-                  />
-                  <p className={classes.para}>
-                    OMG! I cannot believe that I have got a brand new landing
-                    page after getting Omega. It was super easy to edit and
-                    pulish.
-                  </p>
-                  <Button className={classes.moreButton}>
-                    Click here to read full article...
-                  </Button>
-                </CardContent>
-              </Card>
-            </div> */}
+              <div className={classes.removeBorder}>
+                <Card className={classes.cardContainer}>
+                  <CardContent>
+                    <img
+                      className={classes.slideImage}
+                      alt="img1"
+                      src={require("../../assets/images/hindustanTimesMedia.svg")}
+                    />
+                    <p className={classes.para}>
+                      OMG! I cannot believe that I have got a brand new landing
+                      page after getting Omega. It was super easy to edit and
+                      pulish.
+                    </p>
+                    <Button className={classes.moreButton}>
+                      Click here to read full article...
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className={classes.removeBorder}>
+                <Card className={classes.cardContainer}>
+                  <CardContent>
+                    <img
+                      className={classes.slideImage}
+                      alt="img1"
+                      src={require("../../assets/images/theHinduMedia.svg")}
+                    />
+                    <p className={classes.para}>
+                      OMG! I cannot believe that I have got a brand new landing
+                      page after getting Omega. It was super easy to edit and
+                      pulish.
+                    </p>
+                    <Button className={classes.moreButton}>
+                      Click here to read full article...
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className={classes.removeBorder}>
+                <Card className={classes.cardContainer}>
+                  <CardContent>
+                    <img
+                      className={classes.slideImage}
+                      alt="img1"
+                      src={require("../../assets/images/freepressMedia.svg")}
+                    />
+                    <p className={classes.para}>
+                      OMG! I cannot believe that I have got a brand new landing
+                      page after getting Omega. It was super easy to edit and
+                      pulish.
+                    </p>
+                    <Button className={classes.moreButton}>
+                      Click here to read full article...
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
             </Slider>
           </div>
         </Grid>
