@@ -6,7 +6,7 @@ root:{
     flexGrow:1,
     padding:'40px',
     [theme.breakpoints.down("sm")]: {
-        padding:'10px'
+        padding:'20px'
     }
 },
 header:{
@@ -28,7 +28,8 @@ buttons:{
         backgroundColor:'#00BBDC',    
     },
     [theme.breakpoints.down("sm")]: {
-        width:"auto"    }
+        width:"100%"  ,
+      }
 },
 unClickButtons:{
     width:'80%',
@@ -41,7 +42,7 @@ unClickButtons:{
         backgroundColor:'#00BBDC',    
     },
     [theme.breakpoints.down("sm")]: {
-        width:"auto"    }
+        width:"100%"    }
 
 },
 number:{
@@ -54,7 +55,9 @@ number:{
 },
 oicssgrid:{
     padding:'40px',
-    marginTop:'30px'
+    marginTop:'30px',
+    [theme.breakpoints.down("sm")]: {
+        padding:"0px"    }
 },
 oicssheader:{
     color:'#696871'  

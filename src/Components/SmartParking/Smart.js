@@ -16,28 +16,28 @@ export const Smart = () => {
                         Smart Parking Products
                 </h1>
                 </Grid>
-                <Grid item xs={6} md={6} lg={3}>
+                <Grid item xs={12} md={12} lg={3}>
                     <Button variant="contained" onClick={() => setValue('OICCS')}
                         className={value === 'OICCS' ? classes.buttons : classes.unClickButtons}
                     >
                         OICCS
                     </Button>
                 </Grid>
-                <Grid item xs={6} md={6} lg={3}>
+                <Grid item xs={12} md={12} lg={3}>
                     <Button variant="contained" onClick={() => setValue('Ranger')}
                         className={value === 'Ranger' ? classes.buttons : classes.unClickButtons}
                     >
                         Ranger
                     </Button>
                 </Grid>
-                <Grid item xs={6} md={6} lg={3}>
+                <Grid item xs={12} md={12} lg={3}>
                     <Button variant="contained" onClick={() => setValue('Citizen App')}
                         className={value === 'Citizen App' ? classes.buttons : classes.unClickButtons}
                     >
                         Citizen App
                     </Button>
                 </Grid>
-                <Grid item xs={6} md={6} lg={3}>
+                <Grid item xs={12} md={12} lg={3}>
                     <Button variant="contained" onClick={() => setValue('Parking Hardware')}
                         className={value === 'Parking Hardware' ? classes.buttons : classes.unClickButtons}
                     >

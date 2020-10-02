@@ -130,8 +130,7 @@ export const useStyles = makeStyles(theme => ({
     color: "#00BBDC",
     fontWeight: "bold",
     fontSize: "15px",
-    display:'flex',
-    justifyContent:'center'
+   
   },
   title: {
     marginTop: "-10px",

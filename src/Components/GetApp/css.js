@@ -17,7 +17,8 @@ export const useStyles = makeStyles(theme => ({
     backgroundColor: "#00BBDC",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0%",
-      marginRight: "0%"
+      marginRight: "0%",
+     
     }
   },
   title: {
@@ -80,6 +81,10 @@ export const useStyles = makeStyles(theme => ({
   },
   flexContainer: {
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    [theme.breakpoints.down("sm")]: {
+      display:'flex',
+      justifyContent:'center'
+    }
   }
 }));
