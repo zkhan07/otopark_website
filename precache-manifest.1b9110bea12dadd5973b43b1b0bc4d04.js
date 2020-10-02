@@ -1,51 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8f36b789fc713aedfe210eabf03da9d",
+    "revision": "f590d52eb1e4ee266b63a1b0271521de",
     "url": "/otopark_website/index.html"
   },
   {
-    "revision": "62602063ea5197d97819",
+    "revision": "c57c503aa30aacb62037",
     "url": "/otopark_website/static/css/2.5c894ee2.chunk.css"
   },
   {
-    "revision": "62602063ea5197d97819",
-    "url": "/otopark_website/static/js/2.27baa524.chunk.js"
+    "revision": "c57c503aa30aacb62037",
+    "url": "/otopark_website/static/js/2.2c3e6f86.chunk.js"
   },
   {
     "revision": "81896c98bac7b5b16ab1d3790da5b937",
-    "url": "/otopark_website/static/js/2.27baa524.chunk.js.LICENSE.txt"
+    "url": "/otopark_website/static/js/2.2c3e6f86.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9a10c9b98b582a49dd7",
-    "url": "/otopark_website/static/js/3.9b0a962c.chunk.js"
+    "revision": "360ba06874ce62cc748a",
+    "url": "/otopark_website/static/js/3.251f8375.chunk.js"
   },
   {
     "revision": "0f5e6f1b5203b86ab1202ae62480dbf2",
-    "url": "/otopark_website/static/js/3.9b0a962c.chunk.js.LICENSE.txt"
+    "url": "/otopark_website/static/js/3.251f8375.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7313c4fa8811dcba6f84",
-    "url": "/otopark_website/static/js/4.fd2507a2.chunk.js"
+    "revision": "708bfac68f0ae1539d77",
+    "url": "/otopark_website/static/js/4.62966bba.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/otopark_website/static/js/4.fd2507a2.chunk.js.LICENSE.txt"
+    "url": "/otopark_website/static/js/4.62966bba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b7024085a2a62d6ee8e7",
-    "url": "/otopark_website/static/js/5.786ea0d4.chunk.js"
+    "revision": "bc7ad2f40c51d783d584",
+    "url": "/otopark_website/static/js/5.68adecbb.chunk.js"
   },
   {
-    "revision": "43746f6f493ba7dfcf5c",
-    "url": "/otopark_website/static/js/6.468510ff.chunk.js"
+    "revision": "1cc1a367b31e12b1892d",
+    "url": "/otopark_website/static/js/6.d30b3fa8.chunk.js"
   },
   {
-    "revision": "c124a2629f344cabff35",
-    "url": "/otopark_website/static/js/main.2786c866.chunk.js"
+    "revision": "4c38d7d2cafd8f2b38b8",
+    "url": "/otopark_website/static/js/main.eb7d3d8e.chunk.js"
   },
   {
-    "revision": "823cb2ba3f4f012698e0",
-    "url": "/otopark_website/static/js/runtime-main.1b0a4688.js"
+    "revision": "a323c7eda406a138275c",
+    "url": "/otopark_website/static/js/runtime-main.967eab9b.js"
   },
   {
     "revision": "87c15b39137b2347a7938fa6ba35eedd",
@@ -98,6 +98,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b46e23e5b3196f73fc22e4319f213a6b",
     "url": "/otopark_website/static/media/hindustanTimesMedia.b46e23e5.svg"
+  },
+  {
+    "revision": "12805588f5c7535a31502e8fcc450898",
+    "url": "/otopark_website/static/media/icon-04.12805588.svg"
+  },
+  {
+    "revision": "83850829f23782a4d361c4e5a7f05146",
+    "url": "/otopark_website/static/media/icon-06.83850829.svg"
+  },
+  {
+    "revision": "dadf9ac184af1f7809f5eb86051c3705",
+    "url": "/otopark_website/static/media/icon-08.dadf9ac1.svg"
+  },
+  {
+    "revision": "3131bc0099692fd5628e26deec436b9c",
+    "url": "/otopark_website/static/media/icon-09.3131bc00.svg"
+  },
+  {
+    "revision": "47cca551ce7f22810cde24de0b2e84b3",
+    "url": "/otopark_website/static/media/icon-12.47cca551.svg"
+  },
+  {
+    "revision": "2ab55ebef29ab7ffcdb04f55f1866daf",
+    "url": "/otopark_website/static/media/landlord.2ab55ebe.svg"
   },
   {
     "revision": "db86adf02b754f1643f1bdb868534e5d",
@@ -212,8 +236,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/otopark_website/static/media/smartParkingSolution.077f2769.svg"
   },
   {
+    "revision": "d087d1fd677bb04ee5124889c30c00de",
+    "url": "/otopark_website/static/media/taxi-driver.d087d1fd.svg"
+  },
+  {
     "revision": "0cd0d982d01212c9b7ae10c2ddce8393",
     "url": "/otopark_website/static/media/theHinduMedia.0cd0d982.svg"
+  },
+  {
+    "revision": "aff98916a6cac7a10891be0df07980aa",
+    "url": "/otopark_website/static/media/wallet.aff98916.svg"
   },
   {
     "revision": "4f68fb95cfd7703444831362946172be",
