@@ -24,7 +24,7 @@ export const useStyles = makeStyles(theme => ({
   },
   cardContainer: {
     width: "90%",
-    boxShadow: "1px 1px 1px 1px grey",
+    boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("sm")]: {
       width: "100%"
     }

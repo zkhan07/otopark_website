@@ -18,13 +18,43 @@ export const useStyles = makeStyles(theme => ({
   workButton: {
     backgroundColor: "#00BBDC",
     color: "white",
-    marginRight: "10px",
-    textAlign: "center"
+    // marginRight: "10px",
+    margin:'10px',
+    textAlign: "center",
+    padding:'15px',
+    fontSize:'10px',
+    boxShadow:"3px 3px #00000034",
+    "&:hover":{
+      backgroundColor: "#00BBDC",
+    color: "white",
+    }
+  },
+  unclickedworkButton: {
+    backgroundColor: "#ffff",
+    color: "#00BBDC",
+    margin: "10px",
+    textAlign: "center",
+    padding:'15px',
+    fontSize:'10px',
+    boxShadow:"3px 3px #00000034",
+    "&:hover":{
+      backgroundColor: "#00BBDC",
+    color: "white",
+    }
   },
   workImg: {
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
     width: "80%"
+  },
+  btn:{
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center'
+  },
+  img:{
+    width:'15px',
+    padding:'5px',
   }
 }));

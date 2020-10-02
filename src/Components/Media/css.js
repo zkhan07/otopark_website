@@ -16,11 +16,11 @@ export const useStyles = makeStyles(theme => ({
   cardContainer: {
     marginLeft: "30px",
     width: "300px",
-    height: "200px",
+    height: "220px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "20px",
       width: "90%",
-      height: "200px"
+      height: "230px"
     }
   },
   removeBorder: {
@@ -48,6 +48,7 @@ export const useStyles = makeStyles(theme => ({
   moreButton: {
     textTransform: "none",
     color: "#00BBDC",
-    fontSize: "12px"
+    fontSize: "12px",
+    // margin:'30px'
   }
 }));

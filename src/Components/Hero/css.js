@@ -26,7 +26,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       marginLeft: "30%",
       width: "70%",
-      marginTop: "212px"
+      marginTop: "230px"
     }
   },
   heroSlogan: {
@@ -60,8 +60,7 @@ export const useStyles = makeStyles(theme => ({
     fontWeight: "bold",
     fontSize: "15px",
     [theme.breakpoints.down("sm")]: {
-      width: "100px",
-      height: "20px",
+      
       fontSize: "12px"
     }
   },

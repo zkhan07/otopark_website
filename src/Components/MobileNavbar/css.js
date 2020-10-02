@@ -59,8 +59,10 @@ export const useStyles = makeStyles(theme => ({
   },
   mobileView: {
     display: "none",
+    
     [theme.breakpoints.down("sm")]: {
-      display: "block"
+      display: "block",
+      
     }
   },
   mobileLogo: {

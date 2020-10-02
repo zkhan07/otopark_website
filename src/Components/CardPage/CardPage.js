@@ -34,7 +34,7 @@ export default function FullWidthGrid() {
       <Grid
         container
         spacing={2}
-        style={{ marginTop: "150px", marginBottom: "150px" }}
+        className={classes.mainGrid}
       >
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <div style={{ display: "flex" }}>
@@ -43,22 +43,35 @@ export default function FullWidthGrid() {
               onClick={() => selectCard("Earn Money")}
               className={classes.card1}
             >
+              {cardName==='Earn Money'?
               <img
-                className={classes.cardImage}
+                className={classes.cardIcon}
+                src={require("../../assets/icons/wallet.svg")}
+              />:
+              <img
+                className={classes.cardIcon}
                 src={require("../../assets/icons/earnMoneyIcon.svg")}
               />
-              <p className={classes.cardHeader}>Earn Moeny</p>
+              }
+              <p className={cardName==='Earn Money'?classes.otherCardHeader:classes.cardHeader}>Earn Money</p>
             </div>
             <div
               style={isActive("Find Parking")}
               onClick={() => selectCard("Find Parking")}
               className={classes.card2}
             >
+               {cardName==='Find Parking'?
+                 <img
+                 className={classes.cardIcon}
+                 src={require("../../assets/icons/icon-04.svg")}
+               />
+              :
               <img
-                className={classes.cardImage}
-                src={require("../../assets/icons/findParkingIcon.svg")}
-              />
-              <p className={classes.cardHeader}>Find Parking</p>
+              className={classes.cardIcon}
+              src={require("../../assets/icons/findParkingIcon.svg")}
+            />
+              }
+              <p className={cardName==='Find Parking'?classes.otherCardHeader:classes.cardHeader}>Find Parking</p>
             </div>
           </div>
           <div style={{ marginTop: "30px" }}></div>
@@ -69,22 +82,41 @@ export default function FullWidthGrid() {
               onClick={() => selectCard("Parking Services")}
               className={classes.card3}
             >
+              {cardName==='Parking Services'?
               <img
-                className={classes.cardImage}
+              className={classes.cardIcon}
+              src={require("../../assets/icons/icon-06.svg")}
+            />
+            :
+            <img
+                className={classes.cardIcon}
                 src={require("../../assets/icons/parkingServicesIcon.svg")}
               />
-              <p className={classes.cardHeader}>Parking Services</p>
+            
+            }
+              <p className={cardName==='Parking Services'?classes.otherCardHeader:classes.cardHeader}>Parking Services</p>
             </div>
             <div
               style={isActive("Parking Technologies")}
               onClick={() => selectCard("Parking Technologies")}
               className={classes.card4}
             >
-              <img
-                className={classes.cardImage}
-                src={require("../../assets/icons/parkingTechnologiesIcon.svg")}
-              />
-              <p className={classes.cardHeader}>Parking Technologies</p>
+              {cardName==='Parking Technologies'?
+               <img
+               className={classes.cardIcon}
+               src={require("../../assets/icons/icon-08.svg")}
+             />
+              
+              
+             :
+             <img
+               className={classes.cardIcon}
+               src={require("../../assets/icons/parkingTechnologiesIcon.svg")}
+             />
+              
+              }
+              <p className={cardName==='Parking Technologies'?
+             classes.otherCardHeader:classes.cardHeader}>Parking Technologies</p>
             </div>
           </div>
         </Grid>
@@ -115,8 +147,7 @@ export function EarnMoney() {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <img
-            width="350px"
-            height="250px"
+            className={classes.cardImage}
             src={require("../../assets/images/earnMoneyImg.svg")}
           />
           <p className={classes.subTitle}>Smart Parking Solutions</p>
@@ -148,12 +179,16 @@ export function FindParking() {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <img
-            width="350px"
-            height="250px"
+            className={classes.cardImage}
             src={require("../../assets/images/findParkingImg.svg")}
           />
+         
+
           <p className={classes.subTitle}>Smart Parking Solutions</p>
+          
+
           <h4 className={classes.title}>Find Parking</h4>
+          
           <p className={classes.para}>
             Find and book parking on demand or in advance
           </p>
@@ -180,8 +215,7 @@ export function ParkingServices() {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <img
-            width="350px"
-            height="250px"
+            className={classes.cardImage}
             src={require("../../assets/images/parkingServicesImg.svg")}
           />
           <p className={classes.subTitle}>Smart Parking Solutions</p>
@@ -213,8 +247,7 @@ export function ParkingTechnologies() {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <img
-            width="350px"
-            height="250px"
+            className={classes.cardImage}
             src={require("../../assets/images/parkingTechnologiesImg.svg")}
           />
           <p className={classes.subTitle}>Smart Parking Solutions</p>

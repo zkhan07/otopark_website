@@ -18,5 +18,11 @@ export const useStyles = makeStyles(theme => ({
   },
   videoPlayer: {
     height: "100px"
+  },
+  frame:{
+    [theme.breakpoints.down("md")]: {
+      height:'230px',
+      width:'250px'
+    }
   }
 }));
