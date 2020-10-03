@@ -20,7 +20,7 @@ export const useStyles = makeStyles(theme => ({
   },
   mainTitle: {
     color: "#00BBDC",
-    fontSize: "30px"
+    fontSize: "35px"
   },
   cardContainer: {
     width: "90%",

@@ -17,8 +17,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="80px"
-                  height="80px"
+                  width="100px"
+                  height="100px"
                   src={require("../../assets/images/smartParkingSolution.svg")}
                 />
                 <p className={classes.title}>Smart Parking</p>
@@ -55,8 +55,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="80px"
-                  height="80px"
+                  width="100px"
+                  height="100px"
                   src={require("../../assets/images/findParkingSolution.svg")}
                 />
                 <p className={classes.title}>Find Parking</p>
@@ -93,8 +93,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="80px"
-                  height="80px"
+                  width="100px"
+                  height="100px"
                   src={require("../../assets/images/earnMoneySolution.svg")}
                 />
                 <p className={classes.title}>Earn Money</p>
@@ -132,8 +132,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="80px"
-                  height="80px"
+                  width="100px"
+                  height="100px"
                   src={require("../../assets/images/fastTagSolution.svg")}
                 />
                 <p className={classes.title}>Fastag</p>
@@ -170,8 +170,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="80px"
-                  height="80px"
+                  width="100px"
+                  height="100px"
                   src={require("../../assets/images/findChargingSolution.svg")}
                 />
                 <p className={classes.title}>Find EV Charging</p>
@@ -208,8 +208,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="80px"
-                  height="80px"
+                  width="100px"
+                  height="100px"
                   src={require("../../assets/images/findServicesSolution.svg")}
                 />
                 <p className={classes.title}>Parking Services & Consulting</p>

@@ -4,7 +4,11 @@ export const drawerWidth = 240;
 export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    marginLeft: "10%",
+    marginRight: "10%",
     [theme.breakpoints.down("sm")]: {
+      marginLeft: "5%",
+      marginRight: "5%"
     }
   },
   paper: {
@@ -12,23 +16,29 @@ export const useStyles = makeStyles(theme => ({
     textAlign: "center",
     color: theme.palette.text.secondary
   },
+  cardContainer: {
+    marginLeft: "0px",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "20px",
+      marginRight: "20px"
+    }
+  },
   cardHeader: {
     color: "black",
     textAlign: "center",
     fontSize: "15px",
     fontWeight: "bold"
   },
-  otherCardHeader:{
-    color:'#ffff',
+  otherCardHeader: {
+    color: "#ffff",
     textAlign: "center",
     fontSize: "15px",
     fontWeight: "bold"
-  }
-  ,
+  },
   card1: {
     backgroundColor: "#00BBDC",
     display: "block",
-    marginLeft: "135px",
+    marginLeft: "0px",
     marginRight: "auto",
     marginTop: "-30px",
     width: "180px",
@@ -60,7 +70,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("md")]: {
       display: "block",
       marginLeft: "auto",
-      marginRight: "60px"
+      marginRight: "40px"
     },
     [theme.breakpoints.down("sm")]: {
       width: "140px",
@@ -73,7 +83,7 @@ export const useStyles = makeStyles(theme => ({
   card3: {
     backgroundColor: "#fff",
     display: "block",
-    marginLeft: "135px",
+    marginLeft: "0px",
     marginRight: "auto",
     marginTop: "-30px",
     width: "180px",
@@ -105,7 +115,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("md")]: {
       display: "block",
       marginLeft: "auto",
-      marginRight: "60px"
+      marginRight: "40px"
     },
     [theme.breakpoints.down("sm")]: {
       width: "140px",
@@ -129,8 +139,7 @@ export const useStyles = makeStyles(theme => ({
   subTitle: {
     color: "#00BBDC",
     fontWeight: "bold",
-    fontSize: "15px",
-   
+    fontSize: "15px"
   },
   title: {
     marginTop: "-10px",
@@ -156,20 +165,23 @@ export const useStyles = makeStyles(theme => ({
   cardImage: {
     width: "350px",
     height: "250px",
-    display:'flex',
-    justifyContent:'center',
+    display: "flex",
+    justifyContent: "center",
     [theme.breakpoints.down("sm")]: {
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
       width: "250px",
       height: "250px"
     }
   },
-  centerCard:{
-    display:'flex',
-    justifyContent:'center',
-    alignItems:'center'
+  centerCard: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
   },
-  mainGrid:{
+  mainGrid: {
     marginTop: "40px",
-    marginBottom: "40px" 
+    marginBottom: "40px"
   }
 }));

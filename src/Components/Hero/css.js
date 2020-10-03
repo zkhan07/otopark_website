@@ -24,9 +24,9 @@ export const useStyles = makeStyles(theme => ({
       marginTop: "275px"
     },
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "30%",
-      width: "70%",
-      marginTop: "230px"
+      marginLeft: "0%",
+      width: "100%",
+      marginTop: "200px"
     }
   },
   heroSlogan: {
@@ -43,7 +43,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       position: "absolute",
       top: "15%",
-      left: "5%",
+      left: "15%",
       fontSize: "20px"
     }
   },
@@ -59,14 +59,21 @@ export const useStyles = makeStyles(theme => ({
     outline: "0px",
     fontWeight: "bold",
     fontSize: "15px",
+    "&:hover": {
+      backgroundColor: "#00BBDC",
+      color: "#fff",
+      boxShadow: "1px 1px 1px 1px #00BBDC"
+    },
     [theme.breakpoints.down("sm")]: {
-      
-      fontSize: "12px"
+      fontSize: "12px",
+      marginLeft: "50px"
     }
   },
   sliderText: {
     color: "#A9B1C6",
-    marginLeft: "20px",
-    marginTop: "60px"
+    marginTop: "60px",
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "center"
+    }
   }
 }));

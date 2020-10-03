@@ -23,26 +23,21 @@ export default function FullWidthGrid() {
               <b>"FIND PARKING</b>{" "}
               <b style={{ color: "white" }}>
                 WHEN YOU
-                <br /> NEED IT,
+                <br /> <b style={{ marginLeft: "30px" }}>NEED IT,</b>
               </b>{" "}
               <b>EARN MONEY</b> <br />
-              <b style={{ color: "white" }}>WHEN YOU DON'T USE IT"</b>
+              <b style={{ color: "white", marginLeft: "10px" }}>
+                WHEN YOU DON'T USE IT"
+              </b>
             </p>
-            <button className={classes.heroButton}>
-              Explore More{" "}
-              <i
-                style={{ marginLeft: "15px" }}
-                class="fa fa-long-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </button>
+            <button className={classes.heroButton}>Explore More </button>
           </div>
         </Grid>
       </Grid>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={4} lg={4}>
-          <h4 className={classes.sliderText}>
-            Proudly Recognized and Supported by ------
+          <h4 align="right" className={classes.sliderText}>
+            Proudly Recognized and Supported by
           </h4>
         </Grid>
         <Grid item item xs={12} sm={12} md={8} lg={8}>

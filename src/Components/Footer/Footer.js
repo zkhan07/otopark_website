@@ -21,110 +21,117 @@ export default function FullWidthGrid() {
                 src={require("../../assets/images/blueLogo.png")}
               />
               <p className={classes.footerList} align="center">
-                Intoducing india's first contactless parking solution
+                Parking made smart
               </p>
               <p align="center">
                 <i class="fa fa-envelope" aria-hidden="true"></i>{" "}
-                otopark@gmail.com
+                info@otopark.in
               </p>
               <p align="center">
                 {" "}
                 <i class="fa fa-phone" aria-hidden="true"></i> +91 88 55226644
               </p>
               <div align="center" className={classes.icon}>
-                <i style={{padding:'5px',
-                paddingLeft:'10px',
-                paddingRight:'10px',
-                border:'1px solid #71777D',
-                borderRadius:'20px',
-                fontSize:'15px'
-
-                }} class="fa fa-facebook" aria-hidden="true"></i>
-                <i style={{padding:'5px',paddingLeft:'10px',paddingRight:'10px',
-                border:'1px solid #71777D',
-                borderRadius:'20px',
-                fontSize:'15px',
-                margin:'5px'
-                }} class="fa fa-twitter" aria-hidden="true"></i>
-                <i style={{padding:'5px',paddingLeft:'10px',paddingRight:'10px',
-                border:'1px solid #71777D',
-                borderRadius:'20px',
-                fontSize:'15px',
-               
-                }} class="fa fa-linkedin" aria-hidden="true"></i>
-                <i style={{padding:'5px',paddingLeft:'10px',paddingRight:'10px',
-                border:'1px solid #71777D',
-                borderRadius:'20px',
-                fontSize:'15px',
-                margin:'5px'
-                }} class="fa fa-pinterest" aria-hidden="true"></i>
+                <i
+                  style={{
+                    padding: "10px",
+                    height: "10px",
+                    width: "10px",
+                    border: "1px solid #71777D",
+                    borderRadius: "50%",
+                    fontSize: "15px"
+                  }}
+                  class="fa fa-facebook"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  style={{
+                    padding: "10px",
+                    height: "10px",
+                    width: "10px",
+                    border: "1px solid #71777D",
+                    borderRadius: "50%",
+                    fontSize: "15px",
+                    margin: "5px"
+                  }}
+                  class="fa fa-twitter"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  style={{
+                    padding: "10px",
+                    height: "10px",
+                    width: "10px",
+                    border: "1px solid #71777D",
+                    borderRadius: "50%",
+                    fontSize: "15px"
+                  }}
+                  class="fa fa-linkedin"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  style={{
+                    padding: "10px",
+                    height: "10px",
+                    width: "10px",
+                    border: "1px solid #71777D",
+                    borderRadius: "50%",
+                    fontSize: "15px",
+                    margin: "5px"
+                  }}
+                  class="fa fa-pinterest"
+                  aria-hidden="true"
+                ></i>
               </div>
             </Grid>
             <Grid item xs={6} sm={6} md={2} lg={2}>
               <h4 className={classes.header}>Home</h4>
               <div className={classes.footerList}>
                 <p>Introduction</p>
-                <p>Problem Statement</p>
-                <p>Find Parking</p>
-                <p>Booking Parking</p>
-                <p>otomedia</p>
-                <p>Video Sector</p>
-                <p>Social Media</p>
+                <p>How it works</p>
+                <p>Download app</p>
+                <p>Solutions</p>
+                <p>Media</p>
               </div>
             </Grid>
             <Grid item xs={6} sm={6} md={2} lg={2}>
-              <h4 className={classes.header}>Our Innovation</h4>
+              <h4 className={classes.header}>Solutions</h4>
               <div className={classes.footerList}>
-                <p>Parking Technology</p>
-                <p>OICCS Features</p>
-                <p>Smart Parking Technology</p>
-                <p> Parking Services</p>
                 <p>FASTag Parking</p>
-                <p>Our solutions</p>
+                <p>Share Parking and Earn</p>
+                <p>Find Parking</p>
+                <p>Parking Technologies</p>
+                <p>Parking Services</p>
               </div>
             </Grid>
             <Grid item xs={6} sm={6} md={2} lg={2}>
-              <h4 className={classes.header}>About Us</h4>
+              <h4 className={classes.header}>About</h4>
               <div className={classes.footerList}>
-                <p>Team</p>
                 <p>Vision</p>
-                <p>Clientele</p>
-                <p>Our Offerings</p>
-              </div>
-            </Grid>
-            <Grid item xs={6} sm={6} md={2} lg={2}>
-              <h4 className={classes.header}>Case Studies</h4>
-              <div className={classes.footerList}>
                 <p>Team</p>
-                <p>Vision</p>
-                <p>Clientele</p>
-                <p>Our Offerings</p>
               </div>
             </Grid>
 
             <div className={classes.footerDivider}></div>
-            
-             <div className={classes.bottomDiv}> 
+
+            <div className={classes.bottomDiv}>
               {/* <div className={classes.footerAbout}> */}
               <Grid container>
                 <Grid item xs={12} lg={6} md={6}>
                   <div className={classes.footerAbout}>
-                  <div className={classes.bottomTextLeft}>
-                  Term & Conditions | Privacy Policy | Accessibility | Legal
+                    <div className={classes.bottomTextLeft}>
+                      Term & Conditions | Privacy Policy | Legal
+                    </div>
                   </div>
-                 
-                </div>
                 </Grid>
-               <Grid item xs={12} lg={6} md={6} >
-               <div className={classes.bottomText}>
-                Design with@otopark.in 2020.All rights reserved
-                </div>
+                <Grid item xs={12} lg={6} md={6}>
+                  <div className={classes.bottomText}>
+                    Design with@otopark.in 2020.All rights reserved
+                  </div>
                 </Grid>
-              {/* </div> */}
+                {/* </div> */}
               </Grid>
-           
             </div>
-
           </Grid>
         </Grid>
       </Grid>

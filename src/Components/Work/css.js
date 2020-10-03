@@ -16,30 +16,42 @@ export const useStyles = makeStyles(theme => ({
     textAlign: "center"
   },
   workButton: {
+    width: "300px",
+    textTransform: "none",
     backgroundColor: "#00BBDC",
     color: "white",
     // marginRight: "10px",
-    margin:'10px',
+    margin: "10px",
     textAlign: "center",
-    padding:'15px',
-    fontSize:'10px',
-    boxShadow:"3px 3px #00000034",
-    "&:hover":{
+    padding: "15px",
+    fontSize: "15px",
+    boxShadow: "3px 3px #00000034",
+    "&:hover": {
       backgroundColor: "#00BBDC",
-    color: "white",
+      color: "white"
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "200px",
+      fontSize: "15px"
     }
   },
   unclickedworkButton: {
+    width: "300px",
+    textTransform: "none",
     backgroundColor: "#ffff",
     color: "#00BBDC",
     margin: "10px",
     textAlign: "center",
-    padding:'15px',
-    fontSize:'10px',
-    boxShadow:"3px 3px #00000034",
-    "&:hover":{
+    padding: "15px",
+    fontSize: "15px",
+    boxShadow: "3px 3px #00000034",
+    "&:hover": {
       backgroundColor: "#00BBDC",
-    color: "white",
+      color: "white"
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "200px",
+      fontSize: "15px"
     }
   },
   workImg: {
@@ -48,13 +60,13 @@ export const useStyles = makeStyles(theme => ({
     marginRight: "auto",
     width: "80%"
   },
-  btn:{
-    display:'flex',
-    alignItems:'center',
-    justifyContent:'center'
+  btn: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
   },
-  img:{
-    width:'15px',
-    padding:'5px',
+  img: {
+    width: "15px",
+    padding: "5px"
   }
 }));

@@ -83,25 +83,26 @@ export default function PersistentDrawerLeft() {
               <ListItemText primary="Home" />
             </ListItem>
             <ListItem button>
-              <ListItemText primary="Our Innovations" />
+              <ListItemText primary="Solutions" />
             </ListItem>
             <ListItem button>
-              <ListItemText primary="About us" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Contact Us" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Investors" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Case Studies" />
+              <ListItemText primary="Use Cases" />
             </ListItem>
             <ListItem button>
               <ListItemText primary="FAQ" />
             </ListItem>
             <ListItem button>
-              <ListItemText primary="Login" />
+              <ListItemText primary="About" />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary="Contact" />
+            </ListItem>
+            <ListItem
+              button
+              className={classes.listBtn}
+              onClick={handleDrawerClose}
+            >
+              <ListItemText className={classes.listBtn} primary="Login" />
             </ListItem>
           </List>
         </Drawer>

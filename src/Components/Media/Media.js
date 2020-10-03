@@ -53,10 +53,6 @@ export default function FullWidthGrid() {
         <Grid item xs={12} sm={12} ms={12} lg={12}>
           <div className={classes.gridContainer}>
             <p className={classes.title}>otoMedia</p>
-            <p className={classes.subTitle}>
-              Full-range of professional parking services such as valet, parking
-              management, consulting and more
-            </p>
             <Slider {...settings}>
               <div className={classes.removeBorder}>
                 <Card className={classes.cardContainer}>

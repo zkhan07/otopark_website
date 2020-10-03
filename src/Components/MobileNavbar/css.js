@@ -1,5 +1,5 @@
 import { makeStyles, fade } from "@material-ui/core/styles";
-export const drawerWidth = 240;
+export const drawerWidth = 180;
 
 export const useStyles = makeStyles(theme => ({
   root: {
@@ -28,10 +28,13 @@ export const useStyles = makeStyles(theme => ({
   },
   drawer: {
     width: drawerWidth,
-    flexShrink: 0
+    flexShrink: 0,
+    // backgroundColor:'#00BBDC'
   },
   drawerPaper: {
-    width: drawerWidth
+    width: drawerWidth,
+    backgroundColor:'#00BBDC',
+    backgroundImage:require('../../assets/images/heroImg.svg')
   },
   drawerHeader: {
     display: "flex",
@@ -40,6 +43,9 @@ export const useStyles = makeStyles(theme => ({
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: "flex-end"
+  },
+  listBtn:{
+    color:'#ffff'
   },
   content: {
     flexGrow: 1,
@@ -59,15 +65,15 @@ export const useStyles = makeStyles(theme => ({
   },
   mobileView: {
     display: "none",
-    
+
     [theme.breakpoints.down("sm")]: {
-      display: "block",
-      
+      display: "block"
     }
   },
   mobileLogo: {
     width: "70px",
     height: "45px",
     padding: "5px"
-  }
+  },
+ 
 }));

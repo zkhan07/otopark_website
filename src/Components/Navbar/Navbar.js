@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import { Link } from "react-router-dom";
 import { useStyles } from "./css";
 
 export default function ButtonAppBar() {
@@ -17,32 +18,31 @@ export default function ButtonAppBar() {
         <AppBar position="static">
           <Toolbar className={classes.navbarContainer}>
             <div>
-              <img
-                className={classes.navbarImage}
-                src={require("../../assets/images/logo.png")}
-              />
+              <Link to="/">
+                <img
+                  className={classes.navbarImage}
+                  src={require("../../assets/images/logo.png")}
+                />
+              </Link>
             </div>
             <div>
               <Button className={classes.navbarButton} color="inherit">
                 Home
               </Button>
               <Button className={classes.navbarButton} color="inherit">
-                Our Innovations
+                Solutions
               </Button>
               <Button className={classes.navbarButton} color="inherit">
-                About Us
-              </Button>
-              <Button className={classes.navbarButton} color="inherit">
-                Contact Us
-              </Button>
-              <Button className={classes.navbarButton} color="inherit">
-                Investors
-              </Button>
-              <Button className={classes.navbarButton} color="inherit">
-                Case Studies
+                Use Cases
               </Button>
               <Button className={classes.navbarButton} color="inherit">
                 FAQ
+              </Button>
+              <Button className={classes.navbarButton} color="inherit">
+                About
+              </Button>
+              <Button className={classes.navbarButton} color="inherit">
+                Contact
               </Button>
               <Button className={classes.navbarButton} color="inherit">
                 Login

@@ -11,14 +11,15 @@ export const useStyles = makeStyles(theme => ({
     color: theme.palette.text.secondary
   },
   getAppContainer: {
+    marginTop: "100px",
+    marginBottom: "50px",
     marginLeft: "10%",
     marginRight: "10%",
     borderRadius: "20px",
     backgroundColor: "#00BBDC",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0%",
-      marginRight: "0%",
-     
+      marginRight: "0%"
     }
   },
   title: {
@@ -26,43 +27,51 @@ export const useStyles = makeStyles(theme => ({
     fontSize: "40px",
     marginLeft: "15%",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "10%",
+      textAlign: "center",
+      marginLeft: "0%",
       fontSize: "25px"
     }
   },
-  subTitle: {
+  subTitle1: {
+    color: "white",
+    fontSize: "15px",
+    marginTop: "-30px",
+    marginLeft: "15%",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "-15px",
+      textAlign: "center",
+      marginLeft: "0%",
+      fontSize: "12px"
+    }
+  },
+  subTitle2: {
     color: "white",
     fontSize: "15px",
     marginTop: "-10px",
     marginLeft: "15%",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "10%",
+      textAlign: "center",
+      marginLeft: "0%",
       fontSize: "12px"
     }
   },
   firstImg: {
     marginLeft: "15%",
-    width: "100px",
+    width: "120px",
     height: "35px",
     backgroundColor: "#00BBDC",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "10%",
-      marginBottom: "20px"
-    }
-  },
-  secondImg: {
-    width: "100px",
-    height: "35px",
-    backgroundColor: "#00BBDC",
-    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
       marginBottom: "20px"
     }
   },
   button: {
     textTransform: "none",
-    width: "150px",
+    width: "100px",
     height: "30px",
-    marginTop: "-80px",
+    marginTop: "-40px",
     marginRight: "50px",
     backgroundColor: "#fff",
     color: "#00BBDC",
@@ -73,18 +82,20 @@ export const useStyles = makeStyles(theme => ({
       color: "#fff"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "100px",
+      textAlign: "center",
+      width: "120px",
       height: "35px",
       marginTop: "-10px",
-      marginRight: "20px"
+      marginRight: "0px",
+      marginBottom: "40px"
     }
   },
   flexContainer: {
     display: "flex",
     justifyContent: "space-between",
     [theme.breakpoints.down("sm")]: {
-      display:'flex',
-      justifyContent:'center'
+      display: "flex",
+      justifyContent: "center"
     }
   }
 }));
