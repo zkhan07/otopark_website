@@ -15,7 +15,10 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.desktopView}>
       <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar
+          position="fixed"
+          style={{ boxShadow: "2px 2px 2px 2px #00BBDC" }}
+        >
           <Toolbar className={classes.navbarContainer}>
             <div>
               <Link to="/">
@@ -26,24 +29,43 @@ export default function ButtonAppBar() {
               </Link>
             </div>
             <div>
-              <Button className={classes.navbarButton} color="inherit">
-                Home
-              </Button>
-              <Button className={classes.navbarButton} color="inherit">
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                <Button className={classes.navbarButton} color="inherit">
+                  Home
+                </Button>
+              </Link>
+              {/* <Button className={classes.navbarButton} color="inherit">
                 Solutions
-              </Button>
-              <Button className={classes.navbarButton} color="inherit">
-                Use Cases
-              </Button>
-              <Button className={classes.navbarButton} color="inherit">
-                FAQ
-              </Button>
-              <Button className={classes.navbarButton} color="inherit">
-                About
-              </Button>
-              <Button className={classes.navbarButton} color="inherit">
-                Contact
-              </Button>
+              </Button> */}
+              {/* <Link className={classes.btn} to="/otopark/website/caseStudy">
+                <Button className={classes.navbarButton} color="inherit">
+                  Use Cases
+                </Button>
+              </Link> */}
+              <Link
+                to="/otopark/website/faq"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Button className={classes.navbarButton} color="inherit">
+                  FAQ
+                </Button>
+              </Link>
+              <Link
+                to="/otopark/website/aboutUs"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Button className={classes.navbarButton} color="inherit">
+                  About
+                </Button>
+              </Link>
+              <Link
+                to="/otopark/website/contactUs"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Button className={classes.navbarButton} color="inherit">
+                  Contact
+                </Button>
+              </Link>
               <Button className={classes.navbarButton} color="inherit">
                 Login
               </Button>

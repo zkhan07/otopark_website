@@ -25,17 +25,18 @@ export default function FullWidthGrid() {
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      For MLCPs, Parking Lots, Airports, and Malls and more
                     </p>
                   </li>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      End to end smart parking ecosystem and technologies
                     </p>
                   </li>
                 </ul>
+                <br />
+                <br />
+                <br />
                 <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
@@ -63,17 +64,19 @@ export default function FullWidthGrid() {
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      For Individuals and Fleets
                     </p>
                   </li>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      Find available parking and book through the app
                     </p>
                   </li>
                 </ul>
+                <br />
+                <br />
+                <br />
+                <br />
                 <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
@@ -101,17 +104,19 @@ export default function FullWidthGrid() {
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      For Individuals, Fleet Owners, MLCPs, Businesses, Parking
+                      Lots and more
                     </p>
                   </li>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      Earn money by sharing your unused parking space
                     </p>
                   </li>
                 </ul>
+                <br />
+                <br/>
+                <br />
                 <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
@@ -139,18 +144,18 @@ export default function FullWidthGrid() {
                 <p className={classes.title}>Fastag</p>
                 <ul>
                   <li>
-                    <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
-                    </p>
+                    <p className={classes.subTitle}>For FASTag owners</p>
                   </li>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      Seamlessly enter parking lots and automatically pay for
+                      parking fee with your FASTag
                     </p>
                   </li>
                 </ul>
+                <br />
+                <br />
+                <br />
                 <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
@@ -178,17 +183,20 @@ export default function FullWidthGrid() {
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      For Electric Vehicle Owners
                     </p>
                   </li>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      Find available parking and EV charging stations in the
+                      cities
                     </p>
                   </li>
                 </ul>
+                <br />
+                <br />
+                <br />
+                <br />
                 <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
@@ -216,17 +224,18 @@ export default function FullWidthGrid() {
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      For Smart Cities, Businesses, Event Operators, Parking
+                      Lots and more
                     </p>
                   </li>
                   <li>
                     <p className={classes.subTitle}>
-                      For MLCPs, Parking Lots,Airports,
-                      <br /> and Malls and more
+                      Professional parking service and consulting services for
+                      the best parking experience
                     </p>
                   </li>
                 </ul>
+                <br />
                 <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>

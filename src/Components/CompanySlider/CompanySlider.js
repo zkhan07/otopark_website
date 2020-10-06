@@ -15,6 +15,7 @@ export default function FullWidthGrid() {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
+    swipeToSlide: true,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -51,7 +52,7 @@ export default function FullWidthGrid() {
         <Grid item xs={12} sm={12} ms={12} lg={12}>
           <Slider {...settings}>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -61,7 +62,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -71,7 +72,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -81,7 +82,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -92,7 +93,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -102,7 +103,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -112,7 +113,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -122,7 +123,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -132,7 +133,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -142,7 +143,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -152,7 +153,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -162,7 +163,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -172,7 +173,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -182,7 +183,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -192,7 +193,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -202,7 +203,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -212,7 +213,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -222,7 +223,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"
@@ -232,7 +233,7 @@ export default function FullWidthGrid() {
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="#" className={classes.removeBorder}>
                 <img
                   width="100px"
                   height="100px"

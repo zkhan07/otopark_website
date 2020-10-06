@@ -5,7 +5,11 @@ export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     marginLeft: "10%",
-    marginRight: "10%"
+    marginRight: "10%",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "5%",
+      marginRight: "5%"
+    }
   },
   paper: {
     padding: theme.spacing(2),

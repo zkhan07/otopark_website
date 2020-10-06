@@ -4,9 +4,13 @@ export const drawerWidth = 240;
 export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    padding: "40px",
+    marginLeft: "10%",
+    marginRight: "10%",
+    marginTop: "100px",
+    marginBottom: "100px",
     [theme.breakpoints.down("sm")]: {
-      padding: "20px"
+      marginLeft: "5%",
+      marginRight: "5%"
     }
   },
   header: {
@@ -19,7 +23,7 @@ export const useStyles = makeStyles(theme => ({
   },
   buttons: {
     width: "80%",
-    margin: "10px",
+    marginTop: "15px",
     color: "white",
     padding: "10px",
     backgroundColor: "#00BBDC",
@@ -33,7 +37,7 @@ export const useStyles = makeStyles(theme => ({
   },
   unClickButtons: {
     width: "80%",
-    margin: "10px",
+    marginTop: "15px",
     color: "#00BBDC",
     padding: "10px",
     backgroundColor: "#ffff",

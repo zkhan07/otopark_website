@@ -19,5 +19,11 @@ export const useStyles = makeStyles(theme => ({
     maxWidth: "100%",
     overflow: "hidden",
     width: "100%"
+  },
+  removeBorder: {
+    "&:focus": {
+      outline: 0,
+      outline: "none"
+    }
   }
 }));

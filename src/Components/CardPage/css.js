@@ -19,8 +19,8 @@ export const useStyles = makeStyles(theme => ({
   cardContainer: {
     marginLeft: "0px",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "20px",
-      marginRight: "20px"
+      marginLeft: "0px",
+      marginRight: "0px"
     }
   },
   cardHeader: {
@@ -44,6 +44,7 @@ export const useStyles = makeStyles(theme => ({
     width: "180px",
     height: "200px",
     borderRadius: "5px",
+    cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("md")]: {
       display: "block",
@@ -66,6 +67,7 @@ export const useStyles = makeStyles(theme => ({
     width: "180px",
     height: "200px",
     borderRadius: "5px",
+    cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("md")]: {
       display: "block",
@@ -89,6 +91,7 @@ export const useStyles = makeStyles(theme => ({
     width: "180px",
     height: "200px",
     borderRadius: "5px",
+    cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("md")]: {
       display: "block",
@@ -111,6 +114,7 @@ export const useStyles = makeStyles(theme => ({
     width: "180px",
     height: "200px",
     borderRadius: "5px",
+    cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("md")]: {
       display: "block",
@@ -160,7 +164,8 @@ export const useStyles = makeStyles(theme => ({
     fontWeight: "bold",
     border: "1px solid #00BBDC",
     borderRadius: "5px",
-    outerline: "0px"
+    outerline: "0px",
+    cursor: "pointer"
   },
   cardImage: {
     width: "350px",
@@ -181,7 +186,11 @@ export const useStyles = makeStyles(theme => ({
     alignItems: "center"
   },
   mainGrid: {
-    marginTop: "40px",
-    marginBottom: "40px"
+    marginTop: "100px",
+    marginBottom: "100px",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "80px",
+      marginBottom: "50px"
+    }
   }
 }));

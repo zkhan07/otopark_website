@@ -3,20 +3,18 @@ import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
-import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
+import { Link } from "react-router-dom";
 import { useStyles } from "./css";
 
 export default function PersistentDrawerLeft() {
@@ -36,6 +34,7 @@ export default function PersistentDrawerLeft() {
     <div className={classes.mobileView}>
       <div className={classes.root}>
         <AppBar
+          style={{ boxShadow: "2px 2px 2px 2px #00BBDC" }}
           position="fixed"
           className={clsx(classes.appBar, {
             [classes.appBarShift]: open
@@ -51,12 +50,15 @@ export default function PersistentDrawerLeft() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap>
-              <img
-                className={classes.mobileLogo}
-                src={require("../../assets/images/logo.png")}
-              />
-            </Typography>
+            <Grid container justify="flex-end">
+              <Link to="/">
+                <img
+                  justify="flex-end"
+                  className={classes.mobileLogo}
+                  src={require("../../assets/images/logo.png")}
+                />
+              </Link>
+            </Grid>
           </Toolbar>
         </AppBar>
         <Drawer
@@ -79,24 +81,41 @@ export default function PersistentDrawerLeft() {
           </div>
           <Divider />
           <List>
-            <ListItem button>
-              <ListItemText primary="Home" />
-            </ListItem>
-            <ListItem button>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              <ListItem button>
+                <ListItemText primary="Home" />
+              </ListItem>
+            </Link>
+            {/* <ListItem button>
               <ListItemText primary="Solutions" />
-            </ListItem>
-            <ListItem button>
+            </ListItem> */}
+            {/* <ListItem button>
               <ListItemText primary="Use Cases" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="FAQ" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="About" />
-            </ListItem>
-            <ListItem button>
-              <ListItemText primary="Contact" />
-            </ListItem>
+            </ListItem> */}
+            <Link
+              to="/otopark/website/faq"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <ListItem button>
+                <ListItemText primary="FAQ" />
+              </ListItem>
+            </Link>
+            <Link
+              to="/otopark/website/aboutUs"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <ListItem button>
+                <ListItemText primary="About" />
+              </ListItem>
+            </Link>
+            <Link
+              to="/otopark/website/contactUs"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <ListItem button>
+                <ListItemText primary="Contact" />
+              </ListItem>
+            </Link>
             <ListItem
               button
               className={classes.listBtn}

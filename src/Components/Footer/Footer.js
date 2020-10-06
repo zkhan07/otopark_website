@@ -79,7 +79,7 @@ export default function FullWidthGrid() {
                     fontSize: "15px",
                     margin: "5px"
                   }}
-                  class="fa fa-pinterest"
+                  class="fa fa-instagram"
                   aria-hidden="true"
                 ></i>
               </div>
@@ -115,21 +115,17 @@ export default function FullWidthGrid() {
             <div className={classes.footerDivider}></div>
 
             <div className={classes.bottomDiv}>
-              {/* <div className={classes.footerAbout}> */}
               <Grid container>
                 <Grid item xs={12} lg={6} md={6}>
-                  <div className={classes.footerAbout}>
-                    <div className={classes.bottomTextLeft}>
-                      Term & Conditions | Privacy Policy | Legal
-                    </div>
+                  <div className={classes.bottomTextLeft}>
+                    Term & Conditions | Privacy Policy | Legal
                   </div>
                 </Grid>
                 <Grid item xs={12} lg={6} md={6}>
                   <div className={classes.bottomText}>
-                    Design with@otopark.in 2020.All rights reserved
+                    ® © 2020 otopark Technological Pvt. Ltd.
                   </div>
                 </Grid>
-                {/* </div> */}
               </Grid>
             </div>
           </Grid>

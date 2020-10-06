@@ -19,9 +19,9 @@ export const useStyles = makeStyles(theme => ({
     justifyContent: "space-between"
   },
   navbarImage: {
-    width: "100px",
+    width: "80px",
     heigh: "80px",
-    padding: "20px"
+    padding: "10px"
   },
   navbarButton: {
     marginRight: "30px",
@@ -42,5 +42,9 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       display: "none"
     }
+  },
+  btn: {
+    textDecoration: "none",
+    color: "white"
   }
 }));

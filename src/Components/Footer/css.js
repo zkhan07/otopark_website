@@ -15,7 +15,7 @@ export const useStyles = makeStyles(theme => ({
     backgroundColor: "#283646",
     color: "#fff",
     marginTop: "50px",
-    padding:'30px'
+    padding: "30px"
   },
   logo: {
     width: "150px",
@@ -27,10 +27,6 @@ export const useStyles = makeStyles(theme => ({
   footerList: {
     fontSize: "13px"
   },
-  footerAbout: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
   footerDivider: {
     borderBottom: "5px solid white"
   },
@@ -40,28 +36,32 @@ export const useStyles = makeStyles(theme => ({
     height: "20px",
     borderRadius: "50%"
   },
-  bottomDiv:{
-    padding:'10px',
-    width:"100%",
-    borderTop:'1px solid #71777D'
+  bottomDiv: {
+    padding: "10px",
+    width: "100%",
+    borderTop: "1px solid #71777D"
   },
-  header:{
-    color:'#A4A4A4'
+  header: {
+    color: "#A4A4A4"
   },
-  icon:{
-    margin:'5px'
+  icon: {
+    margin: "5px"
   },
-  bottomTextLeft:{
-    fontSize:'14px',
+  bottomTextLeft: {
+    fontSize: "14px",
     [theme.breakpoints.down("sm")]: {
-      padding:'5px'
-  }
-},
-  bottomText:{
-    fontSize:'14px',
-    float:'right',
+      float: "left",
+      padding: "5px",
+      marginLeft: "20px"
+    }
+  },
+  bottomText: {
+    fontSize: "14px",
+    float: "right",
     [theme.breakpoints.down("sm")]: {
-      padding:'5px'
-  }
+      float: "left",
+      padding: "5px",
+      marginLeft: "20px"
+    }
   }
 }));

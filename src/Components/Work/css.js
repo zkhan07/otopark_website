@@ -25,6 +25,7 @@ export const useStyles = makeStyles(theme => ({
     textAlign: "center",
     padding: "15px",
     fontSize: "15px",
+    cursor: "pointer",
     boxShadow: "3px 3px #00000034",
     "&:hover": {
       backgroundColor: "#00BBDC",
@@ -44,11 +45,8 @@ export const useStyles = makeStyles(theme => ({
     textAlign: "center",
     padding: "15px",
     fontSize: "15px",
+    cursor: "pointer",
     boxShadow: "3px 3px #00000034",
-    "&:hover": {
-      backgroundColor: "#00BBDC",
-      color: "white"
-    },
     [theme.breakpoints.down("sm")]: {
       width: "200px",
       fontSize: "15px"
@@ -65,8 +63,14 @@ export const useStyles = makeStyles(theme => ({
     alignItems: "center",
     justifyContent: "center"
   },
-  img: {
-    width: "15px",
+  img1: {
+    width: "25px",
+    height: "25px",
+    padding: "5px"
+  },
+  img2: {
+    width: "30px",
+    height: "30px",
     padding: "5px"
   }
 }));

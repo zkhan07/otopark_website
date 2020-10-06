@@ -48,7 +48,7 @@ export const useStyles = makeStyles(theme => ({
   moreButton: {
     textTransform: "none",
     color: "#00BBDC",
-    fontSize: "12px",
+    fontSize: "12px"
     // margin:'30px'
   }
 }));

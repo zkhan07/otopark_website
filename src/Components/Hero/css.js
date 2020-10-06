@@ -29,6 +29,12 @@ export const useStyles = makeStyles(theme => ({
       marginTop: "200px"
     }
   },
+  sloganMargin: {
+    marginLeft: "30px",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "10px"
+    }
+  },
   heroSlogan: {
     position: "absolute",
     top: "30%",
@@ -36,21 +42,23 @@ export const useStyles = makeStyles(theme => ({
     fontSize: "30px",
     [theme.breakpoints.down("md")]: {
       position: "absolute",
-      top: "15%",
-      left: "5%",
-      fontSize: "25px"
+      top: "30%",
+      left: "10%",
+      fontSize: "30px"
     },
     [theme.breakpoints.down("sm")]: {
-      position: "absolute",
       top: "15%",
-      left: "15%",
+      left: "0",
+      right: "0",
+      textAlign: "center",
+      width: "100%",
       fontSize: "20px"
     }
   },
   heroButton: {
     backgroundColor: "#fff",
     color: "#00BBDC",
-    marginLeft: "70px",
+    marginLeft: "100px",
     width: "150px",
     height: "35px",
     border: "1px solid white",
@@ -59,14 +67,23 @@ export const useStyles = makeStyles(theme => ({
     outline: "0px",
     fontWeight: "bold",
     fontSize: "15px",
+    cursor:'pointer',
     "&:hover": {
       backgroundColor: "#00BBDC",
       color: "#fff",
       boxShadow: "1px 1px 1px 1px #00BBDC"
     },
+    [theme.breakpoints.down("md")]: {
+      fontSize: "12px",
+      marginLeft: "100px"
+    },
     [theme.breakpoints.down("sm")]: {
       fontSize: "12px",
-      marginLeft: "50px"
+      marginLeft: "0px",
+      left: "0",
+      right: "0",
+      textAlign: "center",
+      width: "30%"
     }
   },
   sliderText: {

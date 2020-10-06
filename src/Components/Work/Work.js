@@ -24,12 +24,12 @@ export default function FullWidthGrid() {
             >
               {value === "Driver" ? (
                 <img
-                  className={classes.img}
+                  className={classes.img1}
                   src={require("../../assets/icons/taxi-driver.svg")}
                 />
               ) : (
                 <img
-                  className={classes.img}
+                  className={classes.img2}
                   src={require("../../assets/icons/icon-09.svg")}
                 />
               )}
@@ -45,12 +45,12 @@ export default function FullWidthGrid() {
             >
               {value === "Parking" ? (
                 <img
-                  className={classes.img}
+                  className={classes.img2}
                   src={require("../../assets/icons/icon-12.svg")}
                 />
               ) : (
                 <img
-                  className={classes.img}
+                  className={classes.img1}
                   src={require("../../assets/icons/landlord.svg")}
                 />
               )}

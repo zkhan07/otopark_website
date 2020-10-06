@@ -9,7 +9,9 @@ export default function FullWidthGrid() {
 
   return (
     <div className={classes.root}>
-      <h1 style={{ color: "#00BBDC", marginTop: "100px" }}>Watch Videos</h1>
+      <h1 style={{ color: "#00BBDC", marginTop: "100px" }}>
+        How to Book Parking
+      </h1>
       <div className={classes.videoContainer}>
         <iframe
           width="727"
@@ -20,18 +22,9 @@ export default function FullWidthGrid() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        {/* <Player
-          className={classes.videoPlayer}
-          poster={require("../../assets/images/blueLogo.png")}
-          src="www.youtube.com/watch?v=znsI316hWHQ"
-        >
-          <BigPlayButton position="center" />
-          <LoadingSpinner />
-        </Player> */}
       </div>
-      <h2 style={{ marginTop: "50px", marginBottom: "50px" }}>
-        How to book parking on otopark
-      </h2>
+      <br />
+      <br />
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={6} lg={3}>
           <iframe
@@ -43,29 +36,6 @@ export default function FullWidthGrid() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-
-          {/* <Player
-            poster={require("../../assets/images/blueLogo.png")}
-            src="https://https://www.youtube.com/watch?v=znsI316hWHQ"
-          >
-            <BigPlayButton position="center" />
-          </Player> */}
-        </Grid>
-        <Grid item xs={6} sm={6} md={3} lg={3}>
-          {/* <Player
-            poster={require("../../assets/images/blueLogo.png")}
-            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-          >
-            <BigPlayButton position="center" />
-          </Player> */}
-        </Grid>
-        <Grid item xs={6} sm={6} md={3} lg={3}>
-          {/* <Player
-            poster={require("../../assets/images/blueLogo.png")}
-            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-          >
-            <BigPlayButton position="center" />
-          </Player> */}
         </Grid>
       </Grid>
     </div>

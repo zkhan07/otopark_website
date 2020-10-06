@@ -23,7 +23,7 @@ export default function FullWidthGrid() {
               <b>"FIND PARKING</b>{" "}
               <b style={{ color: "white" }}>
                 WHEN YOU
-                <br /> <b style={{ marginLeft: "30px" }}>NEED IT,</b>
+                <br /> <b className={classes.sloganMargin}>NEED IT,</b>
               </b>{" "}
               <b>EARN MONEY</b> <br />
               <b style={{ color: "white", marginLeft: "10px" }}>
