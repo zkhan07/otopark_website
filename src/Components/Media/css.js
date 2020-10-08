@@ -20,6 +20,7 @@ export const useStyles = makeStyles(theme => ({
     height: "240px",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
+      height: "260px",
       marginLeft: "0px",
       marginRight: "0px"
     }

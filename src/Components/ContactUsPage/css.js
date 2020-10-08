@@ -68,8 +68,8 @@ export const useStyles = makeStyles(theme => ({
   // },
   mapframe: {
     // display: "flex",
-    marginTop: "95px",
-    width: "100%",
+    marginTop: "110px",
+    width: "98%",
     height: "500px",
     [theme.breakpoints.down("sm")]: {
       marginTop: "30px",

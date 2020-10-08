@@ -33,6 +33,7 @@ export default function FullWidthGrid() {
               </p>
               <div align="center" className={classes.icon}>
                 <a
+                  target="_blank"
                   style={{ color: "white" }}
                   href="https://www.facebook.com/myotopark/"
                 >
@@ -50,6 +51,7 @@ export default function FullWidthGrid() {
                   ></i>
                 </a>
                 <a
+                  target="_blank"
                   style={{ color: "white" }}
                   href="https://twitter.com/myotopark"
                 >
@@ -68,6 +70,7 @@ export default function FullWidthGrid() {
                   ></i>
                 </a>
                 <a
+                  target="_blank"
                   style={{ color: "white" }}
                   href="https://www.linkedin.com/company/myotopark/"
                 >
@@ -85,6 +88,7 @@ export default function FullWidthGrid() {
                   ></i>
                 </a>
                 <a
+                  target="_blank"
                   style={{ color: "white" }}
                   href="https://www.instagram.com/myotopark/"
                 >
