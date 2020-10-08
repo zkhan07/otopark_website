@@ -15,7 +15,7 @@ export const useStyles = makeStyles(theme => ({
     backgroundColor: "#283646",
     color: "#fff",
     marginTop: "50px",
-    padding: "30px"
+    padding: "10px"
   },
   logo: {
     width: "150px",
@@ -52,7 +52,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       float: "left",
       padding: "5px",
-      marginLeft: "20px"
+      marginLeft: "-10px"
     }
   },
   bottomText: {
@@ -61,7 +61,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       float: "left",
       padding: "5px",
-      marginLeft: "20px"
+      marginLeft: "-10px"
     }
   }
 }));

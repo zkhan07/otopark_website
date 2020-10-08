@@ -28,13 +28,13 @@ export const useStyles = makeStyles(theme => ({
   },
   drawer: {
     width: drawerWidth,
-    flexShrink: 0,
+    flexShrink: 0
     // backgroundColor:'#00BBDC'
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor:'#00BBDC',
-    backgroundImage:require('../../assets/images/heroImg.svg')
+    backgroundColor: "#00BBDC",
+    backgroundImage: require("../../assets/images/heroImg.svg")
   },
   drawerHeader: {
     display: "flex",
@@ -44,8 +44,8 @@ export const useStyles = makeStyles(theme => ({
     ...theme.mixins.toolbar,
     justifyContent: "flex-end"
   },
-  listBtn:{
-    color:'#ffff'
+  listBtn: {
+    color: "#ffff"
   },
   content: {
     flexGrow: 1,
@@ -74,6 +74,5 @@ export const useStyles = makeStyles(theme => ({
     width: "70px",
     height: "45px",
     padding: "5px"
-  },
- 
+  }
 }));

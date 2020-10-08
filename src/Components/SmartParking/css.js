@@ -15,7 +15,7 @@ export const useStyles = makeStyles(theme => ({
   },
   header: {
     display: "flex",
-    padding: "20px",
+    // padding: "20px",
     color: "#00BBDC",
     [theme.breakpoints.down("sm")]: {
       padding: "0px"

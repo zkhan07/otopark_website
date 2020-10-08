@@ -19,7 +19,6 @@ export default function FullWidthGrid() {
             <p className={classes.subTitle2}>
               job openings and apply on your suitable role.
             </p>
-
             <Button className={classes.button}>Check Job Openings</Button>
           </div>
         </Grid>

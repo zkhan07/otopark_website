@@ -32,56 +32,76 @@ export default function FullWidthGrid() {
                 <i class="fa fa-phone" aria-hidden="true"></i> +91 88 55226644
               </p>
               <div align="center" className={classes.icon}>
-                <i
-                  style={{
-                    padding: "10px",
-                    height: "10px",
-                    width: "10px",
-                    border: "1px solid #71777D",
-                    borderRadius: "50%",
-                    fontSize: "15px"
-                  }}
-                  class="fa fa-facebook"
-                  aria-hidden="true"
-                ></i>
-                <i
-                  style={{
-                    padding: "10px",
-                    height: "10px",
-                    width: "10px",
-                    border: "1px solid #71777D",
-                    borderRadius: "50%",
-                    fontSize: "15px",
-                    margin: "5px"
-                  }}
-                  class="fa fa-twitter"
-                  aria-hidden="true"
-                ></i>
-                <i
-                  style={{
-                    padding: "10px",
-                    height: "10px",
-                    width: "10px",
-                    border: "1px solid #71777D",
-                    borderRadius: "50%",
-                    fontSize: "15px"
-                  }}
-                  class="fa fa-linkedin"
-                  aria-hidden="true"
-                ></i>
-                <i
-                  style={{
-                    padding: "10px",
-                    height: "10px",
-                    width: "10px",
-                    border: "1px solid #71777D",
-                    borderRadius: "50%",
-                    fontSize: "15px",
-                    margin: "5px"
-                  }}
-                  class="fa fa-instagram"
-                  aria-hidden="true"
-                ></i>
+                <a
+                  style={{ color: "white" }}
+                  href="https://www.facebook.com/myotopark/"
+                >
+                  <i
+                    style={{
+                      padding: "10px",
+                      height: "10px",
+                      width: "10px",
+                      border: "1px solid #71777D",
+                      borderRadius: "50%",
+                      fontSize: "15px"
+                    }}
+                    class="fa fa-facebook"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  style={{ color: "white" }}
+                  href="https://twitter.com/myotopark"
+                >
+                  <i
+                    style={{
+                      padding: "10px",
+                      height: "10px",
+                      width: "10px",
+                      border: "1px solid #71777D",
+                      borderRadius: "50%",
+                      fontSize: "15px",
+                      margin: "5px"
+                    }}
+                    class="fa fa-twitter"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  style={{ color: "white" }}
+                  href="https://www.linkedin.com/company/myotopark/"
+                >
+                  <i
+                    style={{
+                      padding: "10px",
+                      height: "10px",
+                      width: "10px",
+                      border: "1px solid #71777D",
+                      borderRadius: "50%",
+                      fontSize: "15px"
+                    }}
+                    class="fa fa-linkedin"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  style={{ color: "white" }}
+                  href="https://www.instagram.com/myotopark/"
+                >
+                  <i
+                    style={{
+                      padding: "10px",
+                      height: "10px",
+                      width: "10px",
+                      border: "1px solid #71777D",
+                      borderRadius: "50%",
+                      fontSize: "15px",
+                      margin: "5px"
+                    }}
+                    class="fa fa-instagram"
+                    aria-hidden="true"
+                  ></i>
+                </a>
               </div>
             </Grid>
             <Grid item xs={6} sm={6} md={2} lg={2}>
@@ -123,7 +143,7 @@ export default function FullWidthGrid() {
                 </Grid>
                 <Grid item xs={12} lg={6} md={6}>
                   <div className={classes.bottomText}>
-                    ® © 2020 otopark Technological Pvt. Ltd.
+                    ® © 2020 otopark Technological Services Pvt. Ltd.
                   </div>
                 </Grid>
               </Grid>

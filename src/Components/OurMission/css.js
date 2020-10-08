@@ -12,14 +12,18 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   headingContainer: {
-    marginTop: "100px",
+    marginLeft: "-8px",
+    marginRight: "-8px",
+    marginTop: "80px",
     height: "150px",
-    backgroundColor: "#B1EFFF45"
+    backgroundColor: "#B1EFFF45",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "10px"
+    }
   },
-  headingPara: {
-    marginTop: "-10px",
-    color: "#696871",
-    fontSize: "15px"
+  heading: {
+    marginLeft: "10%",
+    fontSize: "40px"
   },
   image: {
     width: "100%",

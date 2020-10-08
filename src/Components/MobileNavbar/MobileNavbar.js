@@ -63,7 +63,9 @@ export default function PersistentDrawerLeft() {
         </AppBar>
         <Drawer
           className={classes.drawer}
-          variant="persistent"
+          variant="temporary"
+          onEscapeKeyDown={handleDrawerClose}
+          onBackdropClick={handleDrawerClose}
           anchor="left"
           open={open}
           classes={{
@@ -73,9 +75,9 @@ export default function PersistentDrawerLeft() {
           <div className={classes.drawerHeader}>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
-                <ChevronLeftIcon />
+                <ChevronLeftIcon style={{ color: "white" }} />
               ) : (
-                <ChevronRightIcon />
+                <ChevronRightIcon style={{ color: "white" }} />
               )}
             </IconButton>
           </div>

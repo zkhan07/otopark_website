@@ -17,6 +17,7 @@ export default function FullWidthGrid() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    swipeToSlide: true,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 10000,
@@ -63,13 +64,20 @@ export default function FullWidthGrid() {
                       src={require("../../assets/images/hindustanTimesMedia.svg")}
                     />
                     <p className={classes.para}>
-                      OMG! I cannot believe that I have got a brand new landing
-                      page after getting Omega. It was super easy to edit and
-                      pulish.
+                      The app allows housing societies, malls and commercial
+                      establishments to rent out their parking slots through the
+                      platform, and enables motorists to reserve parking spaces
+                      in advance.
                     </p>
-                    <Button className={classes.moreButton}>
-                      Click here to read full article...
-                    </Button>
+                    <br />
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href="https://www.hindustantimes.com/cities/mobile-app-to-help-you-find-parking-slots-rent-it-out-bmc-in-talks-with-firm/story-uveq1eGSA9XToAdyJnq8WM.html"
+                    >
+                      <Button className={classes.moreButton}>
+                        Click here to read full article...
+                      </Button>
+                    </a>
                   </CardContent>
                 </Card>
               </div>
@@ -82,13 +90,21 @@ export default function FullWidthGrid() {
                       src={require("../../assets/images/theHinduMedia.svg")}
                     />
                     <p className={classes.para}>
-                      OMG! I cannot believe that I have got a brand new landing
-                      page after getting Omega. It was super easy to edit and
-                      pulish.
+                      Mumbai Parking Authority’s move is being facilitated by
+                      IIT-based startup Otopark
                     </p>
-                    <Button className={classes.moreButton}>
-                      Click here to read full article...
-                    </Button>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href="https://www.thehindu.com/news/cities/mumbai/now-use-app-to-book-parking-slots-in-citys-housing-societies/article30795854.ece "
+                    >
+                      <Button className={classes.moreButton}>
+                        Click here to read full article...
+                      </Button>
+                    </a>
                   </CardContent>
                 </Card>
               </div>
@@ -101,33 +117,20 @@ export default function FullWidthGrid() {
                       src={require("../../assets/images/freepressMedia.svg")}
                     />
                     <p className={classes.para}>
-                      OMG! I cannot believe that I have got a brand new landing
-                      page after getting Omega. It was super easy to edit and
-                      pulish.
+                      The Brihanmumbai Municipal Corporation (BMC) has
+                      implemented the concept of a Mumbai based IITian to
+                      formulate the idea of setting up parking spaces in
+                      residential spaces of the city.
                     </p>
-                    <Button className={classes.moreButton}>
-                      Click here to read full article...
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
-              {/* next row */}
-              <div className={classes.removeBorder}>
-                <Card className={classes.cardContainer}>
-                  <CardContent>
-                    <img
-                      className={classes.slideImage}
-                      alt="img1"
-                      src={require("../../assets/images/hindustanTimesMedia.svg")}
-                    />
-                    <p className={classes.para}>
-                      OMG! I cannot believe that I have got a brand new landing
-                      page after getting Omega. It was super easy to edit and
-                      pulish.
-                    </p>
-                    <Button className={classes.moreButton}>
-                      Click here to read full article...
-                    </Button>
+                    <br />
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href="https://www.freepressjournal.in/mumbai/book-bmc-parking-space-on-app-courtesy-iitian"
+                    >
+                      <Button className={classes.moreButton}>
+                        Click here to read full article...
+                      </Button>
+                    </a>
                   </CardContent>
                 </Card>
               </div>
@@ -137,35 +140,23 @@ export default function FullWidthGrid() {
                     <img
                       className={classes.slideImage}
                       alt="img1"
-                      src={require("../../assets/images/theHinduMedia.svg")}
+                      src={require("../../assets/images/media4.jpg")}
                     />
                     <p className={classes.para}>
-                      OMG! I cannot believe that I have got a brand new landing
-                      page after getting Omega. It was super easy to edit and
-                      pulish.
+                      One such solution has been developed by an IIT-based
+                      startup Otopark, which builds a bridge in helping the
+                      guest find a suitable parking slots with hosts ready to
+                      rent the parking space.
                     </p>
-                    <Button className={classes.moreButton}>
-                      Click here to read full article...
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className={classes.removeBorder}>
-                <Card className={classes.cardContainer}>
-                  <CardContent>
-                    <img
-                      className={classes.slideImage}
-                      alt="img1"
-                      src={require("../../assets/images/freepressMedia.svg")}
-                    />
-                    <p className={classes.para}>
-                      OMG! I cannot believe that I have got a brand new landing
-                      page after getting Omega. It was super easy to edit and
-                      pulish.
-                    </p>
-                    <Button className={classes.moreButton}>
-                      Click here to read full article...
-                    </Button>
+                    <br />
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href="https://accommodationtimes.com/iit-based-startup-facilitates-housing-societies-for-parking-space/"
+                    >
+                      <Button className={classes.moreButton}>
+                        Click here to read full article...
+                      </Button>
+                    </a>
                   </CardContent>
                 </Card>
               </div>

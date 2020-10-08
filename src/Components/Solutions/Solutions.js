@@ -115,7 +115,7 @@ export default function FullWidthGrid() {
                   </li>
                 </ul>
                 <br />
-                <br/>
+                <br />
                 <br />
                 <div className={classes.flexContainer}>
                   <p></p>
@@ -141,7 +141,7 @@ export default function FullWidthGrid() {
                   height="100px"
                   src={require("../../assets/images/fastTagSolution.svg")}
                 />
-                <p className={classes.title}>Fastag</p>
+                <p className={classes.title}>FASTag</p>
                 <ul>
                   <li>
                     <p className={classes.subTitle}>For FASTag owners</p>
@@ -230,11 +230,11 @@ export default function FullWidthGrid() {
                   </li>
                   <li>
                     <p className={classes.subTitle}>
-                      Professional parking service and consulting services for
-                      the best parking experience
+                      Professional parking and consulting services
                     </p>
                   </li>
                 </ul>
+                <br />
                 <br />
                 <div className={classes.flexContainer}>
                   <p></p>

@@ -14,13 +14,14 @@ export const useStyles = makeStyles(theme => ({
     marginBottom: "50px"
   },
   cardContainer: {
-    marginLeft: "30px",
-    width: "300px",
-    height: "220px",
+    marginLeft: "20px",
+    marginRight: "20px",
+    width: "90%",
+    height: "240px",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "20px",
-      width: "90%",
-      height: "230px"
+      width: "100%",
+      marginLeft: "0px",
+      marginRight: "0px"
     }
   },
   removeBorder: {
@@ -49,6 +50,5 @@ export const useStyles = makeStyles(theme => ({
     textTransform: "none",
     color: "#00BBDC",
     fontSize: "12px"
-    // margin:'30px'
   }
 }));

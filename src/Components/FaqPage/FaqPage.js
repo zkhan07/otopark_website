@@ -95,9 +95,6 @@ export function FaqTab() {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <h1 className={classes.title}>Frequently Asked Questions</h1>
-          <p className={classes.subTitle}>
-            Create custom landing pages with Omega that converts
-          </p>
           <div className={classes.root1}>
             <Tabs
               indicatorColor="disabled"

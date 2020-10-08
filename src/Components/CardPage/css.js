@@ -37,12 +37,9 @@ export const useStyles = makeStyles(theme => ({
   },
   card1: {
     backgroundColor: "#00BBDC",
-    display: "block",
-    marginLeft: "0px",
-    marginRight: "auto",
     marginTop: "-30px",
-    width: "180px",
-    height: "200px",
+    width: "200px",
+    height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
@@ -52,7 +49,7 @@ export const useStyles = makeStyles(theme => ({
       marginRight: "auto"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "140px",
+      width: "130px",
       height: "170px",
       display: "block",
       marginLeft: "auto",
@@ -61,11 +58,9 @@ export const useStyles = makeStyles(theme => ({
   },
   card2: {
     backgroundColor: "#fff",
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "135px",
-    width: "180px",
-    height: "200px",
+    marginLeft: "30px",
+    width: "200px",
+    height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
@@ -75,7 +70,7 @@ export const useStyles = makeStyles(theme => ({
       marginRight: "40px"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "140px",
+      width: "130px",
       height: "170px",
       display: "block",
       marginLeft: "auto",
@@ -84,12 +79,9 @@ export const useStyles = makeStyles(theme => ({
   },
   card3: {
     backgroundColor: "#fff",
-    display: "block",
-    marginLeft: "0px",
-    marginRight: "auto",
     marginTop: "-30px",
-    width: "180px",
-    height: "200px",
+    width: "200px",
+    height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
@@ -99,7 +91,7 @@ export const useStyles = makeStyles(theme => ({
       marginRight: "auto"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "140px",
+      width: "130px",
       height: "170px",
       display: "block",
       marginLeft: "auto",
@@ -108,11 +100,9 @@ export const useStyles = makeStyles(theme => ({
   },
   card4: {
     backgroundColor: "#fff",
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "135px",
-    width: "180px",
-    height: "200px",
+    marginLeft: "30px",
+    width: "200px",
+    height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
@@ -122,7 +112,7 @@ export const useStyles = makeStyles(theme => ({
       marginRight: "40px"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "140px",
+      width: "130px",
       height: "170px",
       display: "block",
       marginLeft: "auto",

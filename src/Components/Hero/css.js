@@ -37,13 +37,13 @@ export const useStyles = makeStyles(theme => ({
   },
   heroSlogan: {
     position: "absolute",
-    top: "30%",
-    left: "10%",
+    top: "22%",
+    left: "7%",
     fontSize: "30px",
     [theme.breakpoints.down("md")]: {
       position: "absolute",
-      top: "30%",
-      left: "10%",
+      top: "22%",
+      left: "7%",
       fontSize: "30px"
     },
     [theme.breakpoints.down("sm")]: {
@@ -58,7 +58,9 @@ export const useStyles = makeStyles(theme => ({
   heroButton: {
     backgroundColor: "#fff",
     color: "#00BBDC",
-    marginLeft: "100px",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
     width: "150px",
     height: "35px",
     border: "1px solid white",
@@ -67,7 +69,7 @@ export const useStyles = makeStyles(theme => ({
     outline: "0px",
     fontWeight: "bold",
     fontSize: "15px",
-    cursor:'pointer',
+    cursor: "pointer",
     "&:hover": {
       backgroundColor: "#00BBDC",
       color: "#fff",
@@ -79,11 +81,9 @@ export const useStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: "12px",
-      marginLeft: "0px",
-      left: "0",
-      right: "0",
-      textAlign: "center",
-      width: "30%"
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto"
     }
   },
   sliderText: {

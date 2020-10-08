@@ -10,7 +10,7 @@ import Solutions from "../Solutions/Solutions";
 import Media from "../Media/Media";
 import Videos from "../Videos/Videos";
 import Footer from "../Footer/Footer";
-import MyContact from "../MyContact/MyContact";
+// import MyContact from "../MyContact/MyContact";
 import { useStyles } from "./css";
 import { Smart } from "../SmartParking/Smart";
 
@@ -31,7 +31,7 @@ export default function FullWidthGrid() {
           <Smart />
           <Media />
           <Videos />
-          <MyContact />
+          {/* <MyContact /> */}
           <Footer />
         </Grid>
       </Grid>

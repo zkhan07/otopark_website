@@ -57,23 +57,24 @@ export const useStyles = makeStyles(theme => ({
       marginBottom: "30px"
     }
   },
-  map: {
-    marginTop: "80px",
-    width: "400px",
-    padding: "20px",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "0px",
-      width: "200px"
-    }
-  },
+  // map: {
+  //   marginTop: "80px",
+  //   width: "400px",
+  //   padding: "20px",
+  //   [theme.breakpoints.down("sm")]: {
+  //     marginTop: "0px",
+  //     width: "200px"
+  //   }
+  // },
   mapframe: {
-    display: "flex",
-    width: "400px",
+    // display: "flex",
+    marginTop: "95px",
+    width: "100%",
     height: "500px",
     [theme.breakpoints.down("sm")]: {
-      width: "250px",
+      marginTop: "30px",
+      width: "100%",
       height: "230px"
     }
   }
-  // .mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
 }));

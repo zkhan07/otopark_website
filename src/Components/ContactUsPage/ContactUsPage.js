@@ -13,23 +13,21 @@ export default function FullWidthGrid() {
       <MobileNavbar />
       <div className={classes.root}>
         <Grid container>
-          <Grid item xs={12} lg={8}>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
             <MyContact />
           </Grid>
-          <Grid item xs={12} lg={4}>
-            <div className={classes.map}>
-              <div className="gmap_canvas">
-                <iframe
-                  className={classes.mapframe}
-                  id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=319%20Monash%20Building%2C%20IIT%20Bombay%2C%20%20Powai%20Mumbai%20400076%2C%20India&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
-                ></iframe>
-              </div>
-            </div>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            {/* <div className={classes.map}> */}
+            <iframe
+              className={classes.mapframe}
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=319%20Monash%20Building%2C%20IIT%20Bombay%2C%20%20Powai%20Mumbai%20400076%2C%20India&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+            {/* </div> */}
           </Grid>
         </Grid>
       </div>

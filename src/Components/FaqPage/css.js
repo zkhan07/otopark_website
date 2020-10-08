@@ -28,11 +28,6 @@ export const useStyles = makeStyles(theme => ({
       marginTop: "50px"
     }
   },
-  subTitle: {
-    textAlign: "center",
-    marginTop: "-10px",
-    fontSize: "15px"
-  },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
     width: "1000px"
