@@ -4,6 +4,27 @@ import Grid from "@material-ui/core/Grid";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 import CompanySlider from "../CompanySlider/CompanySlider";
 import { useStyles } from "./css";
+import "./Hero.css";
+// done
+var windowHeight = Math.max(
+  document.documentElement.clientHeight,
+  window.innerHeight || 0
+);
+
+window.addEventListener("scroll", function(event) {
+  var train = document.getElementById("trainMotion"),
+    offset = train.getBoundingClientRect().top - windowHeight;
+
+  if (offset > 0) {
+    train.classList.remove("choochoo");
+    return;
+  }
+
+  if (train.className.indexOf("choocho") === -1) {
+    train.classList.add("choochoo");
+  }
+});
+// done
 
 export default function FullWidthGrid() {
   const classes = useStyles();
@@ -31,6 +52,12 @@ export default function FullWidthGrid() {
               </b>
             </p>
             <button className={classes.heroButton}>Explore More </button>
+            <div id="trainMotion">
+              <img
+                id="train"
+                src={require("../../assets/images/movingCarImg.svg")}
+              />
+            </div>
           </div>
         </Grid>
       </Grid>

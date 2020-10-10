@@ -10,7 +10,7 @@ export default function FullWidthGrid() {
   return (
     <div className={classes.root}>
       <h1 style={{ color: "#00BBDC", marginTop: "100px" }}>
-      How to Book Parking
+        How to Book Parking
       </h1>
       <div className={classes.videoContainer}>
         <iframe

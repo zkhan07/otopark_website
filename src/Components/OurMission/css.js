@@ -27,7 +27,10 @@ export const useStyles = makeStyles(theme => ({
   },
   image: {
     width: "100%",
-    height: "300px"
+    height: "350px",
+    [theme.breakpoints.down("sm")]: {
+      height: "200px"
+    }
   },
   contentPara: {
     // letterSpacing: "0.1em",
