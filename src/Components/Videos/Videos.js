@@ -16,7 +16,7 @@ export default function FullWidthGrid() {
         <iframe
           width="727"
           height="409"
-          className={classes.frame}
+          className={classes.frame1}
           src="https://www.youtube.com/embed/2-e8EeKmw3U"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -30,7 +30,7 @@ export default function FullWidthGrid() {
           <iframe
             width="300"
             height="200"
-            className={classes.frame}
+            className={classes.frame2}
             src="https://www.youtube.com/embed/znsI316hWHQ"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

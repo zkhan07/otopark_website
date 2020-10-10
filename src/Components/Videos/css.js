@@ -20,14 +20,22 @@ export const useStyles = makeStyles(theme => ({
     textAlign: "center",
     color: theme.palette.text.secondary
   },
-  videoContainer: {
-    // marginLeft: "10%",
-    // marginRight: "10%"
-  },
+
   videoPlayer: {
     height: "100px"
   },
-  frame: {
+  frame1: {
+    marginTop: "50px",
+    [theme.breakpoints.down("md")]: {
+      height: "230px",
+      width: "100%"
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      height: "230px"
+    }
+  },
+  frame2: {
     [theme.breakpoints.down("md")]: {
       height: "230px",
       width: "100%"
