@@ -27,22 +27,34 @@ export const useStyles = makeStyles(theme => ({
     color: "black",
     textAlign: "center",
     fontSize: "15px",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "20px"
+    }
   },
   otherCardHeader: {
     color: "#ffff",
     textAlign: "center",
     fontSize: "15px",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "20px"
+    }
   },
   card1: {
-    backgroundColor: "#00BBDC",
     marginTop: "-30px",
     width: "200px",
     height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
+    [theme.breakpoints.up("xl")]: {
+      width: "300px",
+      height: "240px",
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto"
+    },
     [theme.breakpoints.down("md")]: {
       display: "block",
       marginLeft: "60px",
@@ -64,6 +76,12 @@ export const useStyles = makeStyles(theme => ({
     borderRadius: "5px",
     cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
+    [theme.breakpoints.up("xl")]: {
+      width: "300px",
+      height: "240px",
+      marginTop: "20px",
+      marginRight: "120px"
+    },
     [theme.breakpoints.down("md")]: {
       display: "block",
       marginLeft: "auto",
@@ -85,6 +103,13 @@ export const useStyles = makeStyles(theme => ({
     borderRadius: "5px",
     cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
+    [theme.breakpoints.up("xl")]: {
+      width: "300px",
+      height: "240px",
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto"
+    },
     [theme.breakpoints.down("md")]: {
       display: "block",
       marginLeft: "60px",
@@ -106,6 +131,12 @@ export const useStyles = makeStyles(theme => ({
     borderRadius: "5px",
     cursor: "pointer",
     boxShadow: "2px 2px 2px 2px lightgrey",
+    [theme.breakpoints.up("xl")]: {
+      width: "300px",
+      height: "240px",
+      marginTop: "20px",
+      marginRight: "120px"
+    },
     [theme.breakpoints.down("md")]: {
       display: "block",
       marginLeft: "auto",
@@ -126,6 +157,11 @@ export const useStyles = makeStyles(theme => ({
     marginTop: "50px",
     width: "80px",
     height: "80px",
+    [theme.breakpoints.up("xl")]: {
+      marginTop: "50px",
+      width: "100px",
+      height: "100px"
+    },
     [theme.breakpoints.down("sm")]: {
       marginTop: "30px"
     }
@@ -133,18 +169,27 @@ export const useStyles = makeStyles(theme => ({
   subTitle: {
     color: "#00BBDC",
     fontWeight: "bold",
-    fontSize: "15px"
+    fontSize: "15px",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "20px"
+    }
   },
   title: {
     marginTop: "-10px",
     color: "black",
     fontWeight: "bold",
-    fontSize: "25px"
+    fontSize: "25px",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "35px"
+    }
   },
   para: {
     marginTop: "-25px",
     color: "grey",
-    fontSize: "15px"
+    fontSize: "15px",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "20px"
+    }
   },
   moreButton: {
     width: "200px",
@@ -155,13 +200,23 @@ export const useStyles = makeStyles(theme => ({
     border: "1px solid #00BBDC",
     borderRadius: "5px",
     outerline: "0px",
-    cursor: "pointer"
+    cursor: "pointer",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "20px"
+    }
   },
   cardImage: {
     width: "350px",
     height: "250px",
     display: "flex",
     justifyContent: "center",
+    [theme.breakpoints.up("xl")]: {
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
+      width: "450px",
+      height: "350px"
+    },
     [theme.breakpoints.down("sm")]: {
       display: "block",
       marginLeft: "auto",
