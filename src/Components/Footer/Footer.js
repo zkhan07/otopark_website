@@ -108,7 +108,7 @@ export default function FullWidthGrid() {
                 </a>
               </div>
             </Grid>
-            <Grid item xs={6} sm={6} md={2} lg={2}>
+            <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>Home</h4>
               <div className={classes.footerList}>
                 <p>Introduction</p>
@@ -118,7 +118,7 @@ export default function FullWidthGrid() {
                 <p>Media</p>
               </div>
             </Grid>
-            <Grid item xs={6} sm={6} md={2} lg={2}>
+            <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>Solutions</h4>
               <div className={classes.footerList}>
                 <p>FASTag Parking</p>
@@ -128,7 +128,7 @@ export default function FullWidthGrid() {
                 <p>Parking Services</p>
               </div>
             </Grid>
-            <Grid item xs={6} sm={6} md={2} lg={2}>
+            <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>About</h4>
               <div className={classes.footerList}>
                 <p>Vision</p>

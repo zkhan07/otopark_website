@@ -32,7 +32,8 @@ export const useStyles = makeStyles(theme => ({
       backgroundColor: "#00BBDC"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "100%"
+      fontSize: "10px",
+      width: "90%"
     }
   },
   unClickButtons: {
@@ -46,7 +47,8 @@ export const useStyles = makeStyles(theme => ({
       backgroundColor: "#00BBDC"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "100%"
+      fontSize: "10px",
+      width: "90%"
     }
   },
   number: {
@@ -72,5 +74,28 @@ export const useStyles = makeStyles(theme => ({
     lineHeight: "1.7em",
     color: "#19191B"
   },
-  spantext: {}
+  gifImg: {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%"
+    }
+  },
+  gif1: {
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      marginLeft: "-50px",
+      marginRight: "auto",
+      width: "100%"
+    }
+  },
+  gif2: {
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      marginLeft: "-80px",
+      marginRight: "auto",
+      width: "100%"
+    }
+  }
 }));

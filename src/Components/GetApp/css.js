@@ -8,6 +8,7 @@ export const useStyles = makeStyles(theme => ({
   getAppContainer: {
     marginTop: "100px",
     marginBottom: "50px",
+    height: "400px",
     width: "95%",
     backgroundImage: `url(${Image})`,
     backgroundPosition: "center",
@@ -68,13 +69,14 @@ export const useStyles = makeStyles(theme => ({
   },
   button: {
     textTransform: "none",
-    width: "100px",
+    width: "140px",
     height: "30px",
     marginTop: "-40px",
     marginRight: "100px",
     backgroundColor: "#fff",
     color: "#00BBDC",
     border: "1px solid white",
+    padding: "20px",
     borderRadius: "5px",
     "&:hover": {
       backgroundColor: "#00BBDC",

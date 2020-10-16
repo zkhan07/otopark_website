@@ -26,10 +26,18 @@ export const useStyles = makeStyles(theme => ({
     fontSize: "40px"
   },
   image: {
-    width: "100%",
-    height: "350px",
-    [theme.breakpoints.down("sm")]: {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "70%",
+    height: "200px",
+    [theme.breakpoints.up("md")]: {
+      width: "70%",
       height: "200px"
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "70%",
+      height: "150px"
     }
   },
   contentPara: {

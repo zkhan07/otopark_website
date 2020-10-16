@@ -20,7 +20,7 @@ export default function FullWidthGrid() {
             <br />
             <br />
             <p className={classes.contentPara}>
-              otopark is a dynamic organisation that exists to meet the parking
+              <b>OTOPARK</b> is a dynamic organisation that exists to meet the parking
               challenges of the mega cities of India, by providing smart
               sustainable innovative technological solutions. otopark focuses on
               building a collaborative economy between consumers, businesses and

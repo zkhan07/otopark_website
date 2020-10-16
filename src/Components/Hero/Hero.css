@@ -1,5 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   #trainMotion {
     display: none;
     margin-top: 50px;
@@ -53,7 +53,7 @@
 @media only screen and (min-width: 992px) {
   #trainMotion {
     display: block;
-    margin-top: 100px;
+    margin-top: 85px;
   }
 
   #trainMotion img {
@@ -71,7 +71,7 @@
 @media only screen and (min-width: 1200px) {
   #trainMotion {
     display: block;
-    margin-top: 95px;
+    margin-top: 80px;
   }
 
   #trainMotion img {

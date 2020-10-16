@@ -10,6 +10,9 @@ export const useStyles = makeStyles(theme => ({
     marginRight: "-8px",
     backgroundColor: "#00BBDC",
     height: "500px",
+    [theme.breakpoints.up("xl")]: {
+      height: "700px"
+    },
     [theme.breakpoints.down("sm")]: {
       height: "300px"
     }
@@ -18,6 +21,11 @@ export const useStyles = makeStyles(theme => ({
     marginLeft: "30%",
     width: "70%",
     marginTop: "205px",
+    [theme.breakpoints.up("xl")]: {
+      marginLeft: "30%",
+      width: "70%",
+      marginTop: "260px"
+    },
     [theme.breakpoints.down("md")]: {
       marginLeft: "30%",
       width: "70%",
