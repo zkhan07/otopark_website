@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 import { useStyles } from "./css";
 
 export default function FullWidthGrid() {
@@ -17,13 +18,20 @@ export default function FullWidthGrid() {
             <p className={classes.subTitle2}>
               Contact us for business enquires
             </p>
-            <img
-              className={classes.googlePlayImg}
-              src={require("../../assets/images/googlePlay.png")}
-            />
+            <a
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.otopark.Otopark.oto.park.my.car.vehicle.find.parking.lot.space.host.user&hl=en_US"
+            >
+              <img
+                className={classes.googlePlayImg}
+                src={require("../../assets/images/googlePlay.png")}
+              />
+            </a>
             <div className={classes.flexContainer}>
               <p></p>
-              <Button className={classes.button}>Contact</Button>
+              <Link className={classes.link} to="/otopark/website/contactUs">
+                <Button className={classes.button}>Contact</Button>
+              </Link>
             </div>
           </div>
         </Grid>

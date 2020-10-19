@@ -66,9 +66,9 @@ export default function ButtonAppBar() {
                   Contact
                 </Button>
               </Link>
-              <Button className={classes.navbarButton} color="inherit">
+              {/* <Button className={classes.navbarButton} color="inherit">
                 Login
-              </Button>
+              </Button> */}
             </div>
           </Toolbar>
         </AppBar>

@@ -61,8 +61,8 @@ export const useStyles = makeStyles(theme => ({
       marginRight: "auto"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "130px",
-      height: "170px",
+      width: "180px",
+      height: "100px",
       display: "block",
       marginLeft: "auto",
       marginRight: "auto"
@@ -88,10 +88,10 @@ export const useStyles = makeStyles(theme => ({
       marginRight: "40px"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "130px",
-      height: "170px",
+      width: "180px",
+      height: "100px",
       display: "block",
-      marginLeft: "auto",
+      marginLeft: "20px",
       marginRight: "auto"
     }
   },
@@ -116,8 +116,8 @@ export const useStyles = makeStyles(theme => ({
       marginRight: "auto"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "130px",
-      height: "170px",
+      width: "180px",
+      height: "100px",
       display: "block",
       marginLeft: "auto",
       marginRight: "auto"
@@ -143,10 +143,10 @@ export const useStyles = makeStyles(theme => ({
       marginRight: "40px"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "130px",
-      height: "170px",
+      width: "180px",
+      height: "100px",
       display: "block",
-      marginLeft: "auto",
+      marginLeft: "20px",
       marginRight: "auto"
     }
   },
@@ -163,7 +163,9 @@ export const useStyles = makeStyles(theme => ({
       height: "100px"
     },
     [theme.breakpoints.down("sm")]: {
-      marginTop: "30px"
+      width: "40px",
+      height: "40px",
+      marginTop: "15px"
     }
   },
   subTitle: {
@@ -199,15 +201,21 @@ export const useStyles = makeStyles(theme => ({
     fontWeight: "bold",
     border: "1px solid #00BBDC",
     borderRadius: "5px",
-    outerline: "0px",
+    border: "none",
+    outline: "none",
     cursor: "pointer",
+    "&:hover": {
+      border: "2px solid #00BBDC",
+      backgroundColor: "#fff",
+      color: "#00BBDC"
+    },
     [theme.breakpoints.up("xl")]: {
       fontSize: "20px"
     }
   },
   cardImage: {
-    width: "350px",
-    height: "250px",
+    width: "300px",
+    height: "300px",
     display: "flex",
     justifyContent: "center",
     [theme.breakpoints.up("xl")]: {
@@ -221,8 +229,8 @@ export const useStyles = makeStyles(theme => ({
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",
-      width: "250px",
-      height: "250px"
+      width: "200px",
+      height: "200px"
     }
   },
   centerCard: {

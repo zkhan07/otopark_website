@@ -71,6 +71,7 @@ export default function FullWidthGrid() {
                     </p>
                     <br />
                     <a
+                      target="_blank"
                       style={{ textDecoration: "none" }}
                       href="https://www.hindustantimes.com/cities/mobile-app-to-help-you-find-parking-slots-rent-it-out-bmc-in-talks-with-firm/story-uveq1eGSA9XToAdyJnq8WM.html"
                     >
@@ -98,6 +99,7 @@ export default function FullWidthGrid() {
                     <br />
                     <br />
                     <a
+                      target="_blank"
                       style={{ textDecoration: "none" }}
                       href="https://www.thehindu.com/news/cities/mumbai/now-use-app-to-book-parking-slots-in-citys-housing-societies/article30795854.ece "
                     >
@@ -124,6 +126,7 @@ export default function FullWidthGrid() {
                     </p>
                     <br />
                     <a
+                      target="_blank"
                       style={{ textDecoration: "none" }}
                       href="https://www.freepressjournal.in/mumbai/book-bmc-parking-space-on-app-courtesy-iitian"
                     >
@@ -150,6 +153,7 @@ export default function FullWidthGrid() {
                     </p>
                     <br />
                     <a
+                      target="_blank"
                       style={{ textDecoration: "none" }}
                       href="https://accommodationtimes.com/iit-based-startup-facilitates-housing-societies-for-parking-space/"
                     >

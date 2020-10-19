@@ -9,7 +9,10 @@ export default function FullWidthGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="solutions">
+      <br />
+      <br />
+      <br />
       <h2 className={classes.mainTitle}>Solutions</h2>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={4} lg={4}>
@@ -17,8 +20,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="100px"
-                  height="100px"
+                  width="70px"
+                  height="70px"
                   src={require("../../assets/images/smartParkingSolution.svg")}
                 />
                 <p className={classes.title}>Smart Parking</p>
@@ -34,10 +37,7 @@ export default function FullWidthGrid() {
                     </p>
                   </li>
                 </ul>
-                <br />
-                <br />
-                <br />
-                <div className={classes.flexContainer}>
+                {/* <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
                     Learn More{" "}
@@ -46,7 +46,7 @@ export default function FullWidthGrid() {
                       class="fa fa-chevron-right"
                     ></i>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>
@@ -56,8 +56,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="100px"
-                  height="100px"
+                  width="70px"
+                  height="70px"
                   src={require("../../assets/images/findParkingSolution.svg")}
                 />
                 <p className={classes.title}>Find Parking</p>
@@ -73,11 +73,8 @@ export default function FullWidthGrid() {
                     </p>
                   </li>
                 </ul>
-                <br />
-                <br />
-                <br />
-                <br />
-                <div className={classes.flexContainer}>
+
+                {/* <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
                     Learn More{" "}
@@ -86,7 +83,7 @@ export default function FullWidthGrid() {
                       class="fa fa-chevron-right"
                     ></i>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>
@@ -96,8 +93,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="100px"
-                  height="100px"
+                  width="70px"
+                  height="70px"
                   src={require("../../assets/images/earnMoneySolution.svg")}
                 />
                 <p className={classes.title}>Earn Money</p>
@@ -114,10 +111,8 @@ export default function FullWidthGrid() {
                     </p>
                   </li>
                 </ul>
-                <br />
-                <br />
-                <br />
-                <div className={classes.flexContainer}>
+
+                {/* <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
                     Learn More{" "}
@@ -126,7 +121,7 @@ export default function FullWidthGrid() {
                       class="fa fa-chevron-right"
                     ></i>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>
@@ -137,8 +132,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="100px"
-                  height="100px"
+                  width="70px"
+                  height="70px"
                   src={require("../../assets/images/fastTagSolution.svg")}
                 />
                 <p className={classes.title}>FASTag</p>
@@ -153,10 +148,8 @@ export default function FullWidthGrid() {
                     </p>
                   </li>
                 </ul>
-                <br />
-                <br />
-                <br />
-                <div className={classes.flexContainer}>
+
+                {/* <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
                     Learn More{" "}
@@ -165,7 +158,7 @@ export default function FullWidthGrid() {
                       class="fa fa-chevron-right"
                     ></i>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>
@@ -175,8 +168,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="100px"
-                  height="100px"
+                  width="70px"
+                  height="70px"
                   src={require("../../assets/images/findChargingSolution.svg")}
                 />
                 <p className={classes.title}>Find EV Charging</p>
@@ -193,11 +186,8 @@ export default function FullWidthGrid() {
                     </p>
                   </li>
                 </ul>
-                <br />
-                <br />
-                <br />
-                <br />
-                <div className={classes.flexContainer}>
+
+                {/* <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
                     Learn More{" "}
@@ -206,7 +196,7 @@ export default function FullWidthGrid() {
                       class="fa fa-chevron-right"
                     ></i>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>
@@ -216,8 +206,8 @@ export default function FullWidthGrid() {
             <CardContent>
               <div>
                 <img
-                  width="100px"
-                  height="100px"
+                  width="70px"
+                  height="70px"
                   src={require("../../assets/images/findServicesSolution.svg")}
                 />
                 <p className={classes.title}>Parking Services & Consulting</p>
@@ -234,9 +224,7 @@ export default function FullWidthGrid() {
                     </p>
                   </li>
                 </ul>
-                <br />
-                <br />
-                <div className={classes.flexContainer}>
+                {/* <div className={classes.flexContainer}>
                   <p></p>
                   <Button className={classes.moreButton}>
                     Learn More{" "}
@@ -245,7 +233,7 @@ export default function FullWidthGrid() {
                       class="fa fa-chevron-right"
                     ></i>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>

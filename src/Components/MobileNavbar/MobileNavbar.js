@@ -118,13 +118,13 @@ export default function PersistentDrawerLeft() {
                 <ListItemText primary="Contact" />
               </ListItem>
             </Link>
-            <ListItem
+            {/* <ListItem
               button
               className={classes.listBtn}
               onClick={handleDrawerClose}
             >
               <ListItemText className={classes.listBtn} primary="Login" />
-            </ListItem>
+            </ListItem> */}
           </List>
         </Drawer>
         <main

@@ -6,7 +6,7 @@ export const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     marginLeft: "10%",
     marginRight: "10%",
-    marginTop: "100px",
+    marginTop: "50px",
     marginBottom: "30px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "5%",
@@ -26,14 +26,14 @@ export const useStyles = makeStyles(theme => ({
   },
   cardContainer: {
     width: "98%",
-    height: "400px",
+    height: "240px",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("sm")]: {
       width: "100%"
     }
   },
   title: {
-    fontSize: "25px",
+    fontSize: "20px",
     fontWeight: "bold"
   },
   subTitle: {

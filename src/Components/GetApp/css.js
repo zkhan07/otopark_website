@@ -7,7 +7,7 @@ export const useStyles = makeStyles(theme => ({
   },
   getAppContainer: {
     marginTop: "100px",
-    marginBottom: "50px",
+    marginBottom: "0px",
     height: "400px",
     width: "95%",
     backgroundImage: `url(${Image})`,
@@ -98,6 +98,9 @@ export const useStyles = makeStyles(theme => ({
       display: "flex",
       justifyContent: "center"
     }
+  },
+  link: {
+    textDecoration: "none"
   }
   // googlePlayImg: {
   //   display: "flex",

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
+import { HashLink as Link } from "react-router-hash-link";
+// import { Link } from "react-router-dom";
 
 import { useStyles } from "./css";
 
@@ -136,7 +138,7 @@ export default function FullWidthGrid() {
                     : classes.cardHeader
                 }
               >
-                Parking Technologies
+                Parking Tech
               </p>
             </div>
           </div>
@@ -169,22 +171,24 @@ export function EarnMoney() {
         <Grid item xs={12} className={classes.cardContainer}>
           <img
             className={classes.cardImage}
-            src={require("../../assets/images/earnMoneyImg.svg")}
+            src={require("../../assets/images/earnMoneyImg.png")}
           />
-          <p className={classes.subTitle}>Smart Parking Solutions</p>
+          {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
           <h4 className={classes.title}>Earn Money</h4>
           <p className={classes.para}>
             Earn Money by sharing your unused parking space to those <br />
             who need it
           </p>
-          <button className={classes.moreButton}>
-            Learn More{" "}
-            <i
-              style={{ marginLeft: "15px" }}
-              class="fa fa-long-arrow-right"
-              aria-hidden="true"
-            ></i>
-          </button>
+          <Link smooth={true} to="#solutions">
+            <button className={classes.moreButton}>
+              Learn More{" "}
+              <i
+                style={{ marginLeft: "15px" }}
+                class="fa fa-long-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </Link>
         </Grid>
       </Grid>
     </div>
@@ -201,24 +205,24 @@ export function FindParking() {
         <Grid item xs={12} className={classes.cardContainer}>
           <img
             className={classes.cardImage}
-            src={require("../../assets/images/findParkingImg.svg")}
+            src={require("../../assets/images/findParkingImg.png")}
           />
 
-          <p className={classes.subTitle}>Smart Parking Solutions</p>
-
+          {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
           <h4 className={classes.title}>Find Parking</h4>
-
           <p className={classes.para}>
             Find and book parking on demand or in advance
           </p>
-          <button className={classes.moreButton}>
-            Learn More{" "}
-            <i
-              style={{ marginLeft: "15px" }}
-              class="fa fa-long-arrow-right"
-              aria-hidden="true"
-            ></i>
-          </button>
+          <Link smooth={true} to="#solutions">
+            <button className={classes.moreButton}>
+              Learn More{" "}
+              <i
+                style={{ marginLeft: "15px" }}
+                class="fa fa-long-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </Link>
         </Grid>
       </Grid>
     </div>
@@ -235,22 +239,24 @@ export function ParkingServices() {
         <Grid item xs={12} className={classes.cardContainer}>
           <img
             className={classes.cardImage}
-            src={require("../../assets/images/parkingServicesImg.svg")}
+            src={require("../../assets/images/parkingServicesImg.png")}
           />
-          <p className={classes.subTitle}>Smart Parking Solutions</p>
+          {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
           <h4 className={classes.title}>Parking Services</h4>
           <p className={classes.para}>
             Full-range of professional parking services such as valet, <br />
             parking management, consulting and more
           </p>
-          <button className={classes.moreButton}>
-            Learn More{" "}
-            <i
-              style={{ marginLeft: "15px" }}
-              class="fa fa-long-arrow-right"
-              aria-hidden="true"
-            ></i>
-          </button>
+          <Link smooth={true} to="#solutions">
+            <button className={classes.moreButton}>
+              Learn More{" "}
+              <i
+                style={{ marginLeft: "15px" }}
+                class="fa fa-long-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </Link>
         </Grid>
       </Grid>
     </div>
@@ -267,22 +273,24 @@ export function ParkingTechnologies() {
         <Grid item xs={12} className={classes.cardContainer}>
           <img
             className={classes.cardImage}
-            src={require("../../assets/images/parkingTechnologiesImg.svg")}
+            src={require("../../assets/images/parkingTechnologiesImg.png")}
           />
-          <p className={classes.subTitle}>Smart Parking Solutions</p>
-          <h4 className={classes.title}>Parking Technologies</h4>
+          {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
+          <h4 className={classes.title}>Parking Tech</h4>
           <p className={classes.para}>
             Solve your parking needs with our end-to-end smart <br />
             parking solutions
           </p>
-          <button className={classes.moreButton}>
-            Learn More{" "}
-            <i
-              style={{ marginLeft: "15px" }}
-              class="fa fa-long-arrow-right"
-              aria-hidden="true"
-            ></i>
-          </button>
+          <Link smooth={true} to="#solutions">
+            <button className={classes.moreButton}>
+              Learn More{" "}
+              <i
+                style={{ marginLeft: "15px" }}
+                class="fa fa-long-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </Link>
         </Grid>
       </Grid>
     </div>
