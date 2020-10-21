@@ -10,12 +10,13 @@ export const useStyles = makeStyles(theme => ({
     marginBottom: "100px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "5%",
-      marginRight: "5%"
+      marginRight: "5%",
+      marginTop: "50px",
+      marginBottom: "50px"
     }
   },
   header: {
     display: "flex",
-    // padding: "20px",
     color: "#00BBDC",
     [theme.breakpoints.down("sm")]: {
       padding: "0px"
@@ -67,6 +68,8 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   oicssheader: {
+    fontWeight: "500",
+    fontSize: "20px",
     color: "#696871"
   },
   underContent: {
@@ -78,11 +81,13 @@ export const useStyles = makeStyles(theme => ({
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
+    width: "100%",
     [theme.breakpoints.down("sm")]: {
       width: "100%"
     }
   },
   gif1: {
+    width: "100%",
     [theme.breakpoints.down("sm")]: {
       display: "block",
       marginLeft: "-50px",
@@ -91,6 +96,7 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   gif2: {
+    width: "100%",
     [theme.breakpoints.down("sm")]: {
       display: "block",
       marginLeft: "-80px",

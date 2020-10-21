@@ -11,7 +11,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       marginLeft: "5%",
       marginRight: "5%",
-      marginTop: "0px",
+      marginTop: "-70px",
       marginBottom: "0px"
     }
   },
@@ -26,14 +26,15 @@ export const useStyles = makeStyles(theme => ({
   },
   cardContainer: {
     width: "98%",
-    height: "240px",
+    height: "230px",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("sm")]: {
       width: "100%"
     }
   },
   title: {
-    fontSize: "20px",
+    marginLeft: "20px",
+    fontSize: "25px",
     fontWeight: "bold"
   },
   subTitle: {
@@ -48,6 +49,6 @@ export const useStyles = makeStyles(theme => ({
   },
   flexContainer: {
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "start"
   }
 }));

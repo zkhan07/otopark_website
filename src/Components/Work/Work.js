@@ -15,11 +15,18 @@ export default function FullWidthGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} id="howItWork">
         <Grid item xs={12}>
           <h4 className={classes.workTitle}>How it works</h4>
-          <div className={classes.btn}>
-            <Grid item xs={12} lg={6} align="right">
+          <div className={classes.btn} style={{ overflowX: "hidden" }}>
+            <Grid
+              item
+              xs={12}
+              lg={6}
+              align="right"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <Button
                 onClick={() => selectedButton("Driver")}
                 className={
@@ -42,7 +49,13 @@ export default function FullWidthGrid() {
                 For Drivers (Guests)
               </Button>
             </Grid>
-            <Grid item xs={12} lg={6}>
+            <Grid
+              item
+              xs={12}
+              lg={6}
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <Button
                 onClick={() => setValue("Parking")}
                 className={
@@ -100,7 +113,11 @@ export function DesktopDriver() {
     <div className={classes.root}>
       <Grid container spacing={2} className={classes.desktopView}>
         <div className={classes.bgImg}>
-          <Card className={classes.desktopCard1}>
+          <Card
+            className={classes.desktopCard1}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -111,7 +128,7 @@ export function DesktopDriver() {
                 <p className={classes.title1}>Find Parking</p>
                 <ol>
                   <li>
-                    <p className={classes.subTitle1}>Find nearest Parking</p>
+                    <p className={classes.subTitle1}>Find nearest parking</p>
                   </li>
                   <li>
                     <p className={classes.subTitle1}>
@@ -120,14 +137,18 @@ export function DesktopDriver() {
                   </li>
                   <li>
                     <p className={classes.subTitle1}>
-                      option for EV-friendly parking
+                      Option for EV-friendly parking
                     </p>
                   </li>
                 </ol>
               </div>
             </CardContent>
           </Card>
-          <Card className={classes.desktopCard2}>
+          <Card
+            className={classes.desktopCard2}
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -156,7 +177,11 @@ export function DesktopDriver() {
               </div>
             </CardContent>
           </Card>
-          <Card className={classes.desktopCard3}>
+          <Card
+            className={classes.desktopCard3}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -197,7 +222,11 @@ export function DesktopOwner() {
     <div className={classes.root}>
       <Grid container spacing={2} className={classes.desktopView}>
         <div className={classes.bgImg}>
-          <Card className={classes.desktopCard1}>
+          <Card
+            className={classes.desktopCard1}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -224,7 +253,11 @@ export function DesktopOwner() {
               </div>
             </CardContent>
           </Card>
-          <Card className={classes.desktopCard2}>
+          <Card
+            className={classes.desktopCard2}
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -248,7 +281,11 @@ export function DesktopOwner() {
               </div>
             </CardContent>
           </Card>
-          <Card className={classes.desktopCard3}>
+          <Card
+            className={classes.desktopCard3}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -286,7 +323,11 @@ export function MobileDriver() {
     <div className={classes.root}>
       <Grid container spacing={2} className={classes.mobileView}>
         <Grid item xs={12} sm={12} md={4} lg={4}>
-          <Card className={classes.cardContainer}>
+          <Card
+            className={classes.cardContainer}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -315,7 +356,11 @@ export function MobileDriver() {
           </Card>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
-          <Card className={classes.cardContainer}>
+          <Card
+            className={classes.cardContainer}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -346,7 +391,11 @@ export function MobileDriver() {
           </Card>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
-          <Card className={classes.cardContainer}>
+          <Card
+            className={classes.cardContainer}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -387,7 +436,11 @@ export function MobileOwner() {
     <div className={classes.root}>
       <Grid container spacing={2} className={classes.mobileView}>
         <Grid item xs={12} sm={12} md={4} lg={4}>
-          <Card className={classes.cardContainer}>
+          <Card
+            className={classes.cardContainer}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -416,7 +469,11 @@ export function MobileOwner() {
           </Card>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
-          <Card className={classes.cardContainer}>
+          <Card
+            className={classes.cardContainer}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img
@@ -442,7 +499,11 @@ export function MobileOwner() {
           </Card>
         </Grid>
         <Grid item xs={12} sm={12} md={4} lg={4}>
-          <Card className={classes.cardContainer}>
+          <Card
+            className={classes.cardContainer}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <CardContent>
               <div>
                 <img

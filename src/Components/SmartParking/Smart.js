@@ -63,34 +63,28 @@ export const Smart = () => {
       {/*1. OICCS Button */}
       {value === "OICCS" ? (
         <Grid container spacing={2} className={classes.oicssgrid}>
-          <Grid item xs={12} sm={12} md={4} lg={4}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={4}
+            lg={4}
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className={classes.oicssheader}>
               Integrated Command Control System for Commercial Parking
               Management
             </div>
-            <div>
-              <table>
-                <tr>
-                  <div className={classes.underContent}>
-                    <td>
-                      <span className={classes.number}>1</span>
-                    </td>
-                    <td>All-in-one dashboard for parking lot administrators</td>
-                  </div>
-                </tr>
-                <tr>
-                  <div className={classes.underContent}>
-                    <td>
-                      <span className={classes.number}>2</span>
-                    </td>
-                    <td>
-                      Track vehicle entry and exits, revenue breakdown, monthly
-                      pass holders, real time parking status, analytics and more
-                    </td>
-                  </div>
-                </tr>
-              </table>
-            </div>
+            <ul>
+              <li className={classes.underContent}>
+                All-in-one dashboard for parking lot administrators
+              </li>
+              <li className={classes.underContent}>
+                Track vehicle entry and exits, revenue breakdown, monthly pass
+                holders, real time parking status, analytics and more
+              </li>
+            </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
             <img
@@ -106,41 +100,33 @@ export const Smart = () => {
       {/*2. Ranger Button */}
       {value === "Ranger" ? (
         <Grid container spacing={2} className={classes.oicssgrid}>
-          <Grid item xs={12} sm={12} md={4} lg={4}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={4}
+            lg={4}
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className={classes.oicssheader}>
               Simple parking operations app for attendants (Rangers)
             </div>
-            <div>
-              <table>
-                <tr>
-                  <div className={classes.underContent}>
-                    <td>
-                      <span className={classes.number}>1</span>
-                    </td>
-                    <td>
-                      Track vehicles entering and exiting the parking facility,
-                      transact payments, and manage Rangers
-                    </td>
-                  </div>
-                </tr>
-                <tr>
-                  <div className={classes.underContent}>
-                    <td>
-                      <span className={classes.number}>2</span>
-                    </td>
-                    <td>
-                      Simple user interface for quick transactions and parking
-                      operation control
-                    </td>
-                  </div>
-                </tr>
-              </table>
-            </div>
+            <ul>
+              <li className={classes.underContent}>
+                Track vehicles entering and exiting the parking facility,
+                transact payments, and manage Rangers
+              </li>
+              <li className={classes.underContent}>
+                Simple user interface for quick transactions and parking
+                operation control
+              </li>
+            </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
             <img
               className={classes.gif2}
-              src={require("../../assets/gif/Ranger.gif")}
+              src={require("../../assets/gif/CitizenApp.gif")}
             />
           </Grid>
         </Grid>
@@ -151,35 +137,31 @@ export const Smart = () => {
       {/* 3. Citizen App Button */}
       {value === "Citizen App" ? (
         <Grid container spacing={2} className={classes.oicssgrid}>
-          <Grid item xs={12} sm={12} md={4} lg={4}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={4}
+            lg={4}
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className={classes.oicssheader}>
               Free app for citizens to find parking and earn money
             </div>
-            <div>
-              <table>
-                <tr>
-                  <div className={classes.underContent}>
-                    <td>
-                      <span className={classes.number}>1</span>
-                    </td>
-                    <td>Find parking and pay for the hours you need</td>
-                  </div>
-                </tr>
-                <tr>
-                  <div className={classes.underContent}>
-                    <td>
-                      <span className={classes.number}>2</span>
-                    </td>
-                    <td>Earn money by sharing your home parking space</td>
-                  </div>
-                </tr>
-              </table>
-            </div>
+            <ul>
+              <li className={classes.underContent}>
+                Find parking and pay for the hours you need
+              </li>
+              <li className={classes.underContent}>
+                Earn money by sharing your home parking space
+              </li>
+            </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
             <img
               className={classes.gif1}
-              src={require("../../assets/gif/CitizenApp.gif")}
+              src={require("../../assets/gif/Ranger.gif")}
             />
           </Grid>
         </Grid>
@@ -190,37 +172,29 @@ export const Smart = () => {
       {/* 4. Parking Hardware Button */}
       {value === "Parking Hardware" ? (
         <Grid container spacing={2} className={classes.oicssgrid}>
-          <Grid item xs={12} sm={12} md={4} lg={4}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={4}
+            lg={4}
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <div className={classes.oicssheader}>
               Suite of parking technologies for parking lots, malls, airports
               and more
             </div>
-            <div>
-              <table>
-                <tr>
-                  <div className={classes.underContent}>
-                    <td>
-                      <div className={classes.number}>1</div>
-                    </td>
-                    <td>
-                      Install boom barrier gates, Automatic Number Plate
-                      Recognition cameras (ANPR), FASTag sensors and more
-                    </td>
-                  </div>
-                </tr>
-                <tr>
-                  <div className={classes.underContent}>
-                    <td>
-                      <span className={classes.number}>2</span>
-                    </td>
-                    <td>
-                      Don’t see what you need? Contact us to learn about our
-                      full product offering
-                    </td>
-                  </div>
-                </tr>
-              </table>
-            </div>
+            <ul>
+              <li className={classes.underContent}>
+                Install boom barrier gates, Automatic Number Plate Recognition
+                cameras (ANPR), FASTag sensors and more
+              </li>
+              <li className={classes.underContent}>
+                Don’t see what you need? Contact us to learn about our full
+                product offering
+              </li>
+            </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
             <img

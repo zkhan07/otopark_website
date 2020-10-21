@@ -16,13 +16,6 @@ export const useStyles = makeStyles(theme => ({
     textAlign: "center",
     color: theme.palette.text.secondary
   },
-  cardContainer: {
-    marginLeft: "0px",
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "0px",
-      marginRight: "0px"
-    }
-  },
   cardHeader: {
     color: "black",
     textAlign: "center",

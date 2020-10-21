@@ -50,7 +50,7 @@ export default function FullWidthGrid() {
   };
   return (
     <div className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} id="otoMedia">
         <Grid item xs={12} sm={12} ms={12} lg={12}>
           <div className={classes.gridContainer}>
             <p className={classes.title}>otoMedia</p>
@@ -69,7 +69,6 @@ export default function FullWidthGrid() {
                       platform, and enables motorists to reserve parking spaces
                       in advance.
                     </p>
-                    <br />
                     <a
                       target="_blank"
                       style={{ textDecoration: "none" }}
@@ -96,8 +95,6 @@ export default function FullWidthGrid() {
                     </p>
                     <br />
                     <br />
-                    <br />
-                    <br />
                     <a
                       target="_blank"
                       style={{ textDecoration: "none" }}
@@ -119,12 +116,11 @@ export default function FullWidthGrid() {
                       src={require("../../assets/images/freepressMedia.svg")}
                     />
                     <p className={classes.para}>
-                      The Brihanmumbai Municipal Corporation (BMC) has
-                      implemented the concept of a Mumbai based IITian to
-                      formulate the idea of setting up parking spaces in
-                      residential spaces of the city.
+                      The Brihanmumbai Municipal Corporation has implemented the
+                      concept of a Mumbai based IITian to formulate the idea of
+                      setting up parking spaces in residential spaces of the
+                      city.
                     </p>
-                    <br />
                     <a
                       target="_blank"
                       style={{ textDecoration: "none" }}
@@ -151,7 +147,6 @@ export default function FullWidthGrid() {
                       guest find a suitable parking slots with hosts ready to
                       rent the parking space.
                     </p>
-                    <br />
                     <a
                       target="_blank"
                       style={{ textDecoration: "none" }}

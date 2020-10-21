@@ -141,13 +141,13 @@ export const useStyles = makeStyles(theme => ({
   },
   title1: {
     color: "#fff",
-    fontSize: "15px",
+    fontSize: "20px",
     fontWeight: "bold"
   },
   subTitle1: {
     color: "#fff",
     marginTop: "-10px",
-    fontSize: "12px"
+    fontSize: "15px"
   },
   desktopCard1: {
     position: "relative",
@@ -155,8 +155,8 @@ export const useStyles = makeStyles(theme => ({
     left: "75%",
     backgroundColor: "#00BBDC",
     color: "#fff",
-    width: "250px",
-    height: "250px",
+    width: "270px",
+    height: "270px",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("sm")]: {
       width: "100%"
@@ -168,8 +168,8 @@ export const useStyles = makeStyles(theme => ({
     left: "5%",
     backgroundColor: "#00BBDC",
     color: "#fff",
-    width: "250px",
-    height: "250px",
+    width: "270px",
+    height: "270px",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("sm")]: {
       width: "100%"
@@ -181,8 +181,8 @@ export const useStyles = makeStyles(theme => ({
     left: "55%",
     backgroundColor: "#00BBDC",
     color: "#fff",
-    width: "250px",
-    height: "250px",
+    width: "270px",
+    height: "270px",
     boxShadow: "2px 2px 2px 2px lightgrey",
     [theme.breakpoints.down("sm")]: {
       width: "100%"

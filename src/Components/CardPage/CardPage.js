@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import { HashLink as Link } from "react-router-hash-link";
-// import { Link } from "react-router-dom";
-
 import { useStyles } from "./css";
 
 export default function FullWidthGrid() {
@@ -29,7 +27,7 @@ export default function FullWidthGrid() {
   };
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="cards">
       <Grid container spacing={2} className={classes.mainGrid}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <div style={{ display: "flex" }}>
@@ -38,52 +36,56 @@ export default function FullWidthGrid() {
               onClick={() => selectCard("Earn Money")}
               className={classes.card1}
             >
-              {cardName === "Earn Money" ? (
-                <img
-                  className={classes.cardIcon}
-                  src={require("../../assets/icons/wallet.svg")}
-                />
-              ) : (
-                <img
-                  className={classes.cardIcon}
-                  src={require("../../assets/icons/earnMoneyIcon.svg")}
-                />
-              )}
-              <p
-                className={
-                  cardName === "Earn Money"
-                    ? classes.otherCardHeader
-                    : classes.cardHeader
-                }
-              >
-                Earn Money
-              </p>
+              <div data-aos="fade-up" data-aos-duration="1000">
+                {cardName === "Earn Money" ? (
+                  <img
+                    className={classes.cardIcon}
+                    src={require("../../assets/icons/wallet.svg")}
+                  />
+                ) : (
+                  <img
+                    className={classes.cardIcon}
+                    src={require("../../assets/icons/earnMoneyIcon.svg")}
+                  />
+                )}
+                <p
+                  className={
+                    cardName === "Earn Money"
+                      ? classes.otherCardHeader
+                      : classes.cardHeader
+                  }
+                >
+                  Earn Money
+                </p>
+              </div>
             </div>
             <div
               style={isActive("Find Parking")}
               onClick={() => selectCard("Find Parking")}
               className={classes.card2}
             >
-              {cardName === "Find Parking" ? (
-                <img
-                  className={classes.cardIcon}
-                  src={require("../../assets/icons/icon-04.svg")}
-                />
-              ) : (
-                <img
-                  className={classes.cardIcon}
-                  src={require("../../assets/icons/findParkingIcon.svg")}
-                />
-              )}
-              <p
-                className={
-                  cardName === "Find Parking"
-                    ? classes.otherCardHeader
-                    : classes.cardHeader
-                }
-              >
-                Find Parking
-              </p>
+              <div data-aos="fade-up" data-aos-duration="1000">
+                {cardName === "Find Parking" ? (
+                  <img
+                    className={classes.cardIcon}
+                    src={require("../../assets/icons/icon-04.svg")}
+                  />
+                ) : (
+                  <img
+                    className={classes.cardIcon}
+                    src={require("../../assets/icons/findParkingIcon.svg")}
+                  />
+                )}
+                <p
+                  className={
+                    cardName === "Find Parking"
+                      ? classes.otherCardHeader
+                      : classes.cardHeader
+                  }
+                >
+                  Find Parking
+                </p>
+              </div>
             </div>
           </div>
           <div style={{ marginTop: "30px" }}></div>
@@ -94,52 +96,56 @@ export default function FullWidthGrid() {
               onClick={() => selectCard("Parking Services")}
               className={classes.card3}
             >
-              {cardName === "Parking Services" ? (
-                <img
-                  className={classes.cardIcon}
-                  src={require("../../assets/icons/icon-06.svg")}
-                />
-              ) : (
-                <img
-                  className={classes.cardIcon}
-                  src={require("../../assets/icons/parkingServicesIcon.svg")}
-                />
-              )}
-              <p
-                className={
-                  cardName === "Parking Services"
-                    ? classes.otherCardHeader
-                    : classes.cardHeader
-                }
-              >
-                Parking Services
-              </p>
+              <div data-aos="fade-up" data-aos-duration="1000">
+                {cardName === "Parking Services" ? (
+                  <img
+                    className={classes.cardIcon}
+                    src={require("../../assets/icons/icon-06.svg")}
+                  />
+                ) : (
+                  <img
+                    className={classes.cardIcon}
+                    src={require("../../assets/icons/parkingServicesIcon.svg")}
+                  />
+                )}
+                <p
+                  className={
+                    cardName === "Parking Services"
+                      ? classes.otherCardHeader
+                      : classes.cardHeader
+                  }
+                >
+                  Parking Services
+                </p>
+              </div>
             </div>
             <div
               style={isActive("Parking Technologies")}
               onClick={() => selectCard("Parking Technologies")}
               className={classes.card4}
             >
-              {cardName === "Parking Technologies" ? (
-                <img
-                  className={classes.cardIcon}
-                  src={require("../../assets/icons/icon-08.svg")}
-                />
-              ) : (
-                <img
-                  className={classes.cardIcon}
-                  src={require("../../assets/icons/parkingTechnologiesIcon.svg")}
-                />
-              )}
-              <p
-                className={
-                  cardName === "Parking Technologies"
-                    ? classes.otherCardHeader
-                    : classes.cardHeader
-                }
-              >
-                Parking Tech
-              </p>
+              <div data-aos="fade-up" data-aos-duration="1000">
+                {cardName === "Parking Technologies" ? (
+                  <img
+                    className={classes.cardIcon}
+                    src={require("../../assets/icons/icon-08.svg")}
+                  />
+                ) : (
+                  <img
+                    className={classes.cardIcon}
+                    src={require("../../assets/icons/parkingTechnologiesIcon.svg")}
+                  />
+                )}
+                <p
+                  className={
+                    cardName === "Parking Technologies"
+                      ? classes.otherCardHeader
+                      : classes.cardHeader
+                  }
+                >
+                  Parking Tech
+                </p>
+              </div>
             </div>
           </div>
         </Grid>
@@ -166,31 +172,37 @@ export function EarnMoney() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} className={classes.cardContainer}>
-          <img
-            className={classes.cardImage}
-            src={require("../../assets/images/earnMoneyImg.png")}
-          />
-          {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
-          <h4 className={classes.title}>Earn Money</h4>
-          <p className={classes.para}>
-            Earn Money by sharing your unused parking space to those <br />
-            who need it
-          </p>
-          <Link smooth={true} to="#solutions">
-            <button className={classes.moreButton}>
-              Learn More{" "}
-              <i
-                style={{ marginLeft: "15px" }}
-                class="fa fa-long-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </button>
-          </Link>
+    <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
+      <div
+        className={classes.root}
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
+        <Grid container spacing={2}>
+          <Grid item xs={12} className={classes.cardContainer}>
+            <img
+              className={classes.cardImage}
+              src={require("../../assets/images/earnMoneyImg.png")}
+            />
+            {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
+            <h4 className={classes.title}>Earn Money</h4>
+            <p className={classes.para}>
+              Earn money by sharing your unused parking space to those who need
+              it
+            </p>
+            <Link smooth={true} to="#solutions">
+              <button className={classes.moreButton}>
+                Learn More{" "}
+                <i
+                  style={{ marginLeft: "15px" }}
+                  class="fa fa-long-arrow-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </Link>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
@@ -200,31 +212,37 @@ export function FindParking() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} className={classes.cardContainer}>
-          <img
-            className={classes.cardImage}
-            src={require("../../assets/images/findParkingImg.png")}
-          />
+    <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
+      <div
+        className={classes.root}
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
+        <Grid container spacing={2}>
+          <Grid item xs={12} className={classes.cardContainer}>
+            <img
+              className={classes.cardImage}
+              src={require("../../assets/images/findParkingImg.png")}
+            />
 
-          {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
-          <h4 className={classes.title}>Find Parking</h4>
-          <p className={classes.para}>
-            Find and book parking on demand or in advance
-          </p>
-          <Link smooth={true} to="#solutions">
-            <button className={classes.moreButton}>
-              Learn More{" "}
-              <i
-                style={{ marginLeft: "15px" }}
-                class="fa fa-long-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </button>
-          </Link>
+            {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
+            <h4 className={classes.title}>Find Parking</h4>
+            <p className={classes.para}>
+              Find and book parking on demand or in advance
+            </p>
+            <Link smooth={true} to="#solutions">
+              <button className={classes.moreButton}>
+                Learn More{" "}
+                <i
+                  style={{ marginLeft: "15px" }}
+                  class="fa fa-long-arrow-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </Link>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
@@ -234,31 +252,37 @@ export function ParkingServices() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} className={classes.cardContainer}>
-          <img
-            className={classes.cardImage}
-            src={require("../../assets/images/parkingServicesImg.png")}
-          />
-          {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
-          <h4 className={classes.title}>Parking Services</h4>
-          <p className={classes.para}>
-            Full-range of professional parking services such as valet, <br />
-            parking management, consulting and more
-          </p>
-          <Link smooth={true} to="#solutions">
-            <button className={classes.moreButton}>
-              Learn More{" "}
-              <i
-                style={{ marginLeft: "15px" }}
-                class="fa fa-long-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </button>
-          </Link>
+    <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
+      <div
+        className={classes.root}
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
+        <Grid container spacing={2}>
+          <Grid item xs={12} className={classes.cardContainer}>
+            <img
+              className={classes.cardImage}
+              src={require("../../assets/images/parkingServicesImg.png")}
+            />
+            {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
+            <h4 className={classes.title}>Parking Services</h4>
+            <p className={classes.para}>
+              Full-range of professional parking services such as valet, parking
+              management, consulting and more
+            </p>
+            <Link smooth={true} to="#solutions">
+              <button className={classes.moreButton}>
+                Learn More{" "}
+                <i
+                  style={{ marginLeft: "15px" }}
+                  class="fa fa-long-arrow-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </Link>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
@@ -268,31 +292,37 @@ export function ParkingTechnologies() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} className={classes.cardContainer}>
-          <img
-            className={classes.cardImage}
-            src={require("../../assets/images/parkingTechnologiesImg.png")}
-          />
-          {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
-          <h4 className={classes.title}>Parking Tech</h4>
-          <p className={classes.para}>
-            Solve your parking needs with our end-to-end smart <br />
-            parking solutions
-          </p>
-          <Link smooth={true} to="#solutions">
-            <button className={classes.moreButton}>
-              Learn More{" "}
-              <i
-                style={{ marginLeft: "15px" }}
-                class="fa fa-long-arrow-right"
-                aria-hidden="true"
-              ></i>
-            </button>
-          </Link>
+    <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
+      <div
+        className={classes.root}
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
+        <Grid container spacing={2}>
+          <Grid item xs={12} className={classes.cardContainer}>
+            <img
+              className={classes.cardImage}
+              src={require("../../assets/images/parkingTechnologiesImg.png")}
+            />
+            {/* <p className={classes.subTitle}>Smart Parking Solutions</p> */}
+            <h4 className={classes.title}>Parking Tech</h4>
+            <p className={classes.para}>
+              Solve your parking needs with our end-to-end smart parking
+              solutions
+            </p>
+            <Link smooth={true} to="#solutions">
+              <button className={classes.moreButton}>
+                Learn More{" "}
+                <i
+                  style={{ marginLeft: "15px" }}
+                  class="fa fa-long-arrow-right"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </Link>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }

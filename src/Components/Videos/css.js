@@ -21,7 +21,10 @@ export const useStyles = makeStyles(theme => ({
     color: theme.palette.text.secondary
   },
   videoContainer: {
-    marginTop: "100px"
+    marginTop: "100px",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "50px"
+    }
   },
   videoPlayer: {
     height: "100px"

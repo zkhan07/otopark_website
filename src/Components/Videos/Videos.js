@@ -9,7 +9,11 @@ export default function FullWidthGrid() {
 
   return (
     <div className={classes.root}>
-      <div className={classes.videoContainer}>
+      <div
+        className={classes.videoContainer}
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
         <iframe
           width="727"
           height="409"
@@ -23,7 +27,15 @@ export default function FullWidthGrid() {
       <br />
       <br />
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={12} md={6} lg={3}>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          lg={3}
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
           <iframe
             width="300"
             height="200"

@@ -2,10 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { Link } from "react-router-dom";
-
 import { useStyles } from "./css";
 import { Divider } from "@material-ui/core";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function FullWidthGrid() {
   const classes = useStyles();
@@ -111,28 +110,52 @@ export default function FullWidthGrid() {
             <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>Home</h4>
               <div className={classes.footerList}>
-                <p>Introduction</p>
-                <p>How it works</p>
-                <p>Download app</p>
-                <p>Solutions</p>
-                <p>Media</p>
+                <Link smooth={true} to="#homePage" className={classes.link}>
+                  <p className={classes.listItem}>Introduction</p>
+                </Link>
+                <Link smooth={true} to="#howItWork" className={classes.link}>
+                  <p className={classes.listItem}>How it works</p>
+                </Link>
+                <Link smooth={true} to="#getApp" className={classes.link}>
+                  <p className={classes.listItem}>Download app</p>
+                </Link>
+                <Link smooth={true} to="#solutions" className={classes.link}>
+                  <p className={classes.listItem}>Solutions</p>
+                </Link>
+                <Link smooth={true} to="#otoMedia" className={classes.link}>
+                  <p className={classes.listItem}>Media</p>
+                </Link>
               </div>
             </Grid>
             <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>Solutions</h4>
               <div className={classes.footerList}>
-                <p>FASTag Parking</p>
-                <p>Share Parking and Earn</p>
-                <p>Find Parking</p>
-                <p>Parking Technologies</p>
-                <p>Parking Services</p>
+                <Link smooth={true} to="#solutions" className={classes.link}>
+                  <p className={classes.listItem}>FASTag Parking</p>
+                </Link>
+                <Link smooth={true} to="#solutions" className={classes.link}>
+                  <p className={classes.listItem}>Share Parking and Earn</p>
+                </Link>
+                <Link smooth={true} to="#solutions" className={classes.link}>
+                  <p className={classes.listItem}>Find Parking</p>
+                </Link>
+                <Link smooth={true} to="#solutions" className={classes.link}>
+                  <p className={classes.listItem}>Parking Technologies</p>
+                </Link>
+                <Link smooth={true} to="#solutions" className={classes.link}>
+                  <p className={classes.listItem}>Parking Services</p>
+                </Link>
               </div>
             </Grid>
             <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>About</h4>
               <div className={classes.footerList}>
-                <p>Vision</p>
-                <p>Team</p>
+                <Link to="/otopark/website/aboutUs" className={classes.link}>
+                  <p className={classes.listItem}>Vision</p>
+                </Link>
+                <Link to="/otopark/website/aboutUs" className={classes.link}>
+                  <p className={classes.listItem}>Team</p>
+                </Link>
               </div>
             </Grid>
 
@@ -142,7 +165,30 @@ export default function FullWidthGrid() {
               <Grid container>
                 <Grid item xs={12} lg={6} md={6}>
                   <div className={classes.bottomTextLeft}>
-                    Term & Conditions | Privacy Policy | Legal
+                    <a
+                      target="_blank"
+                      style={{ color: "white", textDecoration: "none" }}
+                      href="#"
+                    >
+                      Host Policy{" "}
+                    </a>{" "}
+                    |{" "}
+                    <a
+                      target="_blank"
+                      style={{ color: "white", textDecoration: "none" }}
+                      href="#"
+                    >
+                      {" "}
+                      Privacy Policy{" "}
+                    </a>{" "}
+                    |{" "}
+                    <a
+                      target="_blank"
+                      style={{ color: "white", textDecoration: "none" }}
+                      href="#"
+                    >
+                      Overstay Policy{" "}
+                    </a>
                   </div>
                 </Grid>
                 <Grid item xs={12} lg={6} md={6}>

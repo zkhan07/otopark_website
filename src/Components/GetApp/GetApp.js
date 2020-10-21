@@ -9,27 +9,52 @@ export default function FullWidthGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} id="getApp">
         <Grid item xs={12}>
-          <div className={classes.getAppContainer}>
+          <div
+            className={classes.getAppContainer}
+            style={{ overflowX: "hidden" }}
+          >
             <br />
-            <h2 className={classes.title}>Get the app now</h2>
-            <p className={classes.subTitle1}>Need Enterprise Solutions?</p>
-            <p className={classes.subTitle2}>
+            <h2
+              className={classes.title}
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              Get the app now
+            </h2>
+            <p
+              className={classes.subTitle1}
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              Need Enterprise Solutions?
+            </p>
+            <p
+              className={classes.subTitle2}
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               Contact us for business enquires
             </p>
-            <a
-              target="_blank"
-              href="https://play.google.com/store/apps/details?id=com.otopark.Otopark.oto.park.my.car.vehicle.find.parking.lot.space.host.user&hl=en_US"
-            >
-              <img
-                className={classes.googlePlayImg}
-                src={require("../../assets/images/googlePlay.png")}
-              />
-            </a>
             <div className={classes.flexContainer}>
-              <p></p>
-              <Link className={classes.link} to="/otopark/website/contactUs">
+              <a
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.otopark.Otopark.oto.park.my.car.vehicle.find.parking.lot.space.host.user&hl=en_US"
+              >
+                <img
+                  className={classes.googlePlayImg}
+                  src={require("../../assets/images/googlePlay.png")}
+                />
+              </a>
+              <Link
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                className={classes.link}
+                to="/otopark/website/contactUs"
+              >
                 <Button className={classes.button}>Contact</Button>
               </Link>
             </div>

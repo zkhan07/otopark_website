@@ -7,7 +7,6 @@ export const useStyles = makeStyles(theme => ({
   },
   getAppContainer: {
     marginTop: "100px",
-    marginBottom: "0px",
     height: "400px",
     width: "95%",
     backgroundImage: `url(${Image})`,
@@ -16,9 +15,8 @@ export const useStyles = makeStyles(theme => ({
     backgroundSize: "cover",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      height: "430px",
-      marginTop: "0px",
-      marginBottom: "0px"
+      height: "380px",
+      marginTop: "-70px"
     }
   },
   title: {
@@ -56,9 +54,9 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   googlePlayImg: {
-    marginLeft: "19.5%",
+    marginLeft: "243px",
     width: "140px",
-    height: "50px",
+    height: "60px",
     backgroundColor: "#00BBDC",
     [theme.breakpoints.down("sm")]: {
       display: "block",
@@ -71,7 +69,7 @@ export const useStyles = makeStyles(theme => ({
     textTransform: "none",
     width: "140px",
     height: "30px",
-    marginTop: "-40px",
+    marginTop: "10px",
     marginRight: "100px",
     backgroundColor: "#fff",
     color: "#00BBDC",
@@ -86,7 +84,6 @@ export const useStyles = makeStyles(theme => ({
       textAlign: "center",
       width: "120px",
       height: "35px",
-      marginTop: "-10px",
       marginRight: "0px",
       marginBottom: "40px"
     }

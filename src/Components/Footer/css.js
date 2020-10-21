@@ -15,7 +15,10 @@ export const useStyles = makeStyles(theme => ({
     backgroundColor: "#283646",
     color: "#fff",
     marginTop: "50px",
-    padding: "10px"
+    padding: "10px",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "30px"
+    }
   },
   logo: {
     width: "150px",
@@ -25,7 +28,7 @@ export const useStyles = makeStyles(theme => ({
     marginRight: "auto"
   },
   footerList: {
-    fontSize: "13px"
+    fontSize: "15px"
   },
   footerDivider: {
     borderBottom: "5px solid white"
@@ -62,6 +65,16 @@ export const useStyles = makeStyles(theme => ({
       float: "left",
       padding: "5px",
       marginLeft: "-10px"
+    }
+  },
+  link: {
+    textDecoration: "none",
+    color: "#fff"
+  },
+  listItem: {
+    fontSize: "15px",
+    "&:hover": {
+      color: "grey"
     }
   }
 }));

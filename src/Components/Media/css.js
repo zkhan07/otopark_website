@@ -10,17 +10,20 @@ export const useStyles = makeStyles(theme => ({
   gridContainer: {
     marginLeft: "10%",
     marginRight: "10%",
-    marginTop: "50px",
+    marginTop: "80px",
     marginBottom: "50px"
   },
   cardContainer: {
     marginLeft: "20px",
     marginRight: "20px",
     width: "90%",
-    height: "240px",
+    height: "260px",
+    "&:hover": {
+      color: "grey"
+    },
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      height: "260px",
+      height: "280px",
       marginLeft: "0px",
       marginRight: "0px"
     }
@@ -32,6 +35,7 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   title: {
+    fontWeight: "bold",
     fontSize: "35px",
     marginLeft: "30px"
   },
@@ -41,10 +45,12 @@ export const useStyles = makeStyles(theme => ({
     marginLeft: "30px"
   },
   slideImage: {
+    padding: "10px",
     width: "60%",
     height: "50px"
   },
   para: {
+    padding: "10px",
     fontSize: "15px"
   },
   moreButton: {

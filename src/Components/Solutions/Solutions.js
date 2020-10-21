@@ -9,7 +9,12 @@ export default function FullWidthGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} id="solutions">
+    <div
+      className={classes.root}
+      id="solutions"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <br />
       <br />
       <br />
@@ -19,12 +24,16 @@ export default function FullWidthGrid() {
           <Card className={classes.cardContainer}>
             <CardContent>
               <div>
-                <img
-                  width="70px"
-                  height="70px"
-                  src={require("../../assets/images/smartParkingSolution.svg")}
-                />
-                <p className={classes.title}>Smart Parking</p>
+                <div className={classes.flexContainer}>
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    width="70px"
+                    height="70px"
+                    src={require("../../assets/images/smartParkingSolution.svg")}
+                  />
+                  <p className={classes.title}>Smart Parking</p>
+                </div>
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
@@ -55,12 +64,16 @@ export default function FullWidthGrid() {
           <Card className={classes.cardContainer}>
             <CardContent>
               <div>
-                <img
-                  width="70px"
-                  height="70px"
-                  src={require("../../assets/images/findParkingSolution.svg")}
-                />
-                <p className={classes.title}>Find Parking</p>
+                <div className={classes.flexContainer}>
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    width="70px"
+                    height="70px"
+                    src={require("../../assets/images/findParkingSolution.svg")}
+                  />
+                  <p className={classes.title}>Find Parking</p>
+                </div>
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
@@ -92,12 +105,16 @@ export default function FullWidthGrid() {
           <Card className={classes.cardContainer}>
             <CardContent>
               <div>
-                <img
-                  width="70px"
-                  height="70px"
-                  src={require("../../assets/images/earnMoneySolution.svg")}
-                />
-                <p className={classes.title}>Earn Money</p>
+                <div className={classes.flexContainer}>
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    width="70px"
+                    height="70px"
+                    src={require("../../assets/images/earnMoneySolution.svg")}
+                  />
+                  <p className={classes.title}>Earn Money</p>
+                </div>
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
@@ -131,12 +148,16 @@ export default function FullWidthGrid() {
           <Card className={classes.cardContainer}>
             <CardContent>
               <div>
-                <img
-                  width="70px"
-                  height="70px"
-                  src={require("../../assets/images/fastTagSolution.svg")}
-                />
-                <p className={classes.title}>FASTag</p>
+                <div className={classes.flexContainer}>
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    width="70px"
+                    height="70px"
+                    src={require("../../assets/images/fastTagSolution.svg")}
+                  />
+                  <p className={classes.title}>FASTag</p>
+                </div>
                 <ul>
                   <li>
                     <p className={classes.subTitle}>For FASTag owners</p>
@@ -167,12 +188,16 @@ export default function FullWidthGrid() {
           <Card className={classes.cardContainer}>
             <CardContent>
               <div>
-                <img
-                  width="70px"
-                  height="70px"
-                  src={require("../../assets/images/findChargingSolution.svg")}
-                />
-                <p className={classes.title}>Find EV Charging</p>
+                <div className={classes.flexContainer}>
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    width="70px"
+                    height="70px"
+                    src={require("../../assets/images/findChargingSolution.svg")}
+                  />
+                  <p className={classes.title}>Find EV Charging</p>
+                </div>
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
@@ -205,12 +230,16 @@ export default function FullWidthGrid() {
           <Card className={classes.cardContainer}>
             <CardContent>
               <div>
-                <img
-                  width="70px"
-                  height="70px"
-                  src={require("../../assets/images/findServicesSolution.svg")}
-                />
-                <p className={classes.title}>Parking Services & Consulting</p>
+                <div className={classes.flexContainer}>
+                  <img
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    width="70px"
+                    height="70px"
+                    src={require("../../assets/images/findServicesSolution.svg")}
+                  />
+                  <p className={classes.title}>Parking Services & Consulting</p>
+                </div>
                 <ul>
                   <li>
                     <p className={classes.subTitle}>
