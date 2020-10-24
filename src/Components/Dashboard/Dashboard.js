@@ -8,9 +8,10 @@ import Work from "../Work/Work";
 import GetApp from "../GetApp/GetApp";
 import Solutions from "../Solutions/Solutions";
 import Media from "../Media/Media";
+import Offering from "../Offering/Offering";
 import Videos from "../Videos/Videos";
 import Footer from "../Footer/Footer";
-// import MyContact from "../MyContact/MyContact";
+import MyContact from "../MyContact/MyContact";
 import { useStyles } from "./css";
 import { Smart } from "../SmartParking/Smart";
 
@@ -30,8 +31,9 @@ export default function FullWidthGrid() {
           <Solutions />
           <Smart />
           <Media />
+          <Offering />
           <Videos />
-          {/* <MyContact /> */}
+          <MyContact />
           <Footer />
         </Grid>
       </Grid>

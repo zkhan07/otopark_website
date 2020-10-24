@@ -91,7 +91,7 @@ export function FaqTab() {
   };
 
   return (
-    <div className={classes.tabRoot}>
+    <div className={classes.tabRoot} id="faqTop">
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <h1

@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -14,7 +15,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { useStyles } from "./css";
 
 export default function PersistentDrawerLeft() {
@@ -51,7 +52,7 @@ export default function PersistentDrawerLeft() {
               <MenuIcon />
             </IconButton>
             <Grid container justify="flex-end">
-              <Link to="/">
+              <Link smooth={true} to="/#homePage">
                 <img
                   justify="flex-end"
                   className={classes.mobileLogo}
@@ -83,7 +84,11 @@ export default function PersistentDrawerLeft() {
           </div>
           <Divider />
           <List>
-            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+            <Link
+              smooth={true}
+              to="/#homePage"
+              style={{ textDecoration: "none", color: "white" }}
+            >
               <ListItem button>
                 <ListItemText primary="Home" />
               </ListItem>
@@ -95,7 +100,7 @@ export default function PersistentDrawerLeft() {
               <ListItemText primary="Use Cases" />
             </ListItem> */}
             <Link
-              to="/otopark/website/faq"
+              to="/otopark/website/faq/#faqTop"
               style={{ textDecoration: "none", color: "white" }}
             >
               <ListItem button>
@@ -103,7 +108,7 @@ export default function PersistentDrawerLeft() {
               </ListItem>
             </Link>
             <Link
-              to="/otopark/website/aboutUs"
+              to="/otopark/website/aboutUs/#aboutUsTop"
               style={{ textDecoration: "none", color: "white" }}
             >
               <ListItem button>
@@ -111,13 +116,22 @@ export default function PersistentDrawerLeft() {
               </ListItem>
             </Link>
             <Link
-              to="/otopark/website/contactUs"
+              to="/otopark/website/contactUs/#contactUsTop"
               style={{ textDecoration: "none", color: "white" }}
             >
               <ListItem button>
                 <ListItemText primary="Contact" />
               </ListItem>
             </Link>
+            <a
+              className={classes.link}
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.otopark.Otopark.oto.park.my.car.vehicle.find.parking.lot.space.host.user&hl=en_US"
+            >
+              <Button className={classes.downloadButton} color="inherit">
+                Download App
+              </Button>
+            </a>
             {/* <ListItem
               button
               className={classes.listBtn}

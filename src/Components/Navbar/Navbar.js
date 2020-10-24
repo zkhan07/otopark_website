@@ -1,15 +1,30 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+import { withRouter } from "react-router-dom";
 import { useStyles } from "./css";
 
-export default function ButtonAppBar() {
+const isActive = (history, path) => {
+  if (history.location.pathname === path)
+    return {
+      width: "50%",
+      color: "#00BBDC",
+      padding: "10px",
+      backgroundColor: "#fff",
+      borderRadius: "20px"
+    };
+  else
+    return {
+      color: "#fff",
+      padding: "10px",
+      backgroundColor: "#00BBDC",
+      borderRadius: "20px"
+    };
+};
+
+const Navbar = ({ history }) => {
   const classes = useStyles();
 
   return (
@@ -21,7 +36,7 @@ export default function ButtonAppBar() {
         >
           <Toolbar className={classes.navbarContainer}>
             <div>
-              <Link to="/">
+              <Link smooth={true} to="/#homePage">
                 <img
                   className={classes.navbarImage}
                   src={require("../../assets/images/logo.png")}
@@ -29,7 +44,12 @@ export default function ButtonAppBar() {
               </Link>
             </div>
             <div>
-              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              <Link
+                smooth={true}
+                style={isActive(history, "/")}
+                to="/#homePage"
+                className={classes.link}
+              >
                 <Button className={classes.navbarButton} color="inherit">
                   Home
                 </Button>
@@ -43,36 +63,50 @@ export default function ButtonAppBar() {
                 </Button>
               </Link> */}
               <Link
-                to="/otopark/website/faq"
-                style={{ textDecoration: "none", color: "white" }}
+                smooth={true}
+                style={isActive(history, "/otopark/website/faq/")}
+                to="/otopark/website/faq/#faqTop"
+                className={classes.link}
               >
                 <Button className={classes.navbarButton} color="inherit">
                   FAQ
                 </Button>
               </Link>
               <Link
-                to="/otopark/website/aboutUs"
-                style={{ textDecoration: "none", color: "white" }}
+                smooth={true}
+                style={isActive(history, "/otopark/website/aboutUs/")}
+                to="/otopark/website/aboutUs/#aboutUsTop"
+                className={classes.link}
               >
                 <Button className={classes.navbarButton} color="inherit">
                   About
                 </Button>
               </Link>
               <Link
-                to="/otopark/website/contactUs"
-                style={{ textDecoration: "none", color: "white" }}
+                smooth={true}
+                style={isActive(history, "/otopark/website/contactUs/")}
+                to="/otopark/website/contactUs/#contactUsTop"
+                className={classes.link}
               >
                 <Button className={classes.navbarButton} color="inherit">
                   Contact
                 </Button>
               </Link>
-              {/* <Button className={classes.navbarButton} color="inherit">
-                Login
-              </Button> */}
+              <a
+                className={classes.link}
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.otopark.Otopark.oto.park.my.car.vehicle.find.parking.lot.space.host.user&hl=en_US"
+              >
+                <Button className={classes.downloadButton} color="inherit">
+                  Download App
+                </Button>
+              </a>
             </div>
           </Toolbar>
         </AppBar>
       </div>
     </div>
   );
-}
+};
+
+export default withRouter(Navbar);

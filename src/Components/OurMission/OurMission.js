@@ -9,7 +9,7 @@ export default function FullWidthGrid() {
   const classes = useStyles();
 
   return (
-    <>
+    <div id="aboutUsTop" className={classes.mainRoot}>
       <div className={classes.headingContainer}>
         <br />
         <h1
@@ -30,7 +30,7 @@ export default function FullWidthGrid() {
               data-aos="fade-down"
               data-aos-duration="1000"
             >
-              <b>OTOPARK</b> is a dynamic organisation that exists to meet the
+              <b>otopark</b> is a dynamic organisation that exists to meet the
               parking challenges of the mega cities of India, by providing smart
               sustainable innovative technological solutions. otopark focuses on
               building a collaborative economy between consumers, businesses and
@@ -44,10 +44,11 @@ export default function FullWidthGrid() {
             sm={12}
             md={6}
             lg={6}
-            data-aos="fade-right"
-            data-aos-duration="1000"
+            style={{ overflowX: "hidden" }}
           >
             <img
+              data-aos="fade-right"
+              data-aos-duration="1000"
               className={classes.image}
               src={require("../../assets/images/aboutImg1.jpg")}
             />
@@ -58,16 +59,17 @@ export default function FullWidthGrid() {
             sm={12}
             md={6}
             lg={6}
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            style={{ overflowX: "hidden" }}
           >
             <img
+              data-aos="fade-left"
+              data-aos-duration="1000"
               className={classes.image}
               src={require("../../assets/images/aboutImg2.jpg")}
             />
           </Grid>
         </Grid>
       </div>
-    </>
+    </div>
   );
 }

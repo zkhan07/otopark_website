@@ -150,13 +150,13 @@ export default function FullWidthGrid() {
           </div>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          {cardName == "Earn Money" ? (
+          {cardName === "Earn Money" ? (
             <EarnMoney />
-          ) : cardName == "Find Parking" ? (
+          ) : cardName === "Find Parking" ? (
             <FindParking />
-          ) : cardName == "Parking Services" ? (
+          ) : cardName === "Parking Services" ? (
             <ParkingServices />
-          ) : cardName == "Parking Technologies" ? (
+          ) : cardName === "Parking Technologies" ? (
             <ParkingTechnologies />
           ) : (
             ""

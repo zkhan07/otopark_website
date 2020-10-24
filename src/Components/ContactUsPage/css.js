@@ -3,7 +3,9 @@ export const drawerWidth = 240;
 
 export const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    paddingTop: "50px",
+    marginTop: "-50px"
   },
   root1: {
     flexGrow: 1,

@@ -52,14 +52,6 @@ export const useStyles = makeStyles(theme => ({
       width: "90%"
     }
   },
-  number: {
-    borderRadius: "20px",
-    padding: "8px",
-    margin: "5px",
-    color: "#ffff",
-    fontSize: "10px",
-    backgroundColor: "#00BBDC"
-  },
   oicssgrid: {
     padding: "40px",
     marginTop: "30px",
@@ -77,31 +69,8 @@ export const useStyles = makeStyles(theme => ({
     lineHeight: "1.7em",
     color: "#19191B"
   },
-  gifImg: {
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "100%",
-    [theme.breakpoints.down("sm")]: {
-      width: "100%"
-    }
-  },
-  gif1: {
-    width: "100%",
-    [theme.breakpoints.down("sm")]: {
-      display: "block",
-      marginLeft: "-50px",
-      marginRight: "auto",
-      width: "100%"
-    }
-  },
-  gif2: {
-    width: "100%",
-    [theme.breakpoints.down("sm")]: {
-      display: "block",
-      marginLeft: "-80px",
-      marginRight: "auto",
-      width: "100%"
-    }
+  videoDiv: {
+    boxShadow: "none",
+    width: "100%"
   }
 }));

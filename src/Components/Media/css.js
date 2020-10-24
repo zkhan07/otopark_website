@@ -8,9 +8,10 @@ export const useStyles = makeStyles(theme => ({
     color: "#fff"
   },
   gridContainer: {
+    paddingTop: "100px",
+    marginTop: "-100px",
     marginLeft: "10%",
     marginRight: "10%",
-    marginTop: "80px",
     marginBottom: "50px"
   },
   cardContainer: {

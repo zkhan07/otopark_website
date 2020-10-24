@@ -11,7 +11,7 @@ export default function FullWidthGrid() {
     <>
       <ButtonAppBar />
       <MobileNavbar />
-      <div className={classes.root}>
+      <div className={classes.root} id="contactUsTop">
         <Grid container data-aos="fade-down" data-aos-duration="1000">
           <Grid item xs={12} sm={12} md={6} lg={6}>
             <MyContact />

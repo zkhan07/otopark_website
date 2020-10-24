@@ -2,6 +2,10 @@ import { makeStyles, fade } from "@material-ui/core/styles";
 export const drawerWidth = 240;
 
 export const useStyles = makeStyles(theme => ({
+  mainRoot: {
+    paddingTop: "50px",
+    marginTop: "-50px"
+  },
   root: {
     flexGrow: 1,
     marginLeft: "10%",
@@ -29,19 +33,18 @@ export const useStyles = makeStyles(theme => ({
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
-    width: "70%",
-    height: "200px",
-    [theme.breakpoints.up("md")]: {
+    width: "90%",
+    height: "270px",
+    [theme.breakpoints.down("md")]: {
       width: "70%",
       height: "200px"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "70%",
-      height: "150px"
+      width: "100%",
+      height: "200px"
     }
   },
   contentPara: {
-    // letterSpacing: "0.1em",
     justifyContent: "center",
     fontSize: "15px"
   }

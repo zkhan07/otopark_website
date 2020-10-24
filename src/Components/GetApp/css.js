@@ -16,7 +16,7 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       width: "100%",
       height: "380px",
-      marginTop: "-70px"
+      marginTop: "-60px"
     }
   },
   title: {
@@ -54,10 +54,8 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   googlePlayImg: {
-    marginLeft: "243px",
     width: "140px",
     height: "60px",
-    backgroundColor: "#00BBDC",
     [theme.breakpoints.down("sm")]: {
       display: "block",
       marginLeft: "auto",
@@ -89,9 +87,11 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   flexContainer: {
+    marginLeft: "19.2%",
     display: "flex",
     justifyContent: "space-between",
     [theme.breakpoints.down("sm")]: {
+      marginLeft: "0%",
       display: "flex",
       justifyContent: "center"
     }

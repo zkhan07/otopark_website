@@ -34,13 +34,13 @@ export default function FullWidthGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="homePage">
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={12} md={12} lg={12} id="homePage">
+        <Grid item xs={12} sm={12} md={12} lg={12}>
           <div className={classes.heroContainer}>
             <img
               className={classes.heroImg}
-              src={require("../../assets/images/heroImg.svg")}
+              src={require("../../assets/images/homeBgImg.svg")}
             />
           </div>
           <div
@@ -49,19 +49,16 @@ export default function FullWidthGrid() {
             data-aos-duration="1000"
           >
             <p>
-              <b>"FIND PARKING</b> {""}
-              <b style={{ color: "white" }}>
-                WHEN YOU
-                <br /> <b className={classes.sloganMargin}>NEED IT,</b>
-              </b>{" "}
-              <b>EARN MONEY</b> <br />
-              <b style={{ color: "white", marginLeft: "10px" }}>
-                WHEN YOU DON'T USE IT"
-              </b>
+              India's first contactless smart parking <br />
+              solution powered by FASTag
             </p>
-            <Link smooth={true} to="#cards" style={{ textDecoration: "none" }}>
-              <button className={classes.heroButton}>Explore More </button>
-            </Link>
+            <p className={classes.para}>
+              otopark is India’s first community driven smart parking solution
+              that is <br /> powered with FASTag and AI. It is the most secured
+              Automated Parking <br /> Management System that has been trusted
+              by the government and adopted by the nation.
+            </p>
+
             {/* <div id="trainMotion">
               <img
                 id="train"
@@ -69,12 +66,15 @@ export default function FullWidthGrid() {
               />
             </div> */}
           </div>
+          <Link smooth={true} to="#cards" style={{ textDecoration: "none" }}>
+            <button className={classes.heroButton}>Explore More </button>
+          </Link>
         </Grid>
       </Grid>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={4} lg={4}>
           <h4 align="right" className={classes.sliderText}>
-            Proudly Recognized and Supported by
+            In association with
           </h4>
         </Grid>
         <Grid item item xs={12} sm={12} md={8} lg={8}>

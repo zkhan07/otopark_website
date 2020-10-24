@@ -19,18 +19,35 @@ export const useStyles = makeStyles(theme => ({
     justifyContent: "space-between"
   },
   navbarImage: {
-    width: "80px",
-    heigh: "80px",
+    width: "100px",
+    heigh: "100px",
     padding: "10px"
   },
   navbarButton: {
-    marginRight: "30px",
     textTransform: "none",
     borderRadius: "20px",
     outerline: "0px",
     "&:hover": {
-      backgroundColor: "white",
-      color: "#00BBDC",
+      backgroundColor: "transparent"
+    },
+    [theme.breakpoints.down("md")]: {
+      marginRight: "20px"
+    }
+  },
+  downloadButton: {
+    width: "150px",
+    marginLeft: "10px",
+    marginRight: "30px",
+    textTransform: "none",
+    borderRadius: "20px",
+    backgroundColor: "white",
+    color: "#00BBDC",
+    border: "2px solid #00BBDC",
+    outerline: "0px",
+    "&:hover": {
+      backgroundColor: "#00BBDC",
+      color: "#fff",
+      border: "2px solid #fff",
       borderRadius: "20px"
     },
     [theme.breakpoints.down("md")]: {
@@ -43,7 +60,9 @@ export const useStyles = makeStyles(theme => ({
       display: "none"
     }
   },
-  btn: {
+  link: {
+    marginLeft: "10px",
+    marginRight: "10px",
     textDecoration: "none",
     color: "white"
   }

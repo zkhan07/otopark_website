@@ -37,10 +37,12 @@ export default function FullWidthGrid() {
                   href="https://www.facebook.com/myotopark/"
                 >
                   <i
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
                     style={{
                       padding: "10px",
-                      height: "10px",
-                      width: "10px",
+                      height: "15px",
+                      width: "15px",
                       border: "1px solid #71777D",
                       borderRadius: "50%",
                       fontSize: "15px"
@@ -55,10 +57,12 @@ export default function FullWidthGrid() {
                   href="https://twitter.com/myotopark"
                 >
                   <i
+                    data-aos="zoom-in"
+                    data-aos-duration="2000"
                     style={{
                       padding: "10px",
-                      height: "10px",
-                      width: "10px",
+                      height: "15px",
+                      width: "15px",
                       border: "1px solid #71777D",
                       borderRadius: "50%",
                       fontSize: "15px",
@@ -74,10 +78,12 @@ export default function FullWidthGrid() {
                   href="https://www.linkedin.com/company/myotopark/"
                 >
                   <i
+                    data-aos="zoom-in"
+                    data-aos-duration="2500"
                     style={{
                       padding: "10px",
-                      height: "10px",
-                      width: "10px",
+                      height: "15px",
+                      width: "15px",
                       border: "1px solid #71777D",
                       borderRadius: "50%",
                       fontSize: "15px"
@@ -92,10 +98,12 @@ export default function FullWidthGrid() {
                   href="https://www.instagram.com/myotopark/"
                 >
                   <i
+                    data-aos="zoom-in"
+                    data-aos-duration="3000"
                     style={{
                       padding: "10px",
-                      height: "10px",
-                      width: "10px",
+                      height: "15px",
+                      width: "15px",
                       border: "1px solid #71777D",
                       borderRadius: "50%",
                       fontSize: "15px",
@@ -110,19 +118,39 @@ export default function FullWidthGrid() {
             <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>Home</h4>
               <div className={classes.footerList}>
-                <Link smooth={true} to="#homePage" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#homePage"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Introduction</p>
                 </Link>
-                <Link smooth={true} to="#howItWork" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#howItWork"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>How it works</p>
                 </Link>
-                <Link smooth={true} to="#getApp" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#getApp"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Download app</p>
                 </Link>
-                <Link smooth={true} to="#solutions" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#solutions"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Solutions</p>
                 </Link>
-                <Link smooth={true} to="#otoMedia" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#otoMedia"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Media</p>
                 </Link>
               </div>
@@ -130,19 +158,39 @@ export default function FullWidthGrid() {
             <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>Solutions</h4>
               <div className={classes.footerList}>
-                <Link smooth={true} to="#solutions" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#solutions"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>FASTag Parking</p>
                 </Link>
-                <Link smooth={true} to="#solutions" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#solutions"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Share Parking and Earn</p>
                 </Link>
-                <Link smooth={true} to="#solutions" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#solutions"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Find Parking</p>
                 </Link>
-                <Link smooth={true} to="#solutions" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#solutions"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Parking Technologies</p>
                 </Link>
-                <Link smooth={true} to="#solutions" className={classes.link}>
+                <Link
+                  smooth={true}
+                  to="/otopark/website/dashboard/#solutions"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Parking Services</p>
                 </Link>
               </div>
@@ -150,10 +198,16 @@ export default function FullWidthGrid() {
             <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>About</h4>
               <div className={classes.footerList}>
-                <Link to="/otopark/website/aboutUs" className={classes.link}>
+                <Link
+                  to="/otopark/website/aboutUs/#aboutUsTop"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Vision</p>
                 </Link>
-                <Link to="/otopark/website/aboutUs" className={classes.link}>
+                <Link
+                  to="/otopark/website/aboutUs/#aboutUsTop"
+                  className={classes.link}
+                >
                   <p className={classes.listItem}>Team</p>
                 </Link>
               </div>
@@ -168,7 +222,7 @@ export default function FullWidthGrid() {
                     <a
                       target="_blank"
                       style={{ color: "white", textDecoration: "none" }}
-                      href="#"
+                      href="http://otopark.in/host-terms-and-conditions/"
                     >
                       Host Policy{" "}
                     </a>{" "}
@@ -176,7 +230,7 @@ export default function FullWidthGrid() {
                     <a
                       target="_blank"
                       style={{ color: "white", textDecoration: "none" }}
-                      href="#"
+                      href="http://otopark.in/privacy-policy/"
                     >
                       {" "}
                       Privacy Policy{" "}
@@ -185,7 +239,7 @@ export default function FullWidthGrid() {
                     <a
                       target="_blank"
                       style={{ color: "white", textDecoration: "none" }}
-                      href="#"
+                      href="http://otopark.in/overstay-policy/"
                     >
                       Overstay Policy{" "}
                     </a>

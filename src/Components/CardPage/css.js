@@ -4,6 +4,8 @@ export const drawerWidth = 240;
 export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    paddingTop: "50px",
+    marginTop: "-50px",
     marginLeft: "10%",
     marginRight: "10%",
     [theme.breakpoints.down("sm")]: {
@@ -40,7 +42,7 @@ export const useStyles = makeStyles(theme => ({
     height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
-    boxShadow: "2px 2px 2px 2px lightgrey",
+    boxShadow: "0px 7px 25px #00000029",
     [theme.breakpoints.up("xl")]: {
       width: "300px",
       height: "240px",
@@ -68,7 +70,7 @@ export const useStyles = makeStyles(theme => ({
     height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
-    boxShadow: "2px 2px 2px 2px lightgrey",
+    boxShadow: "0px 7px 25px #00000029",
     [theme.breakpoints.up("xl")]: {
       width: "300px",
       height: "240px",
@@ -95,7 +97,7 @@ export const useStyles = makeStyles(theme => ({
     height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
-    boxShadow: "2px 2px 2px 2px lightgrey",
+    boxShadow: "0px 7px 25px #00000029",
     [theme.breakpoints.up("xl")]: {
       width: "300px",
       height: "240px",
@@ -123,7 +125,7 @@ export const useStyles = makeStyles(theme => ({
     height: "220px",
     borderRadius: "5px",
     cursor: "pointer",
-    boxShadow: "2px 2px 2px 2px lightgrey",
+    boxShadow: "0px 7px 25px #00000029",
     [theme.breakpoints.up("xl")]: {
       width: "300px",
       height: "240px",
@@ -208,7 +210,7 @@ export const useStyles = makeStyles(theme => ({
   },
   cardImage: {
     width: "300px",
-    height: "300px",
+    height: "350px",
     display: "flex",
     justifyContent: "center",
     [theme.breakpoints.up("xl")]: {
@@ -222,7 +224,7 @@ export const useStyles = makeStyles(theme => ({
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",
-      width: "200px",
+      width: "180px",
       height: "200px"
     }
   },

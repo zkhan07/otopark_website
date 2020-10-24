@@ -4,6 +4,8 @@ import Image from "../../assets/images/workPageImg.svg";
 export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    paddingTop: "60px",
+    marginTop: "-60px",
     marginLeft: "5%",
     marginRight: "5%",
     [theme.breakpoints.down("sm")]: {
@@ -18,7 +20,7 @@ export const useStyles = makeStyles(theme => ({
   },
   workTitle: {
     color: "black",
-    fontSize: "25px",
+    fontSize: "30px",
     textAlign: "center"
   },
   workButton: {

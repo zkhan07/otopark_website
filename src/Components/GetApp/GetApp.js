@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { useStyles } from "./css";
 
 export default function FullWidthGrid() {
@@ -53,7 +53,8 @@ export default function FullWidthGrid() {
                 data-aos="fade-left"
                 data-aos-duration="2000"
                 className={classes.link}
-                to="/otopark/website/contactUs"
+                smooth={true}
+                to="/otopark/website/contactUs/#contactUsTop"
               >
                 <Button className={classes.button}>Contact</Button>
               </Link>

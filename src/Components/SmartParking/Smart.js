@@ -1,6 +1,10 @@
 import { Button, Grid } from "@material-ui/core";
 import React, { useState } from "react";
 import { useStyles } from "./css";
+import video1 from "../../assets/videos/OICCSApp.mp4";
+import video2 from "../../assets/videos/RangerApp.mp4";
+import video3 from "../../assets/videos/CitizenApp.mp4";
+import video4 from "../../assets/videos/ParkingHardware.mp4";
 
 export const Smart = () => {
   const [value, setValue] = useState("OICCS");
@@ -87,10 +91,9 @@ export const Smart = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <img
-              className={classes.gifImg}
-              src={require("../../assets/gif/OICCS.gif")}
-            />
+            <video className={classes.videoDiv} autoPlay loop muted>
+              <source src={video1} type="video/mp4" />
+            </video>
           </Grid>
         </Grid>
       ) : (
@@ -124,10 +127,9 @@ export const Smart = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <img
-              className={classes.gif2}
-              src={require("../../assets/gif/CitizenApp.gif")}
-            />
+            <video className={classes.videoDiv} autoPlay loop muted>
+              <source src={video2} type="video/mp4" />
+            </video>
           </Grid>
         </Grid>
       ) : (
@@ -159,10 +161,9 @@ export const Smart = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <img
-              className={classes.gif1}
-              src={require("../../assets/gif/Ranger.gif")}
-            />
+            <video className={classes.videoDiv} autoPlay loop muted>
+              <source src={video3} type="video/mp4" />
+            </video>
           </Grid>
         </Grid>
       ) : (
@@ -197,10 +198,9 @@ export const Smart = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <img
-              className={classes.gifImg}
-              src={require("../../assets/gif/ParkingHardware.gif")}
-            />
+            <video className={classes.videoDiv} autoPlay loop muted>
+              <source src={video4} type="video/mp4" />
+            </video>
           </Grid>
         </Grid>
       ) : (

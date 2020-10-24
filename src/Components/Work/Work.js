@@ -14,8 +14,8 @@ export default function FullWidthGrid() {
   };
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={2} id="howItWork">
+    <div className={classes.root} id="howItWork">
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <h4 className={classes.workTitle}>How it works</h4>
           <div className={classes.btn} style={{ overflowX: "hidden" }}>

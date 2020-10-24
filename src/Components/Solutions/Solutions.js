@@ -9,15 +9,7 @@ export default function FullWidthGrid() {
   const classes = useStyles();
 
   return (
-    <div
-      className={classes.root}
-      id="solutions"
-      data-aos="fade-up"
-      data-aos-duration="3000"
-    >
-      <br />
-      <br />
-      <br />
+    <div className={classes.root} id="solutions">
       <h2 className={classes.mainTitle}>Solutions</h2>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={4} lg={4}>
@@ -26,7 +18,7 @@ export default function FullWidthGrid() {
               <div>
                 <div className={classes.flexContainer}>
                   <img
-                    data-aos="fade-up"
+                    data-aos="zoom-in"
                     data-aos-duration="3000"
                     width="70px"
                     height="70px"
@@ -66,7 +58,7 @@ export default function FullWidthGrid() {
               <div>
                 <div className={classes.flexContainer}>
                   <img
-                    data-aos="fade-up"
+                    data-aos="zoom-in"
                     data-aos-duration="3000"
                     width="70px"
                     height="70px"
@@ -107,7 +99,7 @@ export default function FullWidthGrid() {
               <div>
                 <div className={classes.flexContainer}>
                   <img
-                    data-aos="fade-up"
+                    data-aos="zoom-in"
                     data-aos-duration="3000"
                     width="70px"
                     height="70px"
@@ -150,7 +142,7 @@ export default function FullWidthGrid() {
               <div>
                 <div className={classes.flexContainer}>
                   <img
-                    data-aos="fade-up"
+                    data-aos="zoom-in"
                     data-aos-duration="3000"
                     width="70px"
                     height="70px"
@@ -190,7 +182,7 @@ export default function FullWidthGrid() {
               <div>
                 <div className={classes.flexContainer}>
                   <img
-                    data-aos="fade-up"
+                    data-aos="zoom-in"
                     data-aos-duration="3000"
                     width="70px"
                     height="70px"
@@ -232,7 +224,7 @@ export default function FullWidthGrid() {
               <div>
                 <div className={classes.flexContainer}>
                   <img
-                    data-aos="fade-up"
+                    data-aos="zoom-in"
                     data-aos-duration="3000"
                     width="70px"
                     height="70px"

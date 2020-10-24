@@ -51,5 +51,19 @@ export const useStyles = makeStyles(theme => ({
       width: "100%",
       height: "230px"
     }
+  },
+  frame3: {
+    marginLeft: "100px",
+    [theme.breakpoints.down("md")]: {
+      marginLeft: "100px",
+      height: "230px",
+      width: "100%"
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "30px",
+      marginLeft: "0px",
+      width: "100%",
+      height: "230px"
+    }
   }
 }));

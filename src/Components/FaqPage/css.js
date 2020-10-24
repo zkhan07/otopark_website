@@ -10,6 +10,8 @@ export const useStyles = makeStyles(theme => ({
     marginLeft: "10%",
     marginRight: "10%",
     [theme.breakpoints.down("sm")]: {
+      paddingTop: "50px",
+      marginTop: "-50px",
       marginLeft: "0%",
       marginRight: "0%"
     }
@@ -41,6 +43,7 @@ export const useStyles = makeStyles(theme => ({
     // letterSpacing: "0.1em"
   },
   tabsPanel: {
+    overflowX: "hidden",
     width: "3000px",
     overflow: "auto",
     marginLeft: "20px",

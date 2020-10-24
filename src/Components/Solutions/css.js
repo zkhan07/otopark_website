@@ -6,12 +6,12 @@ export const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     marginLeft: "10%",
     marginRight: "10%",
-    marginTop: "50px",
-    marginBottom: "30px",
+    paddingTop: "70px",
+    marginTop: "-30px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "5%",
       marginRight: "5%",
-      marginTop: "-70px",
+      marginTop: "-100px",
       marginBottom: "0px"
     }
   },

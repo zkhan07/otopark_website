@@ -74,5 +74,27 @@ export const useStyles = makeStyles(theme => ({
     width: "70px",
     height: "45px",
     padding: "5px"
+  },
+  downloadButton: {
+    marginRight: "30px",
+    textTransform: "none",
+    borderRadius: "20px",
+    backgroundColor: "white",
+    color: "#00BBDC",
+    border: "2px solid #00BBDC",
+    outerline: "0px",
+    "&:hover": {
+      backgroundColor: "#00BBDC",
+      color: "#fff",
+      border: "2px solid #fff",
+      borderRadius: "20px"
+    },
+    [theme.breakpoints.down("md")]: {
+      marginRight: "20px"
+    }
+  },
+  link: {
+    textDecoration: "none",
+    color: "white"
   }
 }));

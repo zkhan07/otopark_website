@@ -50,9 +50,9 @@ export default function FullWidthGrid() {
   };
   return (
     <div className={classes.root}>
-      <Grid container spacing={2} id="otoMedia">
+      <Grid container spacing={2}>
         <Grid item xs={12} sm={12} ms={12} lg={12}>
-          <div className={classes.gridContainer}>
+          <div className={classes.gridContainer} id="otoMedia">
             <p className={classes.title}>otoMedia</p>
             <Slider {...settings}>
               <div className={classes.removeBorder}>

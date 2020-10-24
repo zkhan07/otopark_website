@@ -46,6 +46,25 @@ export default function FullWidthGrid() {
             allowfullscreen
           ></iframe>
         </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={6}
+          lg={3}
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          <iframe
+            width="300"
+            height="200"
+            className={classes.frame3}
+            src="https://www.youtube.com/embed/3ptGAGMVP3o"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </Grid>
       </Grid>
     </div>
   );

@@ -3,7 +3,9 @@ export const drawerWidth = 240;
 
 export const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    paddingTop: "60px",
+    marginTop: "-60px"
   },
   heroContainer: {
     marginLeft: "-8px",
@@ -14,7 +16,7 @@ export const useStyles = makeStyles(theme => ({
       height: "700px"
     },
     [theme.breakpoints.down("sm")]: {
-      height: "300px"
+      height: "400px"
     }
   },
   heroImg: {
@@ -34,18 +36,13 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0%",
       width: "100%",
-      marginTop: "200px"
-    }
-  },
-  sloganMargin: {
-    marginLeft: "30px",
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "10px"
+      marginTop: "300px"
     }
   },
   heroSlogan: {
+    color: "white",
     position: "absolute",
-    top: "22%",
+    top: "20%",
     left: "7%",
     fontSize: "30px",
     [theme.breakpoints.down("md")]: {
@@ -58,12 +55,34 @@ export const useStyles = makeStyles(theme => ({
       top: "15%",
       left: "0",
       right: "0",
-      textAlign: "center",
-      width: "100%",
+      marginLeft: "5%",
       fontSize: "20px"
     }
   },
+  para: {
+    color: "#fff",
+    position: "absolute",
+    top: "70%",
+    left: "0%",
+    fontSize: "15px",
+    [theme.breakpoints.down("md")]: {
+      position: "absolute",
+      top: "22%",
+      left: "7%",
+      fontSize: "30px"
+    },
+    [theme.breakpoints.down("sm")]: {
+      top: "80%",
+      left: "0",
+      right: "0",
+      marginLeft: "0%",
+      fontSize: "9px"
+    }
+  },
   heroButton: {
+    position: "absolute",
+    top: "50%",
+    left: "7%",
     backgroundColor: "#fff",
     color: "#00BBDC",
     display: "block",
@@ -88,6 +107,8 @@ export const useStyles = makeStyles(theme => ({
       marginLeft: "100px"
     },
     [theme.breakpoints.down("sm")]: {
+      top: "35%",
+      left: "5%",
       fontSize: "12px",
       display: "block",
       marginLeft: "auto",
