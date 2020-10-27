@@ -6,7 +6,7 @@ import video1 from "../../assets/videos/oiccsApp.mp4";
 import video2 from "../../assets/videos/rangerApp.mp4";
 import video3 from "../../assets/videos/citizenApp.mp4";
 // import video4 from "../../assets/videos/parkingHardware.mp4";
-import video4 from "../../assets/videos/parking.mp4";
+import video4 from "../../assets/videos/park.mp4";
 
 export const Smart = () => {
   const [value, setValue] = useState("OICCS");
@@ -229,7 +229,7 @@ export const Smart = () => {
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
             <video
-              className={classes.videoDiv}
+              className={classes.videoDiv4}
               playsInline
               autoPlay={true}
               controls={false}

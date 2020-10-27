@@ -27,8 +27,13 @@ export default function FullWidthGrid() {
                 info@otopark.in
               </p>
               <p align="center">
-                {" "}
-                <i class="fa fa-phone" aria-hidden="true"></i> +91 88 55226644
+                &nbsp;
+                <i class="fa fa-phone" aria-hidden="true"></i> +91-9111611134
+              </p>
+              <p align="center">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                &nbsp; 319 Monash Building, IIT Bombay,
+                <br /> Powai Mumbai 400076, India mail
               </p>
               <div align="center" className={classes.icon}>
                 <a

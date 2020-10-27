@@ -242,6 +242,15 @@ export default function FullWidthGrid() {
                 />
               </a>
             </div>
+            <div>
+              <a href="#" className={classes.removeBorder}>
+                <img
+                  className={classes.image20}
+                  alt="img20"
+                  src={require("../../assets/company/logo20.jpg")}
+                />
+              </a>
+            </div>
           </Slider>
         </Grid>
       </Grid>

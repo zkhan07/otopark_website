@@ -20,6 +20,14 @@ export const useStyles = makeStyles(theme => ({
     overflow: "hidden",
     width: "100%"
   },
+  image20: {
+    width: "130px",
+    height: "100px",
+    [theme.breakpoints.down("sm")]: {
+      width: "100px",
+      height: "100px"
+    }
+  },
   removeBorder: {
     "&:focus": {
       outline: 0,
