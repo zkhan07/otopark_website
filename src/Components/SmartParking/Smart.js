@@ -1,10 +1,18 @@
 import { Button, Grid } from "@material-ui/core";
 import React, { useState } from "react";
 import { useStyles } from "./css";
-import video1 from "../../assets/videos/OICCSApp.mp4";
+
+import video1 from "../../assets/videos/khan.mp4";
+// import video1 from "../../assets/videos/OICCSApp.mp4";
 import video2 from "../../assets/videos/RangerApp.mp4";
 import video3 from "../../assets/videos/CitizenApp.mp4";
-import video4 from "../../assets/videos/ParkingHardware.mp4";
+// import video4 from "../../assets/videos/ParkingHardware.mp4";
+import video4 from "../../assets/videos/parking.mp4";
+
+// import v1 from "../../assets/videos/video1.mp4";
+// import v2 from "../../assets/videos/video2.mp4";
+// import v3 from "../../assets/videos/video3.mp4";
+// import v4 from "../../assets/videos/video4.mp4";
 
 export const Smart = () => {
   const [value, setValue] = useState("OICCS");
@@ -160,7 +168,14 @@ export const Smart = () => {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={12} sm={12} md={8} lg={8}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={8}
+            lg={8}
+            style={{ overflowY: "hidden" }}
+          >
             <video className={classes.videoDiv} autoPlay loop muted>
               <source src={video3} type="video/mp4" />
             </video>
@@ -198,7 +213,7 @@ export const Smart = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <video className={classes.videoDiv} autoPlay loop muted>
+            <video className={classes.videoDiv4} autoPlay loop muted>
               <source src={video4} type="video/mp4" />
             </video>
           </Grid>

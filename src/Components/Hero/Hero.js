@@ -49,26 +49,22 @@ export default function FullWidthGrid() {
             data-aos-duration="1000"
           >
             <p>
-              India's first contactless smart parking <br />
-              solution powered by FASTag
+              <b>
+                India's first contactless <br />
+                smart parking solution <br />
+                powered by FASTag
+              </b>
             </p>
-            <p className={classes.para}>
-              otopark is India’s first community driven smart parking solution
-              that is <br /> powered with FASTag and AI. It is the most secured
-              Automated Parking <br /> Management System that has been trusted
-              by the government and adopted by the nation.
-            </p>
-
-            {/* <div id="trainMotion">
+            <Link smooth={true} to="#cards" style={{ textDecoration: "none" }}>
+              <button className={classes.heroButton}>Explore More </button>
+            </Link>
+          </div>
+          {/* <div id="trainMotion">
               <img
                 id="train"
                 src={require("../../assets/images/movingCarImg.svg")}
               />
             </div> */}
-          </div>
-          <Link smooth={true} to="#cards" style={{ textDecoration: "none" }}>
-            <button className={classes.heroButton}>Explore More </button>
-          </Link>
         </Grid>
       </Grid>
       <Grid container spacing={2}>

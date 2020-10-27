@@ -72,5 +72,9 @@ export const useStyles = makeStyles(theme => ({
   videoDiv: {
     boxShadow: "none",
     width: "100%"
+  },
+  videoDiv4: {
+    width: "100%",
+    height: "350px"
   }
 }));

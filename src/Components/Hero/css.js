@@ -16,7 +16,7 @@ export const useStyles = makeStyles(theme => ({
       height: "700px"
     },
     [theme.breakpoints.down("sm")]: {
-      height: "400px"
+      height: "300px"
     }
   },
   heroImg: {
@@ -36,15 +36,16 @@ export const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0%",
       width: "100%",
-      marginTop: "300px"
+      marginTop: "212px"
     }
   },
   heroSlogan: {
+    textAlign: "center",
     color: "white",
     position: "absolute",
     top: "20%",
     left: "7%",
-    fontSize: "30px",
+    fontSize: "35px",
     [theme.breakpoints.down("md")]: {
       position: "absolute",
       top: "22%",
@@ -52,42 +53,19 @@ export const useStyles = makeStyles(theme => ({
       fontSize: "30px"
     },
     [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
       top: "15%",
       left: "0",
       right: "0",
-      marginLeft: "5%",
       fontSize: "20px"
     }
   },
-  para: {
-    color: "#fff",
-    position: "absolute",
-    top: "70%",
-    left: "0%",
-    fontSize: "15px",
-    [theme.breakpoints.down("md")]: {
-      position: "absolute",
-      top: "22%",
-      left: "7%",
-      fontSize: "30px"
-    },
-    [theme.breakpoints.down("sm")]: {
-      top: "80%",
-      left: "0",
-      right: "0",
-      marginLeft: "0%",
-      fontSize: "9px"
-    }
-  },
   heroButton: {
-    position: "absolute",
-    top: "50%",
-    left: "7%",
-    backgroundColor: "#fff",
-    color: "#00BBDC",
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
+    backgroundColor: "#fff",
+    color: "#00BBDC",
     width: "150px",
     height: "35px",
     border: "1px solid white",

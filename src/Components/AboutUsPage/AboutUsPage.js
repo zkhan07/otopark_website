@@ -19,7 +19,7 @@ export default function FullWidthGrid() {
           <Navbar />
           <MobileNavbar />
           <OurMission />
-          {/* <Team /> */}
+          <Team />
           {/* <WantToJoin /> */}
           {/* <MyContact /> */}
           <Footer />

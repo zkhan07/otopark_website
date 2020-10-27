@@ -4,7 +4,11 @@ export const drawerWidth = 240;
 export const useStyles = makeStyles(theme => ({
   mainRoot: {
     paddingTop: "50px",
-    marginTop: "-50px"
+    marginTop: "-50px",
+    marginBottom: "-80px",
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: "50px"
+    }
   },
   root: {
     flexGrow: 1,
@@ -26,26 +30,28 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   heading: {
-    marginLeft: "10%",
+    marginLeft: "11%",
     fontSize: "40px"
   },
   image: {
+    marginTop: "50px",
     display: "block",
-    marginLeft: "auto",
+    marginLeft: "100px",
     marginRight: "auto",
     width: "90%",
-    height: "270px",
+    height: "62%",
     [theme.breakpoints.down("md")]: {
       width: "70%",
       height: "200px"
     },
     [theme.breakpoints.down("sm")]: {
+      marginLeft: "0px",
       width: "100%",
       height: "200px"
     }
   },
   contentPara: {
     justifyContent: "center",
-    fontSize: "15px"
+    fontSize: "16px"
   }
 }));

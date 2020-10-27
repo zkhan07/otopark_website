@@ -12,7 +12,7 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   heading: {
-    marginTop: "100px",
+    marginTop: "0px",
     fontSize: "40px",
     textAlign: "center"
   },
@@ -27,8 +27,8 @@ export const useStyles = makeStyles(theme => ({
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
-    width: "150px",
-    height: "150px",
+    width: "130px",
+    height: "130px",
     borderRadius: "50%",
     [theme.breakpoints.down("sm")]: {
       width: "100px",
@@ -43,5 +43,11 @@ export const useStyles = makeStyles(theme => ({
     textAlign: "center",
     marginTop: "-20px",
     fontSize: "13px"
+  },
+  mobileView: {
+    display: "block",
+    [theme.breakpoints.down("sm")]: {
+      display: "none"
+    }
   }
 }));

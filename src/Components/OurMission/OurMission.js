@@ -22,7 +22,7 @@ export default function FullWidthGrid() {
       </div>
       <div className={classes.root}>
         <Grid container spacing={2}>
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={12} md={12} lg={6}>
             <br />
             <br />
             <p
@@ -37,8 +37,40 @@ export default function FullWidthGrid() {
               government entities for efficient allocation of community
               resources.
             </p>
+            <p
+              className={classes.contentPara}
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              We are a fast-growing smart parking company innovating the parking
+              sector across India. Users can find parking and earn money by
+              sharing their parking through our connected platform. We also
+              offer commercial parking systems, technologies and SaaS solutions
+              for parking lots, parking operators, malls, airports, etc to
+              enhance businesses with their parking needs.
+            </p>
+
+            <p
+              className={classes.contentPara}
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              Born out of SINE IIT Bombay, we collaborate with top companies and
+              are supported by leading organizations such as NPCI, Brihanmumbai
+              Municipal Corporation, Department of Science and Technology, and
+              more. Our vision is to become the smart parking platform offering
+              sustainable and scalable parking solutions for India.
+            </p>
           </Grid>
-          <Grid
+          <Grid xs={12} sm={12} md={12} lg={6}>
+            <img
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className={classes.image}
+              src={require("../../assets/images/aboutImg1.jpg")}
+            />
+          </Grid>
+          {/* <Grid
             item
             xs={12}
             sm={12}
@@ -67,7 +99,7 @@ export default function FullWidthGrid() {
               className={classes.image}
               src={require("../../assets/images/aboutImg2.jpg")}
             />
-          </Grid>
+          </Grid> */}
         </Grid>
       </div>
     </div>

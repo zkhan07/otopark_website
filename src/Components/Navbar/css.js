@@ -19,8 +19,8 @@ export const useStyles = makeStyles(theme => ({
     justifyContent: "space-between"
   },
   navbarImage: {
-    width: "100px",
-    heigh: "100px",
+    width: "80px",
+    heigh: "80px",
     padding: "10px"
   },
   navbarButton: {

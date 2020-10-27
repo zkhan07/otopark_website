@@ -15,7 +15,7 @@ export default function FullWidthGrid() {
               className={classes.imgIcon}
               src={require("../../assets/icons/residentesIcon.svg")}
             />
-            <h4 className={classes.title}>Residentes</h4>
+            <h4 className={classes.title}>Residents</h4>
           </div>
         </Grid>
         <Grid item xs={4} sm={4} md lg>
@@ -24,7 +24,7 @@ export default function FullWidthGrid() {
               className={classes.imgIcon}
               src={require("../../assets/icons/commercialIcon.svg")}
             />
-            <h4 className={classes.title}>Commericals</h4>
+            <h4 className={classes.title}>Commercial</h4>
           </div>
         </Grid>
         <Grid item xs={4} sm={4} md lg>
@@ -88,7 +88,7 @@ export default function FullWidthGrid() {
               className={classes.imgIcon}
               src={require("../../assets/icons/govermentIcon.svg")}
             />
-            <h4 className={classes.title}>Goverment</h4>
+            <h4 className={classes.title}>Government</h4>
           </div>
         </Grid>
         <Grid item xs={4} sm={4} md lg></Grid>

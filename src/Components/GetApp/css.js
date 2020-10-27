@@ -6,7 +6,7 @@ export const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   getAppContainer: {
-    marginTop: "100px",
+    marginTop: "0px",
     height: "400px",
     width: "95%",
     backgroundImage: `url(${Image})`,
