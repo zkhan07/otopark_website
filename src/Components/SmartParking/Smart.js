@@ -93,7 +93,14 @@ export const Smart = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <video className={classes.videoDiv} autoPlay loop muted>
+            <video
+              className={classes.videoDiv}
+              playsInline
+              autoPlay={true}
+              controls={false}
+              loop
+              muted
+            >
               <source src={video1} type="video/mp4" />
             </video>
           </Grid>
@@ -129,7 +136,14 @@ export const Smart = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <video className={classes.videoDiv} autoPlay loop muted>
+            <video
+              className={classes.videoDiv}
+              playsInline
+              autoPlay={true}
+              controls={false}
+              loop
+              muted
+            >
               <source src={video2} type="video/mp4" />
             </video>
           </Grid>
@@ -170,7 +184,14 @@ export const Smart = () => {
             lg={8}
             style={{ overflowY: "hidden" }}
           >
-            <video className={classes.videoDiv} autoPlay loop muted>
+            <video
+              className={classes.videoDiv}
+              playsInline
+              autoPlay={true}
+              controls={false}
+              loop
+              muted
+            >
               <source src={video3} type="video/mp4" />
             </video>
           </Grid>
@@ -207,7 +228,14 @@ export const Smart = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <video className={classes.videoDiv4} autoPlay loop muted>
+            <video
+              className={classes.videoDiv}
+              playsInline
+              autoPlay={true}
+              controls={false}
+              loop
+              muted
+            >
               <source src={video4} type="video/mp4" />
             </video>
           </Grid>
