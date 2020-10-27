@@ -5,7 +5,6 @@ import { useStyles } from "./css";
 import video1 from "../../assets/videos/oiccsApp.mp4";
 import video2 from "../../assets/videos/rangerApp.mp4";
 import video3 from "../../assets/videos/citizenApp.mp4";
-// import video4 from "../../assets/videos/parkingHardware.mp4";
 import video4 from "../../assets/videos/park.mp4";
 
 export const Smart = () => {
