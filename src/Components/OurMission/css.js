@@ -5,7 +5,7 @@ export const useStyles = makeStyles(theme => ({
   mainRoot: {
     paddingTop: "50px",
     marginTop: "-50px",
-    marginBottom: "-80px",
+    marginBottom: "50px",
     [theme.breakpoints.down("sm")]: {
       marginBottom: "50px"
     }
@@ -34,17 +34,18 @@ export const useStyles = makeStyles(theme => ({
     fontSize: "40px"
   },
   image: {
-    marginTop: "50px",
+    marginTop: "60px",
     display: "block",
     marginLeft: "100px",
     marginRight: "auto",
     width: "90%",
-    height: "62%",
+    height: "70%",
     [theme.breakpoints.down("md")]: {
       width: "70%",
       height: "200px"
     },
     [theme.breakpoints.down("sm")]: {
+      marginTop: "20px",
       marginLeft: "0px",
       width: "100%",
       height: "200px"

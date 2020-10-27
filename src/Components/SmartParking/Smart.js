@@ -2,17 +2,11 @@ import { Button, Grid } from "@material-ui/core";
 import React, { useState } from "react";
 import { useStyles } from "./css";
 
-import video1 from "../../assets/videos/khan.mp4";
-// import video1 from "../../assets/videos/OICCSApp.mp4";
-import video2 from "../../assets/videos/RangerApp.mp4";
-import video3 from "../../assets/videos/CitizenApp.mp4";
-// import video4 from "../../assets/videos/ParkingHardware.mp4";
+import video1 from "../../assets/videos/oiccsApp.mp4";
+import video2 from "../../assets/videos/rangerApp.mp4";
+import video3 from "../../assets/videos/citizenApp.mp4";
+// import video4 from "../../assets/videos/parkingHardware.mp4";
 import video4 from "../../assets/videos/parking.mp4";
-
-// import v1 from "../../assets/videos/video1.mp4";
-// import v2 from "../../assets/videos/video2.mp4";
-// import v3 from "../../assets/videos/video3.mp4";
-// import v4 from "../../assets/videos/video4.mp4";
 
 export const Smart = () => {
   const [value, setValue] = useState("OICCS");

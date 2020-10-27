@@ -67,7 +67,7 @@ export default function FullWidthGrid() {
               data-aos="fade-right"
               data-aos-duration="1000"
               className={classes.image}
-              src={require("../../assets/images/aboutImg1.jpg")}
+              src={require("../../assets/images/aboutUsImg.jpg")}
             />
           </Grid>
           {/* <Grid
