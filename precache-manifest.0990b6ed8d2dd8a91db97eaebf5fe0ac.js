@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad1b78aaf3cc7f234e64e2f27c4ab3ec",
+    "revision": "4c3c146d50b60acb1b3e02ed32c1f351",
     "url": "/otopark_website/index.html"
   },
   {
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/otopark_website/static/js/9.095ac936.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "addb9aa40a508e1f492e",
-    "url": "/otopark_website/static/js/main.57f22abd.chunk.js"
+    "revision": "d0c2570029e2db421ff4",
+    "url": "/otopark_website/static/js/main.070c248d.chunk.js"
   },
   {
     "revision": "25c3d5dc45af2a0fcfc1",
