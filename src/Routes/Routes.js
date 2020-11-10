@@ -22,7 +22,7 @@ const NotFound = lazy(() => import("../util/NotFound/NotFound"));
 
 export const Routes = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Suspense fallback={<Loader />}>
         <Switch>
           <Route exact path="/" component={Dashboard} />
@@ -40,6 +40,6 @@ export const Routes = () => {
           <Route exact path="*" component={NotFound} />
         </Switch>
       </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
