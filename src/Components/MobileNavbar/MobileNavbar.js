@@ -93,6 +93,15 @@ export default function PersistentDrawerLeft() {
                 <ListItemText primary="Home" />
               </ListItem>
             </Link>
+            <Link
+              smooth={true}
+              to="/ourInnovations/#innovationTop"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <ListItem button>
+                <ListItemText primary="Our Innovations" />
+              </ListItem>
+            </Link>
             {/* <ListItem button>
               <ListItemText primary="Solutions" />
             </ListItem> */}
@@ -100,7 +109,7 @@ export default function PersistentDrawerLeft() {
               <ListItemText primary="Use Cases" />
             </ListItem> */}
             <Link
-              to="/otopark/website/faq/#faqTop"
+              to="/faq/#faqTop"
               style={{ textDecoration: "none", color: "white" }}
             >
               <ListItem button>
@@ -108,7 +117,7 @@ export default function PersistentDrawerLeft() {
               </ListItem>
             </Link>
             <Link
-              to="/otopark/website/aboutUs/#aboutUsTop"
+              to="/aboutUs/#aboutUsTop"
               style={{ textDecoration: "none", color: "white" }}
             >
               <ListItem button>
@@ -116,7 +125,7 @@ export default function PersistentDrawerLeft() {
               </ListItem>
             </Link>
             <Link
-              to="/otopark/website/contactUs/#contactUsTop"
+              to="/contactUs/#contactUsTop"
               style={{ textDecoration: "none", color: "white" }}
             >
               <ListItem button>

@@ -20,7 +20,7 @@ export default function FullWidthGrid() {
           className={classes.frame1}
           src="https://www.youtube.com/embed/2-e8EeKmw3U"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
       </div>
@@ -42,7 +42,7 @@ export default function FullWidthGrid() {
             className={classes.frame2}
             src="https://www.youtube.com/embed/znsI316hWHQ"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </Grid>
@@ -61,7 +61,7 @@ export default function FullWidthGrid() {
             className={classes.frame3}
             src="https://www.youtube.com/embed/3ptGAGMVP3o"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </Grid>

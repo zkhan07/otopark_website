@@ -158,8 +158,8 @@ export const useStyles = makeStyles(theme => ({
       height: "100px"
     },
     [theme.breakpoints.down("sm")]: {
-      width: "40px",
-      height: "40px",
+      width: "20px",
+      height: "20px",
       marginTop: "15px"
     }
   },

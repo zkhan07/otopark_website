@@ -9,7 +9,7 @@ export default function FullWidthGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={2} id="getApp">
+      <Grid container spacing={0} id="getApp">
         <Grid item xs={12}>
           <div
             className={classes.getAppContainer}

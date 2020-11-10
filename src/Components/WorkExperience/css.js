@@ -15,7 +15,10 @@ export const useStyles = makeStyles(theme => ({
   },
   title: {
     color: "#00BBDC",
-    fontSize: "40px"
+    fontSize: "40px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "30px"
+    }
   },
   image: {
     marginLeft: "2.5%",

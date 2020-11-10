@@ -55,6 +55,10 @@ export const useStyles = makeStyles(theme => ({
     color: "white",
     backgroundColor: "#00BBDC",
     borderRadius: "5px",
+    "&:hover":{
+      color: "white",
+      backgroundColor: "#00BBDC",
+    },
     [theme.breakpoints.down("sm")]: {
       marginBottom: "30px"
     }

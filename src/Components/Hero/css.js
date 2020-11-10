@@ -10,18 +10,21 @@ export const useStyles = makeStyles(theme => ({
   heroContainer: {
     marginLeft: "-8px",
     marginRight: "-8px",
+    position: "relative",
     backgroundColor: "#00BBDC",
-    height: "500px",
+    height: "100vh",
     [theme.breakpoints.up("xl")]: {
-      height: "700px"
+      height: "60vh"
     },
     [theme.breakpoints.down("sm")]: {
-      height: "300px"
+      height: "60vh"
     }
   },
   heroImg: {
     marginLeft: "30%",
     width: "70%",
+    position: "absolute",
+    bottom: "0",
     marginTop: "205px",
     [theme.breakpoints.up("xl")]: {
       marginLeft: "30%",
@@ -85,7 +88,7 @@ export const useStyles = makeStyles(theme => ({
       marginLeft: "100px"
     },
     [theme.breakpoints.down("sm")]: {
-      top: "35%",
+      top: "45%",
       left: "5%",
       fontSize: "12px",
       display: "block",

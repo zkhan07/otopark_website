@@ -21,7 +21,10 @@ export const useStyles = makeStyles(theme => ({
   workTitle: {
     color: "black",
     fontSize: "30px",
-    textAlign: "center"
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "25px"
+    }
   },
   workButton: {
     width: "300px",
@@ -34,7 +37,7 @@ export const useStyles = makeStyles(theme => ({
     padding: "15px",
     fontSize: "15px",
     cursor: "pointer",
-    boxShadow: "3px 3px #00000034",
+    boxShadow: "3px 3px 3px 3px #00000034",
     "&:hover": {
       backgroundColor: "#00BBDC",
       color: "white"
@@ -57,7 +60,7 @@ export const useStyles = makeStyles(theme => ({
     padding: "15px",
     fontSize: "15px",
     cursor: "pointer",
-    boxShadow: "3px 3px #00000034",
+    boxShadow: "3px 3px 3px 3px #00000034",
     [theme.breakpoints.down("sm")]: {
       display: "block",
       marginLeft: "auto",

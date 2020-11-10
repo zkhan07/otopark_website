@@ -1,12 +1,16 @@
-import { Button, Grid, TextareaAutosize, TextField } from "@material-ui/core";
-import React from "react";
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, Slide, TextareaAutosize, TextField } from "@material-ui/core";
+import React, { useState } from "react";
 import ButtonAppBar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 import { useStyles } from "./css";
+import { ContactForm } from "../../util/Services/services";
+import { SettingsInputComponent } from "@material-ui/icons";
 
 export default function FullWidthGrid() {
   const classes = useStyles();
+  
+
   return (
     <>
       <ButtonAppBar />
@@ -35,13 +39,65 @@ export default function FullWidthGrid() {
     </>
   );
 }
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 // new component MY Contact page
 export function MyContact() {
   const classes = useStyles();
+  const [name,setName]=useState("");
+  const [email,setEmail]=useState('');
+  const [contact,setContact]=useState("");
+  const [message,setMessage]=useState('');
+  const [open,setOpen]= useState("");
 
+  
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const submit=()=>{
+    const formData = new FormData();
+    formData.append("name",name);
+    formData.append("email",email);
+    formData.append("contact",contact);
+    formData.append("message",message)
+    
+    ContactForm(formData).then((res)=>{
+      if(res.data.message==='successful'){
+        setOpen(true)
+      }
+    })
+  }
   return (
     <div className={classes.root1}>
+      <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-slide-title"
+        aria-describedby="alert-dialog-slide-description"
+        fullWidth={true}
+      >
+        <center>
+        <DialogTitle style={{color:"#00BBDC"}} id="alert-dialog-slide-title">{"Successfully Submited"}</DialogTitle>
+        </center>
+        <DialogContent>
+          <center>
+          <DialogContentText id="alert-dialog-slide-description">
+               <h2 style={{color:"#00BBDC"}}>We Will Reach Out to You Shortly!!!</h2> 
+          </DialogContentText>
+          </center>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} style={{color:"white",backgroundColor:"#00BBDC"}} color="primary">
+            OK
+          </Button>
+        </DialogActions>
+      </Dialog>
       <h1 className={classes.title}>Contact Us</h1>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -53,6 +109,7 @@ export function MyContact() {
               id="outlined-basic"
               variant="outlined"
               placeholder="Enter Your Name"
+              onChange={(e)=>setName(e.target.value)}
             />
             <br />
             <br />
@@ -63,16 +120,19 @@ export function MyContact() {
               id="outlined-basic"
               variant="outlined"
               placeholder="Enter Email Address"
+              onChange={(e)=>setEmail(e.target.value)}
             />
             <br />
             <br />
-            <label className={classes.label}>Subject</label> <br />
+            <label className={classes.label}>Contact</label> <br />
             <TextField
               className={classes.inputField}
               size="small"
+              type="number"
               id="outlined-basic"
               variant="outlined"
-              placeholder="Enter Subject"
+              placeholder="Enter Contact No"
+              onChange={(e)=>setContact(e.target.value)}
             />
             <br />
             <br />
@@ -85,11 +145,14 @@ export function MyContact() {
               id="outlined-basic"
               variant="outlined"
               placeholder="Enter Message"
+              onChange={(e)=>setMessage(e.target.value)}
             />
             <br />
             <br />
           </form>
-          <Button className={classes.submitButton}>Send Message</Button>
+          <Button 
+          onClick={submit}
+          className={classes.submitButton}>Send Message</Button>
         </Grid>
       </Grid>
     </div>

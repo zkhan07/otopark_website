@@ -7,13 +7,23 @@ export const useStyles = makeStyles(theme => ({
     marginLeft: "10%",
     marginRight: "10%",
     marginTop: "100px",
-    marginBottom: "100px"
+    marginBottom: "100px",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "5%",
+      marginRight: "5%",
+      marginTop: "50px",
+      marginBottom: "50px"
+    }
   },
   mainTitle: {
     marginBottom: "50px",
     marginLeft: "20px",
     color: "#00BBDC",
-    fontSize: "40px"
+    fontSize: "40px",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "0px",
+      fontSize: "30px"
+    }
   },
   imgIcon: {
     display: "block",

@@ -4,6 +4,8 @@ export const drawerWidth = 240;
 export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    marginLeft: "-8px",
+    marginRight: "-8px",
     backgroundColor: "#00BBDC",
     color: "#fff"
   },
@@ -37,8 +39,12 @@ export const useStyles = makeStyles(theme => ({
   },
   title: {
     fontWeight: "bold",
-    fontSize: "35px",
-    marginLeft: "30px"
+    fontSize: "40px",
+    marginLeft: "30px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "30px",
+      marginLeft: "0px"
+    }
   },
   subTitle: {
     marginTop: "-30px",

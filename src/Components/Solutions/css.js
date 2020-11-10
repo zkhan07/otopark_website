@@ -22,7 +22,10 @@ export const useStyles = makeStyles(theme => ({
   },
   mainTitle: {
     color: "#00BBDC",
-    fontSize: "35px"
+    fontSize: "40px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "30px"
+    }
   },
   cardContainer: {
     width: "98%",

@@ -59,14 +59,6 @@ export default function FullWidthGrid() {
         <Grid item xs={6} sm={6} md lg>
           <img
             className={classes.profileImage}
-            src={require("../../assets/profile/abhishek.png")}
-          />
-          <h4 className={classes.profileTitle}>Abhishek Tyagi</h4>
-          <p className={classes.profileSubTitle}>Financial Advisor</p>
-        </Grid>
-        <Grid item xs={6} sm={6} md lg>
-          <img
-            className={classes.profileImage}
             src={require("../../assets/profile/krishna.png")}
           />
           <h4 className={classes.profileTitle}>Krishna Reddy</h4>
@@ -97,6 +89,14 @@ export default function FullWidthGrid() {
           />
           <h4 className={classes.profileTitle}>Zaid Khan</h4>
           <p className={classes.profileSubTitle}>Developer</p>
+        </Grid>
+        <Grid item xs={6} sm={6} md lg>
+          {/* <img
+            className={classes.profileImage}
+            src={require("../../assets/profile/abhishek.png")}
+          />
+          <h4 className={classes.profileTitle}>Abhishek Tyagi</h4>
+          <p className={classes.profileSubTitle}>Financial Advisor</p> */}
         </Grid>
       </Grid>
     </div>

@@ -64,8 +64,18 @@ const Navbar = ({ history }) => {
               </Link> */}
               <Link
                 smooth={true}
-                style={isActive(history, "/otopark/website/faq/")}
-                to="/otopark/website/faq/#faqTop"
+                style={isActive(history, "/ourInnovations")}
+                to="/ourInnovations/#innovationTop"
+                className={classes.link}
+              >
+                <Button className={classes.navbarButton} color="inherit">
+                  Our Innovations
+                </Button>
+              </Link>
+              <Link
+                smooth={true}
+                style={isActive(history, "/faq/")}
+                to="/faq/#faqTop"
                 className={classes.link}
               >
                 <Button className={classes.navbarButton} color="inherit">
@@ -74,8 +84,8 @@ const Navbar = ({ history }) => {
               </Link>
               <Link
                 smooth={true}
-                style={isActive(history, "/otopark/website/aboutUs/")}
-                to="/otopark/website/aboutUs/#aboutUsTop"
+                style={isActive(history, "/aboutUs/")}
+                to="/aboutUs/#aboutUsTop"
                 className={classes.link}
               >
                 <Button className={classes.navbarButton} color="inherit">
@@ -84,8 +94,8 @@ const Navbar = ({ history }) => {
               </Link>
               <Link
                 smooth={true}
-                style={isActive(history, "/otopark/website/contactUs/")}
-                to="/otopark/website/contactUs/#contactUsTop"
+                style={isActive(history, "/contactUs/")}
+                to="/contactUs/#contactUsTop"
                 className={classes.link}
               >
                 <Button className={classes.navbarButton} color="inherit">

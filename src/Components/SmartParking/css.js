@@ -18,8 +18,10 @@ export const useStyles = makeStyles(theme => ({
   header: {
     display: "flex",
     color: "#00BBDC",
+    fontSize: "40px",
     [theme.breakpoints.down("sm")]: {
-      padding: "0px"
+      padding: "0px",
+      fontSize: "30px"
     }
   },
   buttons: {

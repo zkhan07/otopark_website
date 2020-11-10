@@ -3,7 +3,11 @@ import Image from "../../assets/images/vector1.png";
 
 export const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "-8px",
+      marginRight: "-8px"
+    }
   },
   getAppContainer: {
     marginTop: "0px",

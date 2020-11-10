@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Grid from "@material-ui/core/Grid";
 import Navbar from "../Navbar/Navbar";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
@@ -15,9 +15,16 @@ import Footer from "../Footer/Footer";
 // import MyContact from "../MyContact/MyContact";
 import { useStyles } from "./css";
 import { Smart } from "../SmartParking/Smart";
+// import anime from 'animejs/lib/anime.es.js';
 
 export default function FullWidthGrid() {
   const classes = useStyles();
+  // useEffect(() => {
+  //   anime({
+  //     targets: ".css-selector-demo .el",
+  //     translateX: 250
+  //   });
+  // }, []);
 
   return (
     <div className={classes.root}>

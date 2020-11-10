@@ -50,7 +50,7 @@ export default function FullWidthGrid() {
   };
   return (
     <div className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid item xs={12} sm={12} ms={12} lg={12}>
           <div className={classes.gridContainer} id="otoMedia">
             <p className={classes.title}>otoMedia</p>

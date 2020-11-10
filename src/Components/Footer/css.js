@@ -40,9 +40,15 @@ export const useStyles = makeStyles(theme => ({
     borderRadius: "50%"
   },
   bottomDiv: {
+    marginLeft: "5%",
+    marginRight: "5%",
     padding: "10px",
     width: "100%",
-    borderTop: "1px solid #71777D"
+    borderTop: "1px solid #71777D",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "0%",
+      marginRight: "0%"
+    }
   },
   header: {
     color: "#A4A4A4"

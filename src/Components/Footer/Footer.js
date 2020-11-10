@@ -33,7 +33,7 @@ export default function FullWidthGrid() {
               <p align="center">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 &nbsp; 319 Monash Building, IIT Bombay,
-                <br /> Powai Mumbai 400076, India mail
+                <br /> Powai Mumbai 400076, India
               </p>
               <div align="center" className={classes.icon}>
                 <a
@@ -77,11 +77,7 @@ export default function FullWidthGrid() {
                     aria-hidden="true"
                   ></i>
                 </a>
-                <a
-                  target="_blank"
-                  style={{ color: "white" }}
-                  href="https://www.linkedin.com/company/myotopark/"
-                >
+                <a target="_blank" style={{ color: "white" }} href="/host">
                   <i
                     data-aos="zoom-in"
                     data-aos-duration="2500"
@@ -163,16 +159,10 @@ export default function FullWidthGrid() {
             <Grid item xs={6} sm={6} md={2} lg>
               <h4 className={classes.header}>About</h4>
               <div className={classes.footerList}>
-                <Link
-                  to="/otopark/website/aboutUs/#aboutUsTop"
-                  className={classes.link}
-                >
+                <Link to="/aboutUs/#aboutUsTop" className={classes.link}>
                   <p className={classes.listItem}>Vision</p>
                 </Link>
-                <Link
-                  to="/otopark/website/aboutUs/#aboutUsTop"
-                  className={classes.link}
-                >
+                <Link to="/aboutUs/#aboutUsTop" className={classes.link}>
                   <p className={classes.listItem}>Team</p>
                 </Link>
               </div>
@@ -184,30 +174,29 @@ export default function FullWidthGrid() {
               <Grid container>
                 <Grid item xs={12} lg={6} md={6}>
                   <div className={classes.bottomTextLeft}>
-                    <a
-                      target="_blank"
+                    <Link
+                      smooth={true}
                       style={{ color: "white", textDecoration: "none" }}
-                      href="http://otopark.in/host-terms-and-conditions/"
+                      to="/host/#hostTop"
                     >
-                      Host Policy{" "}
-                    </a>{" "}
-                    |{" "}
-                    <a
-                      target="_blank"
+                      Host Policy
+                    </Link>
+                    &nbsp; | &nbsp;
+                    <Link
+                      smooth={true}
                       style={{ color: "white", textDecoration: "none" }}
-                      href="http://otopark.in/privacy-policy/"
+                      to="/privacy/#privacyTop"
                     >
-                      {" "}
-                      Privacy Policy{" "}
-                    </a>{" "}
-                    |{" "}
-                    <a
-                      target="_blank"
+                      Privacy Policy
+                    </Link>
+                    &nbsp; |&nbsp;
+                    <Link
+                      smooth={true}
                       style={{ color: "white", textDecoration: "none" }}
-                      href="http://otopark.in/overstay-policy/"
+                      to="/overstay/#overstayTop"
                     >
-                      Overstay Policy{" "}
-                    </a>
+                      Overstay Policy
+                    </Link>
                   </div>
                 </Grid>
                 <Grid item xs={12} lg={6} md={6}>

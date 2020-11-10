@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 import AppStreamCam from "../Components/Test/Test";
 
 import Loader from "../util/Loader/Loader";
@@ -12,39 +12,34 @@ const CaseStudy = lazy(() => import("../Components/CaseStudy/Casestudy"));
 const ContactUsPage = lazy(() =>
   import("../Components/ContactUsPage/ContactUsPage")
 );
+const Host = lazy(() => import("../ExtraPages/Host"));
+const Overstay = lazy(() => import("../ExtraPages/Overstay"));
+const Privacy = lazy(() => import("../ExtraPages/Privacy"));
+
+const Innovations = lazy(() => import("../Components/Innovations/Innovations"));
+
 const NotFound = lazy(() => import("../util/NotFound/NotFound"));
 
 export const Routes = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Suspense fallback={<Loader />}>
         <Switch>
           <Route exact path="/" component={Dashboard} />
-          <Route
-            exact
-            path="/otopark/website/aboutUs"
-            component={AboutUsPage}
-          />
-          <Route exact path="/otopark/website/faq" component={FaqPage} />
-          <Route
-            exact
-            path="/otopark/website/caseStudy"
-            component={CaseStudy}
-          />
-          <Route
-            exact
-            path="/otopark/website/contactUs"
-            component={ContactUsPage}
-          />
-          <Route
-            exact
-            path="/otopark/website/appstream"
-            component={AppStreamCam}
-          />
+          <Route exact path="/aboutUs" component={AboutUsPage} />
+          <Route exact path="/faq" component={FaqPage} />
+          <Route exact path="/caseStudy" component={CaseStudy} />
+          <Route exact path="/contactUs" component={ContactUsPage} />
+          <Route exact path="/appstream" component={AppStreamCam} />
+          <Route exact path="/host" component={Host} />
+          <Route exact path="/overstay" component={Overstay} />
+          <Route exact path="/privacy" component={Privacy} />
+
+          <Route exact path="/ourInnovations" component={Innovations} />
 
           <Route exact path="*" component={NotFound} />
         </Switch>
       </Suspense>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
