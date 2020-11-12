@@ -64,7 +64,7 @@ const Navbar = ({ history }) => {
               </Link> */}
               <Link
                 smooth={true}
-                style={isActive(history, "/ourInnovations")}
+                style={isActive(history, "/ourInnovations/")}
                 to="/ourInnovations/#innovationTop"
                 className={classes.link}
               >
