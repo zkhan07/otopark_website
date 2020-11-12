@@ -5,7 +5,7 @@ export const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     marginTop: "-50px",
-    marginBottom: "100px",
+    marginBottom: "30px",
     marginLeft: "10%",
     marginRight: "10%",
     [theme.breakpoints.down("sm")]: {
@@ -16,10 +16,32 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   mainContainer: {
+    padding: "20px",
+    paddingLeft: "50px",
+    paddingRight: "50px",
     marginTop: "50px",
     backgroundColor: "#EDFAFD",
     borderRadius: "10px",
-    boxShadow: "0px 5px 16px #00000029"
+    boxShadow: "0px 5px 16px #00000029",
+    [theme.breakpoints.down("sm")]: {
+      padding: "0px",
+      paddingLeft: "0px",
+      paddingRight: "0px"
+    }
+  },
+  evMainContainer: {
+    padding: "20px",
+    paddingLeft: "50px",
+    paddingRight: "50px",
+    marginTop: "100px",
+    backgroundColor: "#EDFAFD",
+    borderRadius: "10px",
+    boxShadow: "0px 5px 16px #00000029",
+    [theme.breakpoints.down("sm")]: {
+      padding: "0px",
+      paddingLeft: "0px",
+      paddingRight: "0px"
+    }
   },
   imageDiv: {
     margin: "20px",

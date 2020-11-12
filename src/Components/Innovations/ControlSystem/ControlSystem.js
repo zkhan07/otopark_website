@@ -50,7 +50,7 @@ export default function FullWidthGrid() {
                   <br className={classes.mobileView} />
                   real-time slot availability detection, booking{" "}
                   <br className={classes.mobileView} />
-                  app and parkign guidance system
+                  app and parking guidance system
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function FullWidthGrid() {
               <div>
                 <h4 className={classes.title}>Contactless FASTag Payment</h4>
                 <p className={classes.para}>
-                  Accept seamless and contactless automatic
+                  Accept seamless and contactless automatic{" "}
                   <br className={classes.mobileView} />
                   parking fee collection with NPCI FASTag
                 </p>
@@ -110,7 +110,7 @@ export default function FullWidthGrid() {
               <div>
                 <h4 className={classes.title}>Street Pay n Park</h4>
                 <p className={classes.para}>
-                  Entry and exit parkign equipment, automatic{" "}
+                  Entry and exit parking equipment, automatic{" "}
                   <br className={classes.mobileView} />
                   barriers, handheld POS devices, booking app,{" "}
                   <br className={classes.mobileView} />
@@ -132,9 +132,9 @@ export default function FullWidthGrid() {
               <div>
                 <h4 className={classes.title}>Reporting</h4>
                 <p className={classes.para}>
-                  Generate reports on occupancy, revenue,
+                  Generate reports on occupancy, revenue,{" "}
                   <br className={classes.mobileView} />
-                  metrics and insights for smart parking
+                  metrics and insights for smart parking{" "}
                   <br className={classes.mobileView} />
                   analytics
                 </p>
@@ -154,7 +154,7 @@ export default function FullWidthGrid() {
               <div>
                 <h4 className={classes.title}>Security System</h4>
                 <p className={classes.para}>
-                  Monitor CCTV footage and security for
+                  Monitor CCTV footage and security for {"  "}
                   <br className={classes.mobileView} />
                   parking lots
                 </p>

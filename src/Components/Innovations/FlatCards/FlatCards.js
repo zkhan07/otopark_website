@@ -216,8 +216,9 @@ export default function FullWidthGrid() {
         </Grid>
 
         {/* card6 */}
-        <Grid container className={classes.mainContainer}>
-          <Grid item xs={12} sm={12} md={8} lg={8}>
+        <Grid container id="electricVehicle" style={{marginTop:"-50px"}}>
+        <Grid container className={classes.evMainContainer} >
+          <Grid item xs={12} sm={12} md={8} lg={8} >
             <div
               className={classes.rightContainer}
               data-aos="fade-right"
@@ -255,6 +256,7 @@ export default function FullWidthGrid() {
               />
             </div>
           </Grid>
+        </Grid>
         </Grid>
 
         {/* card7 */}
@@ -511,7 +513,8 @@ export default function FullWidthGrid() {
   </Grid>
 
   {/* card6 */}
-  <Grid container className={classes.mainContainer}>
+  <Grid container id="mobElectricVehicle" style={{marginTop:"-50px"}}>
+        <Grid container className={classes.evMainContainer} >
     <Grid item xs={12} sm={12} md={8} lg={8}>
       <div
         className={classes.rightContainer}
@@ -550,6 +553,7 @@ export default function FullWidthGrid() {
         />
       </div>
     </Grid>
+  </Grid>
   </Grid>
 
   {/* card7 */}

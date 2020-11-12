@@ -1,5 +1,5 @@
 import { makeStyles, fade } from "@material-ui/core/styles";
-import Image from "../../../assets/images/imageCardImg.png";
+import Image from "../../../assets/images/imageCardImg1.jpg";
 
 export const useStyles = makeStyles(theme => ({
   root: {

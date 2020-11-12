@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { useStyles } from "./css";
 import TabSlider from "../TabSlider/TabSlider";
 
@@ -173,7 +173,7 @@ export function Search() {
               Search for nearby parking based on your desired amenities and
               pricing
             </p>
-            <Link smooth={true} to="/#solutions">
+            <Link smooth={true} to="/faq/#faqTop">
               <button className={classes.moreButton}>
                 Learn More{" "}
                 <i
@@ -204,7 +204,8 @@ export function Entry() {
         >
           <Grid item lg={6} data-aos="fade-right" data-aos-duration="3000">
             <img
-              className={classes.image}
+              style={{ height: "270px" }}
+              // className={classes.image}
               src={require("../../../assets/images/innovationEntryImg.png")}
               alt="image2"
             />
@@ -221,7 +222,7 @@ export function Entry() {
               Arrive securely with our patented dynamic otopass accessible on
               the app
             </p>
-            <Link smooth={true} to="#solutions">
+            <Link smooth={true} to="/faq/#faqTop">
               <button className={classes.moreButton}>
                 Learn More{" "}
                 <i
@@ -268,7 +269,7 @@ export function Park() {
             <p className={classes.para}>
               Park and track your booking status right from the app
             </p>
-            <Link smooth={true} to="#solutions">
+            <Link smooth={true} to="/faq/#faqTop">
               <button className={classes.moreButton}>
                 Learn More{" "}
                 <i
@@ -313,10 +314,9 @@ export function Value() {
           >
             <h4 className={classes.title}>Value Added Service</h4>
             <p className={classes.para}>
-              Enhance your parking experience by changing your EV while your
-              work
+              Enhance your parking experience by changing your EV while you work
             </p>
-            <Link smooth={true} to="#solutions">
+            <Link smooth={true} to="#electricVehicle">
               <button className={classes.moreButton}>
                 Learn More{" "}
                 <i
@@ -362,18 +362,21 @@ export function Finish() {
             <h4 className={classes.title}>Finish</h4>
             <p className={classes.para}>
               Exit parking and rate your experience <br />
-              Need more ? Explore otopark app for more features
+              Need more? Explore otopark app for more features
             </p>
-            <Link smooth={true} to="#solutions">
+            <a
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.otopark.Otopark.oto.park.my.car.vehicle.find.parking.lot.space.host.user&hl=en_US"
+            >
               <button className={classes.moreButton}>
-                Learn More{" "}
+                Download App{" "}
                 <i
                   style={{ marginLeft: "15px" }}
                   class="fa fa-long-arrow-right"
                   aria-hidden="true"
                 ></i>
               </button>
-            </Link>
+            </a>
           </Grid>
         </Grid>
       </div>
