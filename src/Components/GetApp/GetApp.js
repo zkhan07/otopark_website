@@ -54,7 +54,7 @@ export default function FullWidthGrid() {
                 data-aos-duration="2000"
                 className={classes.link}
                 smooth={true}
-                to="/otopark/website/contactUs/#contactUsTop"
+                to="/contactUs/#contactUsTop"
               >
                 <Button className={classes.button}>Contact</Button>
               </Link>
