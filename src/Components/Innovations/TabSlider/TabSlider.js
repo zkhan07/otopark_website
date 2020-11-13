@@ -138,11 +138,11 @@ export default function FullWidthGrid() {
                   data-aos-duration="3000"
                 >
                   <img
-                    style={{
-                      marginLeft: "30px",
-                      height: "220px"
-                    }}
-                    // className={classes.image}
+                    // style={{
+                    //   width: "100%",
+                    //   height: "280px"
+                    // }}
+                    className={classes.image}
                     src={require("../../../assets/images/innovationEntryImg.png")}
                     alt="image2"
                   />

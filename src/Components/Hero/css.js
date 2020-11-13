@@ -24,22 +24,25 @@ export const useStyles = makeStyles(theme => ({
     marginLeft: "30%",
     width: "70%",
     position: "absolute",
-    bottom: "0",
+    bottom: "-0.1%",
     marginTop: "205px",
     [theme.breakpoints.up("xl")]: {
       marginLeft: "30%",
       width: "70%",
-      marginTop: "260px"
+      position: "absolute",
+      bottom: "-1%"
     },
     [theme.breakpoints.down("md")]: {
       marginLeft: "30%",
       width: "70%",
-      marginTop: "275px"
+      position: "absolute",
+      bottom: "-1%"
     },
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0%",
       width: "100%",
-      marginTop: "212px"
+      position: "absolute",
+      bottom: "-1%"
     }
   },
   heroSlogan: {
