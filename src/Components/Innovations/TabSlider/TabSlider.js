@@ -99,7 +99,7 @@ export default function FullWidthGrid() {
                 >
                   <img
                     className={classes.image}
-                    src={require("../../../assets/images/innovationSearchImg.png")}
+                    src={require("../../../assets/images/img1.png")}
                     alt="image1"
                   />
                 </Grid>
@@ -138,12 +138,9 @@ export default function FullWidthGrid() {
                   data-aos-duration="3000"
                 >
                   <img
-                    // style={{
-                    //   width: "100%",
-                    //   height: "280px"
-                    // }}
+                    style={{ marginLeft: "-20px" }}
                     className={classes.image}
-                    src={require("../../../assets/images/innovationEntryImg.png")}
+                    src={require("../../../assets/images/img2.png")}
                     alt="image2"
                   />
                 </Grid>
@@ -183,7 +180,7 @@ export default function FullWidthGrid() {
                 >
                   <img
                     className={classes.image}
-                    src={require("../../../assets/images/innovationParkImg.png")}
+                    src={require("../../../assets/images/img3.png")}
                     alt="image3"
                   />
                 </Grid>
@@ -222,7 +219,7 @@ export default function FullWidthGrid() {
                 >
                   <img
                     className={classes.image}
-                    src={require("../../../assets/images/innovationValueImg.png")}
+                    src={require("../../../assets/images/img4.png")}
                     alt="image4"
                   />
                 </Grid>
@@ -262,7 +259,7 @@ export default function FullWidthGrid() {
                 >
                   <img
                     className={classes.image}
-                    src={require("../../../assets/images/innovationFinishImg.png")}
+                    src={require("../../../assets/images/img5.png")}
                     alt="image5"
                   />
                 </Grid>

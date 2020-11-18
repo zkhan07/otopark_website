@@ -157,7 +157,7 @@ export function Search() {
           <Grid item lg={6} data-aos="fade-right" data-aos-duration="3000">
             <img
               className={classes.image}
-              src={require("../../../assets/images/innovationSearchImg.png")}
+              src={require("../../../assets/images/img1.png")}
               alt="image1"
             />
           </Grid>
@@ -204,9 +204,8 @@ export function Entry() {
         >
           <Grid item lg={6} data-aos="fade-right" data-aos-duration="3000">
             <img
-              style={{ height: "270px" }}
-              // className={classes.image}
-              src={require("../../../assets/images/innovationEntryImg.png")}
+              className={classes.image}
+              src={require("../../../assets/images/img2.png")}
               alt="image2"
             />
           </Grid>
@@ -254,7 +253,7 @@ export function Park() {
           <Grid item lg={6} data-aos="fade-right" data-aos-duration="3000">
             <img
               className={classes.image}
-              src={require("../../../assets/images/innovationParkImg.png")}
+              src={require("../../../assets/images/img3.png")}
               alt="image3"
             />
           </Grid>
@@ -301,7 +300,7 @@ export function Value() {
           <Grid item lg={6} data-aos="fade-right" data-aos-duration="3000">
             <img
               className={classes.image}
-              src={require("../../../assets/images/innovationValueImg.png")}
+              src={require("../../../assets/images/img4.png")}
               alt="image4"
             />
           </Grid>
@@ -348,7 +347,7 @@ export function Finish() {
           <Grid item lg={6} data-aos="fade-right" data-aos-duration="3000">
             <img
               className={classes.image}
-              src={require("../../../assets/images/innovationFinishImg.png")}
+              src={require("../../../assets/images/img5.png")}
               alt="image5"
             />
           </Grid>

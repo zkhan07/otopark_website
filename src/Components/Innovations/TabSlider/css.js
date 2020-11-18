@@ -10,9 +10,12 @@ export const useStyles = makeStyles(theme => ({
     width: "100%",
     height: "250px",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "0px",
-      width: "100%",
-      height: "250px"
+      marginTop: "-50px",
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
+      width: "90%",
+      height: "300px"
     }
   },
   title: {

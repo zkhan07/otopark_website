@@ -66,8 +66,9 @@ export const useStyles = makeStyles(theme => ({
     }
   },
   image: {
-    width: "100%",
-    height: "270px",
+    marginTop: "-50px",
+    width: "400px",
+    height: "400px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0px",
       width: "100%",
